@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Blutsbande (1 10)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="_info.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Blutsbande (1 10)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Blutsbande (2 10).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Blutsbande (1 10)</b> - 0:58:25 Anna-Lisa Waldemar (Stina Ekblad) betreibt mit ihrem Sohn Oskar (Joel Spira) und dessen Frau Liv (Jessica Grabowsky) ein kleines Hotel auf Aland in den schwedischen Sch&auml;ren. Zum Erstaunen ihrer drei Kinder beruft sie einen Familienrat ein ... Die Family-Drama-Serie sorgte 2014 f&uuml;r einen spektakul&auml;ren Primetime-Erfolg in Schweden. Mit ausgezeichneter Besetzung!
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Blutsbande (2 10).html"><img width="100%" height="auto" src="_Poster/Blutsbande (1 10).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("_info.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Blutsbande (2 10).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

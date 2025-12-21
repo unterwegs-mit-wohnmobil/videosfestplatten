@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Charles Dickens Little Dorrit (1 von 8).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.themoviedb.org/tv/13561-little-dorrit?language=de-DE">Details</a> GB 2008 (Little Dorrit) Miniserie in 8 Teilen Deutsche Erstausstrahlung: 26.08.2010 Passion Free-TV-Erstausstrahlung: 22.05.2012 ServusTV Original-Erstausstrahlung: 26.10.2008 BBC One (Englisch) arte: Charles Dickens' Little Dorrit / Alternativtitel: Little Dorrit - Familiengeheimnisse Nach seiner R&uuml;ckkehr aus China, wo er bis zum Tod des Vaters in dessen Gesch&auml;ft gearbeitet hat, begegnet der 40-j&auml;hrige Arthur im Haus seiner Mutter der halb so alten, wegen ihrer zierlichen Figur Little Dorrit genannten Amy Dorrit. Die Familie des M&auml;dchens lebt seit Jahren im Londoner Schuldgef&auml;ngnis Marshalsea, in dem Amy auch geboren wurde.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Charles Dickens Little Dorrit (1 von 8).html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Charles Dickens Little Dorrit (1 von 8).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

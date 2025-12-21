@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Unterwegs im Allg&auml;u - Von Oberstdorf nach F&uuml;ssen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ulrile Aicher (Wagner) - Stationen (BR).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Unterwegs im Allgaeu - Von Oberstdorf nach Fuessen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Wildes Allgaeu - Hohe Berge, tiefe Schluchten.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Unterwegs im Allg&auml;u - Von Oberstdorf nach F&uuml;ssen</b>
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Wildes Allgaeu - Hohe Berge, tiefe Schluchten.html"><img width="100%" height="auto" src="_Poster/Unterwegs im Allgaeu - Von Oberstdorf nach Fuessen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ulrile Aicher (Wagner) - Stationen (BR).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Wildes Allgaeu - Hohe Berge, tiefe Schluchten.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

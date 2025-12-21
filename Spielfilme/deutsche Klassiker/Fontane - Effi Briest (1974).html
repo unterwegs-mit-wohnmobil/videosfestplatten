@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Fontane - Effi Briest (1974)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Es geschah am hellichten Tag.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Fontane - Effi Briest (1974)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Faehre nach Hongkong.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Fontane - Effi Briest (1974)</b> - 2:14:45 Mit 17 Jahren wird Effi Briest, Tochter aus preu&szlig;ischem Gro&szlig;b&uuml;rgertum, von ihren Eltern in die Ehe mit dem fast doppelt so alten, aufstrebenden Beamten Baron Innstetten gezwungen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Faehre nach Hongkong.html"><img width="100%" height="auto" src="_Poster/Fontane - Effi Briest (1974).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Es geschah am hellichten Tag.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Faehre nach Hongkong.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

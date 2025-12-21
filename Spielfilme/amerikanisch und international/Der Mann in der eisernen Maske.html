@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der Mann in der eisernen Maske</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Knochenjaeger.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der Mann in der eisernen Maske"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der mit dem Wolf tanzt.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der Mann in der eisernen Maske</b> - 1:59:39 <a href="https://de.wikipedia.org/wiki/Der_Mann_in_der_eisernen_Maske_(1998)">Details</a> Die Geschichte spielt in Frankreich unter der Herrschaft von K&ouml;nig Ludwig XIV. Der K&ouml;nig ist verdorben und skrupellos. W&auml;hrend sein Volk hungert, feiert er Feste und umgibt sich mit sch&ouml;nen Frauen. Es kommt daher zu Aufst&auml;nden und Anschl&auml;gen auf sein Leben, doch der Kommandant der Musketiere der Garde, d’Artagnan, kann sie gerade so vereiteln. Die Musketiere Athos, Porthos und Aramis sind inzwischen nicht mehr aktiv und gehen verschiedenen Besch&auml;ftigungen nach.  Der K&ouml;nig verliebt sich in Christine, die bereits so gut wie verlobt ist und den K&ouml;nig daher abweist. Ludwig l&ouml;st das Problem, indem er Christines Geliebten im Krieg an vorderste Front beordern l&auml;sst, sodass dieser f&auml;llt. Daraufhin macht der K&ouml;nig Christine zu seiner M&auml;tresse.  Dieses Vorgehen ist der Tropfen, der das Fass f&uuml;r Athos, Porthos und Aramis zum &Uuml;berlaufen bringt: Christines Verlobter war Athos’ einziger Sohn, der nun durch die Skrupellosigkeit des K&ouml;nigs sterben musste. Die drei treffen sich mit d’Artagnan und versuchen, ihn zu &uuml;berreden, gemeinsam mit ihnen den K&ouml;nig zu st&uuml;rzen. D’Artagnan befindet sich als Sicherheitschef des K&ouml;nigs in einem Loyalit&auml;tskonflikt, dessen Ausma&szlig; erst im Verlauf des Filmes offenbar wird. Vorerst erkl&auml;rt er nur, dass er daran glaube, dass sich jeder Mensch, auch Ludwig, &auml;ndern k&ouml;nne, und dass er seinen Schwur, den K&ouml;nig zu sch&uuml;tzen, nicht brechen m&ouml;chte.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der mit dem Wolf tanzt.html"><img width="100%" height="auto" src="_Poster/Der Mann in der eisernen Maske.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Knochenjaeger.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der mit dem Wolf tanzt.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

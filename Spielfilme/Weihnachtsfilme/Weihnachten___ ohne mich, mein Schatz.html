@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Weihnachten... ohne mich, mein Schatz</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Weihnachten im Schnee.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Weihnachten___ ohne mich, mein Schatz"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Weihnachtsengel kuesst man nicht.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Weihnachten... ohne mich, mein Schatz</b> - 1:27:25 Als der Architekt Ruprecht Ehefrau Johanna am Flughafen vergisst und keine Reue zeigt, wechselt sie die Seiten. An Ellies Seite k&auml;mpft sie gegen ein Bauprojekt ihres Mannes.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Weihnachtsengel kuesst man nicht.html"><img width="100%" height="auto" src="_Poster/Weihnachten___ ohne mich, mein Schatz.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Weihnachten im Schnee.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Weihnachtsengel kuesst man nicht.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

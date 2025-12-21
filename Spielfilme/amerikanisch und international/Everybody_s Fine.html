@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Everybody's Fine</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ernst sein ist alles.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Everybody_s Fine"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fargo - Blutiger Schnee.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Everybody's Fine</b> - 1:34:10 Einige Monate nach dem Tod seiner Frau bereitet Rentner Frank Goode ein Familientreffen mit seinen vier erwachsenen Kindern vor, doch sie sagen alle nacheinander ab. Zum Ausgleich entschlie&szlig;t er sich gegen den Rat seines Arztes, ihnen in Form einer Rundreise jeweils einen &Uuml;berraschungsbesuch abzustatten.  Da Frank wegen seiner berufsbedingten Lungenfibrose keine Flugreisen unternehmen kann, reist er per Zug und Fernbus durch die USA. Soweit er wei&szlig;, lebt David als Kunstmaler in New York, Amy als Inhaberin einer Werbeagentur in Chicago, Robert als Orchesterdirigent in Denver und Rosie als Kunstt&auml;nzerin in Las Vegas. Vor dem Zugfenster kann er unentwegt seine eigene Arbeit betrachten – er war in der Kabelherstellung t&auml;tig. Die durch die Kabel neben der Zugtrasse laufenden Telefongespr&auml;che bilden im Film einen roten Faden, der die Episoden verbindet. Dabei sind Telefonate zwischen Franks Kindern zu h&ouml;ren, aus denen der Zuschauer erf&auml;hrt, dass es diesen gar nicht so gut geht, was Frank verheimlicht werden soll.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fargo - Blutiger Schnee.html"><img width="100%" height="auto" src="_Poster/Everybody_s Fine.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ernst sein ist alles.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fargo - Blutiger Schnee.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

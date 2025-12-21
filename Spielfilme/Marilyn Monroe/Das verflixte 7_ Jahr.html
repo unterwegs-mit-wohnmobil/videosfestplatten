@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Das verflixte 7. Jahr</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Blondinen bevorzugt.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Das verflixte 7_ Jahr"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Niagara.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Das verflixte 7. Jahr</b> - 1:39:30 Manhattan: Richard Sherman schickt seine Ehefrau Helen und den gemeinsamen Sohn Ricky im hei&szlig;en Sommer aufs Land nach Maine, w&auml;hrend er wie auch viele andere Familienv&auml;ter &uuml;ber die Hundstage alleine in der Stadt zur&uuml;ckbleibt. Richard ist entschlossen, nicht wie andere Ehem&auml;nner seine Zeit mit Trinkgelagen und Liebeleien zu verschwenden. Aber seine Vors&auml;tze sind vergessen, als eine sinnliche Blondine in die Wohnung &uuml;ber seiner einzieht. Das M&auml;dchen, ein Model und Schauspielerin, dreht Werbespots f&uuml;r eine Zahnpasta und verdreht ihm sofort den Kopf. Passenderweise arbeitet der Verlagsmanager Sherman gerade an der Ver&ouml;ffentlichung eines Buches vom Psychiater Dr. Brubaker, der schreibt, dass fast alle M&auml;nner sich im siebten Jahr ihrer Ehe nach Aff&auml;ren umsehen. Mehrmals verf&auml;llt Sherman in wirre Tagtr&auml;ume, in denen er beispielsweise seiner Frau seine Attraktivit&auml;t beweisen will oder das M&auml;dchen leidenschaftlich beim Klavierspielen verf&uuml;hrt.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Niagara.html"><img width="100%" height="auto" src="_Poster/Das verflixte 7_ Jahr.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Blondinen bevorzugt.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Niagara.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

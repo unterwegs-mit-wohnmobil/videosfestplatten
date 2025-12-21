@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Fuechsin 1 - Dunkle Faehrte.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.fernsehserien.de/die-fuechsin">Details</a> D 2015– bisher 5 Filme Deutsche Erstausstrahlung: 17.12.2015 Das Erste Zur&uuml;ckgezogen lebt die Mittf&uuml;nfzigerin Anne Marie Fuchs (Lina Wendel) in D&uuml;sseldorf. Kontakte zur Au&szlig;enwelt hat sie kaum, lediglich Simone (Jasmin Schwiers), die Chefin des Restaurant-Cafés „Mittsommer“ h&auml;lt stets einen guten Kaffee f&uuml;r sie bereit. Als Simones Bruder Sebastian verschwindet und dessen bester Freund ermordet aufgefunden wird, bietet Anne ihre Hilfe an. Die unscheinbare Dame, die sich stets in Geldn&ouml;ten befindet, entpuppt sich dabei als absoluter Ermittlungsprofi mit scharfem Verstand. Was kaum jemand wei&szlig;: sie ist eine ehemalige DDR-Spionin. Olaf Ruhleben (Torsten Michaelis) war fr&uuml;her ihr F&uuml;hrungsoffizier und versucht sie nun f&uuml;r seine Sicherheitsfirma anzuwerben. Doch Anne hat aus ihrer aktiven Zeit noch eine Rechnung offen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Fuechsin 1 - Dunkle Faehrte.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Fuechsin 1 - Dunkle Faehrte.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

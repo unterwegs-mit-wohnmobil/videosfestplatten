@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Links und rechts vom Glockenbach</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Karwendelalmen oder das Jahr auf der Alm (1956).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Links und rechts vom Glockenbach"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Matterhornbesteigung (1959).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Links und rechts vom Glockenbach</b> - 0:30:29 Der Glockenbach hat einem M&uuml;nchner Stadtviertel seinen Namen gegeben. Der Film von Lis Klatt portr&auml;tiert das Leben rund um den Bach anno 1962 von Bienenzucht und Hasenstall bis hin zu Heim und Handwerk, nicht ohne wehm&uuml;tige Exkurse des Erz&auml;hlers in seine Jugendzeit dortselbst. Seine nostalgischen Seufzer sind zeitlos; denn immer schon gab es &quot;fr&uuml;her&quot; mehr Ruhe, sch&ouml;nere H&auml;user und moderatere Schwe
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Matterhornbesteigung (1959).html"><img width="100%" height="auto" src="_Poster/Links und rechts vom Glockenbach.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Karwendelalmen oder das Jahr auf der Alm (1956).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Matterhornbesteigung (1959).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der Kommissar und das Meer 03 - An einem einsamen Ort</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Kommissar und das Meer 02 - Naeher als du denkst.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der Kommissar und das Meer 03 - An einem einsamen Ort"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der Kommissar und das Meer 04 - Sommerzeit.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der Kommissar und das Meer 03 - An einem einsamen Ort</b> - 1:28:56 Es ist Hochsommer in Gotland. Und wir erleben in der dritten Folge An einem einsamen Ort, wie eine internationale Gruppe von Arch&auml;logie-Studenten auf den Grabungsfeldern der Insel, an Funden aus der Wikingerzeit forscht. Doch dann passiert das Unvorstellbare: Die Leiche der jungen Studentin Martina Flochten (Anna S&auml;rnholm) wird aufgefunden. Sie wurde nach dem Wikinger-Ritual mit dem Dreifaltigen-Tod niedergestreckt. Kommissar Anders (Walter Sittler) sieht sich gleich mit mehreren Verd&auml;chtigen konfrontiert: Der esoterisch angehauchte Naturliebhaber Ulf Torstensson (Ola Rapace), der gegen den Willen von Martinas Vater (Jacob Nordenson), den Bau einer Hotelanlage verhindern will, Martinas Doktorvater Staffan Mellgren (Peter Haber), dem ein Verh&auml;ltnis mit ihr nachgesagt wurde, und die Br&uuml;der Eskil und Aron (Jonas Karlsson und Nicolaj Lie Kaas), die sich gegenseitig mit einem falschen Alibi sch&uuml;tzen. Die Situation eskaliert, als Staffan tot aufgefunden wird, auch ermordet nach den Ritualen der Wikinger.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der Kommissar und das Meer 04 - Sommerzeit.html"><img width="100%" height="auto" src="_Poster/Der Kommissar und das Meer 03 - An einem einsamen Ort.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Kommissar und das Meer 02 - Naeher als du denkst.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der Kommissar und das Meer 04 - Sommerzeit.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

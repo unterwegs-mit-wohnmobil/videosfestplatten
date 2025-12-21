@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der junge Inspektor Morse 16 - Bett zehn</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der junge Inspektor Morse 15 - Irrungen.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der junge Inspektor Morse 16 - Bett zehn"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der junge Inspektor Morse 17 - Sonnenglanz.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der junge Inspektor Morse 16 - Bett zehn</b> - 1:29:26 Joan Thursday verschwindet heimlich aus Oxford und l&auml;sst ihre Familie sowie Endeavour Morse mit gebrochenen Herzen zur&uuml;ck. Doch anstatt zu verzweifeln, st&uuml;rzt Morse sich in die Arbeit. Im Cowley Krankenhaus sterben in kurzer Zeit ungew&ouml;hnlich viele Patienten, die alle in Bett zehn auf der gleichen Station untergebracht waren. Der letzte Tote ist der Gef&auml;ngnisinsasse Terence Bakewell, den Morse im Krankenhaus bewachen sollte. Chief Superintendent Bright bricht in seinem B&uuml;ro pl&ouml;tzlich zusammen. Er wird ins Cowley Krankenhaus eingeliefert und von dem &auml;lteren Sir Merlyn Chubb operiert, der auch der Arzt aller Patienten von Bett zehn war. Nach der Operation wird Bright ebenfalls auf die todbringende Krankenstation gebracht. Zudem wird die allein lebende Mrs. Zacharides auf ihrem Anwesen tot aufgefunden. Alles deutet auf eine nat&uuml;rliche Todesursache hin. Auch ihr Mann, der vor sechs Monaten starb, war Patient im Cowley Krankenhaus. Von der Tochter des Ehepaars erf&auml;hrt Morse, dass Mrs. Zacharides im Clinch mit dem Krankenhaus lag, da einige Sachen ihres Mannes im Krankenhaus gestohlen wurden.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der junge Inspektor Morse 17 - Sonnenglanz.html"><img width="100%" height="auto" src="_Poster/Der junge Inspektor Morse 16 - Bett zehn.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der junge Inspektor Morse 15 - Irrungen.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der junge Inspektor Morse 17 - Sonnenglanz.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Musik aus Schloss Nymphenburg (BR-Klassik)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Mozarts Requiem als Pferdeballett.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Musik aus Schloss Nymphenburg (BR-Klassik)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Musik-Khatia - Das Waldkonzert.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Musik aus Schloss Nymphenburg (BR-Klassik)</b> - 0:52:26 Fast 200 Jahre lang lag der Hubertussaal im Nordflügel des Wittelsbacher-Schlosses Nymphenburg im Dornröschenschlaf, ehe er im Juli 2003 nach aufwendiger Renovierung zu neuem Leben erweckt wurde. Zur feierlichen Wiedereröffnung des 1755 erbauten Festsaals gastierte das Kammerorchester des Bayerischen Rundfunks unter der Leitung von Konzertmeister Radoslaw Szulc mit Werken von Schubert und Haydn.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Musik-Khatia - Das Waldkonzert.html"><img width="100%" height="auto" src="_Poster/Musik aus Schloss Nymphenburg (BR-Klassik).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Mozarts Requiem als Pferdeballett.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Musik-Khatia - Das Waldkonzert.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

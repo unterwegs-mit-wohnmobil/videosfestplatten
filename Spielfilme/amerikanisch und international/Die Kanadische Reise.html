@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Kanadische Reise</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Jury.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Kanadische Reise"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Maske.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Kanadische Reise</b> - 1:34:09 <a href="https://www.fernsehserien.de/filme/die-kanadische-reise">Details</a> Ausstrahlung auch im franz&ouml;sischen Originalton Der 33-j&auml;hrige Franzose Mathieu hat seinen Vater nie gekannt. Eines Tages erh&auml;lt er einen Anruf, in dem ihm mitgeteilt wird, dass sein Vater im kanadischen Montreal gestorben ist und ihm ein P&auml;ckchen hinterlassen hat. Neugierig reist Mathieu in das fremde Land, um seine beiden Halbbr&uuml;der, von denen er nichts wusste, kennenzulernen. Die d&uuml;rfen jedoc .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Maske.html"><img width="100%" height="auto" src="_Poster/Die Kanadische Reise.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Jury.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Maske.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

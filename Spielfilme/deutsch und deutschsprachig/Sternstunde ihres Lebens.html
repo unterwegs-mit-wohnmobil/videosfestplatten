@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Sternstunde ihres Lebens</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Sterne ueber uns.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Sternstunde ihres Lebens"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Stilles Tal.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Sternstunde ihres Lebens</b> - 1:28:12 Bonn 1948. Die Abgeordnete und Juristin Elisabeth Selbert k&auml;mpft unerm&uuml;dlich f&uuml;r die Aufnahme des Satzes &quot;M&auml;nner und Frauen sind gleichberechtigt&quot; in das Grundgesetz der zuk&uuml;nftigen Bundesrepublik Deutschland. Trotz der vielen Widerst&auml;nde, die sie w&auml;hrend der Sitzungen im Parlamentarischen Rat immer wieder zu sp&uuml;ren bekommt, gibt sie nicht auf und h&auml;lt hartn&auml;ckig an ihrem Vorhaben fest.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Stilles Tal.html"><img width="100%" height="auto" src="_Poster/Sternstunde ihres Lebens.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Sterne ueber uns.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Stilles Tal.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

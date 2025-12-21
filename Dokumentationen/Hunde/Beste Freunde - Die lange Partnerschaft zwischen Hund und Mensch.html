@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Beste Freunde - Die lange Partnerschaft zwischen Hund und Mensch</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#Beste Freunde - Die lange Partnerschaft zwischen Hund und Mensch"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Dackel - Kleiner Hund ganz gross.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Beste Freunde - Die lange Partnerschaft zwischen Hund und Mensch</b> - 0:55:09 Seit Jahrtausenden begleiten uns Hunde als Helfer und treue Freunde durchs Leben. Als Jagdgef&auml;hrten, H&uuml;tehunde, Spielgef&auml;hrten f&uuml;r die Kinder, sogar als Partner f&uuml;r &auml;ltere Menschen. Der Verhaltensbiologe Prof. Kurt Kotrschal glaubt, dass die Beziehung zu Hunden hilft, ein ausgeglicheneres Leben zu f&uuml;hren.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Dackel - Kleiner Hund ganz gross.html"><img width="100%" height="auto" src="_Poster/Beste Freunde - Die lange Partnerschaft zwischen Hund und Mensch.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Dackel - Kleiner Hund ganz gross.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

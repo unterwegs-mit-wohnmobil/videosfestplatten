@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Morden im Norden 045 - Gevatter Tod</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Morden im Norden 044 - Zivilcourage.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Morden im Norden 045 - Gevatter Tod"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Morden im Norden 046 - Ausgekocht.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Morden im Norden 045 - Gevatter Tod</b> - 0:47:48 Kriminalist Finn Kiesewetter und sein Kollege Lars sind fassungslos, als sie erkennen m&uuml;ssen, dass sie die verbrannte Leiche unter der Lachswehrbr&uuml;cke kennen. Es handelt sich um Rosenrosi, eine stadtbekannte, obdachlose alte Frau, die immer am Holstentor sa&szlig; und Rosen verkaufte. Finn und seinem Team geht der grausame Mord nahe und sie setzen alles daran, den Fall schnell zu l&ouml;sen. Den ersten brauc
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Morden im Norden 046 - Ausgekocht.html"><img width="100%" height="auto" src="_Poster/Morden im Norden 045 - Gevatter Tod.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Morden im Norden 044 - Zivilcourage.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Morden im Norden 046 - Ausgekocht.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

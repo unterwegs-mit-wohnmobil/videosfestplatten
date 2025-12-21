@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Fledermaus</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Ehe der Maria Braun.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Fledermaus"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Frau im Mond (1929).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Fledermaus</b> - 1:42:49 <a href="https://de.wikipedia.org/wiki/Die_Fledermaus_(1962)">Details</a> Dr. Gabriel Eisenstein, Syndikus bei Arabayam & Co., muss wegen Beleidigung einer Amtsperson eine achtt&auml;gige Arreststrafe im Bezirksgef&auml;ngnis von Grinzing antreten. Gleichzeitig soll er aber f&uuml;r seinen Arbeitgeber Basil Arabayam als Marquis Renard mit einer fingierten Ehefrau den Ball des Prinzen Orlofsky besuchen. Besagte Frau soll den Prinzen dazu bewegen, ihr &ouml;lreiche L&auml;ndereien in Bakutin am Schwarzen Meer zu schenken, die umgehend an Arabayam weitergegeben werden sollen.  Der mit Eisenstein befreundete Pista von Bundassy besorgt die n&ouml;tigen Eintrittskarten und behauptet, f&uuml;r Eisenstein einen Strafaufschub um einen Tag erwirkt zu haben damit er den Ball besuchen kann. Da er sich bei Eisenstein f&uuml;r einen Streich r&auml;chen will – Eisenstein hatte einst den schlafenden Pista in einem Fledermauskost&uuml;m im Wiener Stadtpark seinem Schicksal &uuml;berlassen – zwingt er Eisenstein w&auml;hrend des Balls, Adele, die Kammerzofe der eigenen Frau, als seine Gattin auszugeben.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Frau im Mond (1929).html"><img width="100%" height="auto" src="_Poster/Die Fledermaus.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Ehe der Maria Braun.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Frau im Mond (1929).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

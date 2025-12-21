@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Gib dem Affen Zucker</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ghost - Nachricht von Sam.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Gib dem Affen Zucker"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Gilbert Grape.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Gib dem Affen Zucker</b> - 1:36:48 Adriano Celentano und Ornella Muti als unverwechselbares Traum-Duo: Das winzige F&uuml;rstentum Saint-Toulipe ist ein Spielerparadies und finanziell am Ende. Ein Millionenkredit muss her - doch aus der Finanzspritze f&uuml;r den Monarchen Gustavo und seine Gattin Betsy wird nichts!
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Gilbert Grape.html"><img width="100%" height="auto" src="_Poster/Gib dem Affen Zucker.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ghost - Nachricht von Sam.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Gilbert Grape.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

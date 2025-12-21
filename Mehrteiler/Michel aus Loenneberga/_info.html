@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Michel aus Loennberga.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.themoviedb.org/movie/348414-michel-aus-l-nneberga-teil-1?language=de-DE">Details</a>  1971 (Emil i L&ouml;nneberga) Serie in 13 Teilen Filme (Immer dieser Michel) Original-Erstausstrahlung: 22.11.1975 SVT (Schwedisch) Titel der Spielfilmreihe: Immer dieser Michel Der kleine Michel lebt mit seinen Eltern, Schwester Klein-Ida, Magd Lina und Knecht Alfred auf einem Hof in L&ouml;nneberga. Auch wenn er es meistens eigentlich gar nicht bewusst macht, heckt er st&auml;ndig Streiche aus. Mal zieht er Klein-Ida an der Fahnenstange hoch, mal steckt er seinen Kopf in eine Suppensch&uuml;ssel und kann sich nicht mehr befreien. Vor dem Zorn seines Vaters fl&uuml;chtet er in den Schuppen der von Au&szlig;en und Innen verschlossen werden kann und wo er Holzm&auml;nnchen schnitzt. Einzig Alfred kommt ausnahmslos gut mit ihm klar. Gemeinsame Ausfl&uuml;ge mit Michel sind f&uuml;r den Knecht eine willkommene Gelegenheit, Lina aus dem Weg zu gehen, die Alfred gerne heiraten m&ouml;chte.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Michel aus Loennberga.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Michel aus Loennberga.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Stratmann wandert - Es geht wieder los</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Stratmann wandert - Entlang der Sieg.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Stratmann wandert - Es geht wieder los"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Stratmann wandert - ins Wildenburger Land.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Stratmann wandert - Es geht wieder los</b> - 0:43:31 Ein Mann, ein Hund und 220 Kilometer gut ausgebaute Wanderwege: Ludger Stratmann macht sich mit Wanderdackel Fidel wieder auf den Weg durchs Land. In sechs Folgen wandern die beiden an der S&uuml;dgrenze Nordrhein-Westfalens entlang: Vom Rhein durchs Siebengebirge bis an die Sieg. Durch das Oberbergische geht es weiter ins Siegerland und zur Tiefenrother H&ouml;he an der hessischen Grenze bei Wilgersdorf. A .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Stratmann wandert - ins Wildenburger Land.html"><img width="100%" height="auto" src="_Poster/Stratmann wandert - Es geht wieder los.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Stratmann wandert - Entlang der Sieg.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Stratmann wandert - ins Wildenburger Land.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

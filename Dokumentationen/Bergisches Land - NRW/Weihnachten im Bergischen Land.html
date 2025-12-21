@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Weihnachten im Bergischen Land</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Stratmann wandert - Von Siegen bis kurz vor Hessen.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Weihnachten im Bergischen Land"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Winterreise durch NRW.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Weihnachten im Bergischen Land</b> - 1:28:33 Wir warten aufs Christkind, das geht im Bergischen Land bekanntlich besonders gut. Denn dort liegt Engelskirchen. Anne Willmes trifft &quot;das echte Christkind&quot;, umringt von vielen Kindern, die dort ihre Wunschzettel abgeben. Ihre Weihnachtsreise f&uuml;hrt sie auch nach Wuppertal, wo sie beim Lichterschwimmmen im Gartenhallenbad Langerfeld mitmacht und mit WDR-Kollegin Catherine Vogel die Weihnachtsm&auml;rkte
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Winterreise durch NRW.html"><img width="100%" height="auto" src="_Poster/Weihnachten im Bergischen Land.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Stratmann wandert - Von Siegen bis kurz vor Hessen.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Winterreise durch NRW.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

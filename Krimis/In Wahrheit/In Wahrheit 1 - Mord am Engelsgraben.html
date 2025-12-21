@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>In Wahrheit 1 - Mord am Engelsgraben</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="_info.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#In Wahrheit 1 - Mord am Engelsgraben"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="In Wahrheit 2 - Jette ist tot.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>In Wahrheit 1 - Mord am Engelsgraben</b> - 1:28:14 Die Saarbrücker Kriminalkommissarin Judith Mohn ermittelt mit ihrem Kollegen Freddy Breyer in dem Fall einer toten Prostituierten, deren Leiche in einem Waldgebiet gefunden wurde. Alles deutet auf Mord hin. Als Judith Mohn einen Zusammenhang mit einem älteren, nie aufgeklärten Fall vermutet, wendet sie sich an den pensionierten Kommissar Markus Zerner …
+</big></big></p>
+<div class="container" id="myImage">
+<a href="In Wahrheit 2 - Jette ist tot.html"><img width="100%" height="auto" src="_Poster/In Wahrheit 1 - Mord am Engelsgraben.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("_info.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("In Wahrheit 2 - Jette ist tot.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

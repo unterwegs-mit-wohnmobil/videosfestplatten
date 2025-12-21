@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Trautmann</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Toubab.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Trautmann"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Treibjagd im Dorf.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Trautmann</b> - 1:49:15 <a href="https://www.fernsehserien.de/trautmann">Details</a> Der deutsche Offizier Bernhard Trautmann wird 1945 nach seiner Gefangennahme in einem britischen Lager inhaftiert. Dort wird er w&auml;hrend eines spielerischen Elfmeterschie&szlig;ens im Hof von Jack Friar bemerkt, der die &ouml;rtliche Fu&szlig;ballmannschaft trainiert. Jack erkennt Berts Qualit&auml;ten als Torwart und nimmt den Kriegsgefangenen in sein Team, allerdings gegen erheblichen Widerstand der &uuml;brigen Spieler, die zun&auml;chst nicht mit einem „Kraut“ im Tor spielen wollen.  „Bert“, wie er in England genannt wird, erweist sich als ausgezeichneter Torwart und – nach einer feindseligen Kennenlernphase – auch pers&ouml;nlich als anst&auml;ndiger Mensch. Schlie&szlig;lich verlieben er und Jacks Tochter Margaret sich und heiraten, und Bert bleibt in England. Jack und Margaret sind jedoch oft damit konfrontiert, dass die meisten Engl&auml;nder in Bert einen pauschal Mitschuldigen an allen Gr&auml;ueltaten im Krieg sehen.  Das wird zum nationalen Thema, als Bert zu Manchester City wechselt. In einer Pressekonferenz zu seiner Aufnahme ins Team wird er entgegen der Vorgaben nicht zu fu&szlig;ballerischen Themen, sondern nur zu seiner soldatischen Vergangenheit befragt; da seine Antworten die Journalisten nicht zufriedenstellen, beginnt eine Pressekampagne gegen Bert, die erst endet, als der zun&auml;chst auch sehr gegen Bert eingestellte Rabbi Altmann, ein gro&szlig;er Unterst&uuml;tzer von Manchester City, zur Einsicht kommt und &ouml;ffentlich dazu aufruft, jeden Menschen individuell nach seinen Taten zu beurteilen und nicht nach seiner Herkunft.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Treibjagd im Dorf.html"><img width="100%" height="auto" src="_Poster/Trautmann.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Toubab.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Treibjagd im Dorf.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

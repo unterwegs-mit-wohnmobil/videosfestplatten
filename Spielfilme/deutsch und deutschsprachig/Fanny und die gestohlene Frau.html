@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Fanny und die gestohlene Frau</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Fanny und die geheimen Vaeter.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Fanny und die gestohlene Frau"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fischer fischt Frau.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Fanny und die gestohlene Frau</b> - 1:28:08 Jutta Speidel gl&auml;nzt als unkonventionelle Heldin, die mit Verve in den Kampf um ihren Traum vom Gl&uuml;ck zieht, dies zuweilen auch mit erstaunlicher krimineller Energie. Die temporeiche Kom&ouml;die von Regisseur Mark Monheim verbindet auf unterhaltsame Weise ernste und heitere Themen rund ums Erben.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fischer fischt Frau.html"><img width="100%" height="auto" src="_Poster/Fanny und die gestohlene Frau.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Fanny und die geheimen Vaeter.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fischer fischt Frau.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

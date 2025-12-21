@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Neues aus Buettenwarder 19 - Weihnachten.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.fernsehserien.de/neues-aus-buettenwarder">Details</a> Die Bauern Kurt Brakelmann (Jan Fedder) und Arthur ‚Adsche‘ T&ouml;nnsen (Peter Heinrich Brix) sind die beiden Stars dieser Serie aus Deutschlands hohem Norden, die gekonnt die Idylle des platten Landes mit dem trockenen Humor seiner Bewohner kombiniert. Kurt und Adsche kennen sich seit Ewigkeiten und mindestens genau so lang versuchen sie auch schon, sich immer wieder gegenseitig zu &uuml;bertreffen. Doch wenn Gewitterwolken &uuml;ber der Heimat B&uuml;ttenwarder aufziehen und Probleme auftauchen, halten die beiden zusammen wie Pech und Schwefel und meistern jede Situation mit Witz und Bauernschl&auml;ue. Und bei Sonnenuntergang sitzen Kurt und Adsche mit Stallknecht Kuno (Sven Walser) und B&uuml;rgermeister Sch&ouml;nbiehl (G&uuml;nter K&uuml;temeyer) im Dorfkrug von Wirt Shorty (Axel Olsson) und begie&szlig;en die Ereignisse des Tages mit dem lokalen Hausgetr&auml;nk „L&uuml;tt un L&uuml;tt“.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Neues aus Buettenwarder 19 - Weihnachten.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Neues aus Buettenwarder 19 - Weihnachten.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

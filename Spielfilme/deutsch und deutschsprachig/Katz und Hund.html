@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Katz und Hund</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Katharina Luther.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Katz und Hund"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Kebab extrascharf.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Katz und Hund</b> - 1:25:31 In der schw&auml;bischen Kleinstadt Pfullendorf wird so gew&auml;hlt, wie der Pfarrer es will. B&uuml;rgermeister und Gemeinderat tun, was der autorit&auml;re Geistliche ihnen vorschreibt. Welch Schock f&uuml;r Pfarrer Hund, als die Gegenkandidatin Dorothee Auer die B&uuml;rgermeisterwahl gewinnt.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Kebab extrascharf.html"><img width="100%" height="auto" src="_Poster/Katz und Hund.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Katharina Luther.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Kebab extrascharf.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

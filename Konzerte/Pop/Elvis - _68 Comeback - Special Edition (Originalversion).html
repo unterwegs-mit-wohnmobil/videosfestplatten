@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Elvis - '68 Comeback - Special Edition (Originalversion)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Duffy Live at LSO St_ Luke_s.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Elvis - _68 Comeback - Special Edition (Originalversion)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Elvis - _68 Comeback Special.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Elvis - '68 Comeback - Special Edition (Originalversion)</b> - 1:13:41 Nachdem Elvis Presley in den 1960er Jahren &uuml;berwiegend harmlose Unterhaltungsfilme gedreht hatte, l&auml;utete er mit diesem TV-Special von 1968 sein Comeback auf der B&uuml;hne ein. &quot;Der King&quot;, ganz in schwarzem Leder gekleidet, singt seine gr&ouml;&szlig;ten Hits und zeigt sich in dieser legend&auml;r gewordenen NBC-Sendung auf dem Zenit seines Erfolgs.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Elvis - _68 Comeback Special.html"><img width="100%" height="auto" src="_Poster/Elvis - _68 Comeback - Special Edition (Originalversion).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Duffy Live at LSO St_ Luke_s.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Elvis - _68 Comeback Special.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Das Adlon_ Eine Familiensaga (1).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.fernsehserien.de/das-adlon-eine-familiensaga">Details</a> Miniserie &uuml;ber die Geschichte des traditionsreichen Berliner Luxushotels Adlon am Brandenburger Tor. Den roten Faden bildet die Lebensgeschichte der fiktionalen Protagonistin Sonja Schadt. Als enger Freund von Lorenz Adlon greift Sonjas Vater Gustaf dem Hotelier unter die Arme. Als Gustaf stirbt, kommt ein gro&szlig;es Familiengeheimnis ans Licht. Zutiefst entt&auml;uscht vom Verrat ihrer leiblichen Eltern, entschlie&szlig;t sich die 17-J&auml;hrige Sonja, ins Hotel ihres Patenonkels Lorenz zu ziehen. Dort trifft sie unter anderem auf den Juniorchef Louis, seine gesch&auml;ftst&uuml;chtige zweite Frau Hedda, das lebenslustige Telefonfr&auml;ulein Margarete und den v&auml;terlichen Portier Friedrich.  In den ausschweifenden 1920er Jahren erlebt Sonja die Goldene &Auml;ra des Hotels. Gemeinsam mit dem Adlon &uuml;berlebt sie in den kommenden Jahrzehnten zahlreiche Schicksalsschl&auml;ge, darunter Inflation, Diktatur, Krieg und Zerst&ouml;rung. Nach der Wende begegnet die inzwischen &uuml;ber 90-j&auml;hrige Sonja im wiederer&ouml;ffneten Hotel ihrer Enkelin. Sonjas Lebenstraum geht in Erf&uuml;llung, und der ‚Mythos Adlon‘ wird wiedererweckt.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Das Adlon_ Eine Familiensaga (1).html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Das Adlon_ Eine Familiensaga (1).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

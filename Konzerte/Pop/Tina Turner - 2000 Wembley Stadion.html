@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Tina Turner - 2000 Wembley Stadion</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="The Rolling Stones 2015 Sticky Fingers (1971).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Tina Turner - 2000 Wembley Stadion"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Tina Turner - Simply the Best.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Tina Turner - 2000 Wembley Stadion</b> - 1:01:00 Am 15. und 16. Juli 2000 rockt Tina Turner das Wembley Stadium in London. Vor ausverkauftem Haus pr&auml;sentiert sich die Soul-Queen in atemberaubender Form und feiert die Hit-Party des Jahres.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Tina Turner - Simply the Best.html"><img width="100%" height="auto" src="_Poster/Tina Turner - 2000 Wembley Stadion.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("The Rolling Stones 2015 Sticky Fingers (1971).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Tina Turner - Simply the Best.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

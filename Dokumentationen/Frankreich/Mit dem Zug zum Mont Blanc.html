@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Mit dem Zug zum Mont Blanc</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Mit dem Wohnmobil entlang der franzoesischen Pyrenaeen.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Mit dem Zug zum Mont Blanc"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Normandie - Cap Nez.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Mit dem Zug zum Mont Blanc</b> - 0:43:14 Der Mont Blanc Express von Martigny &uuml;ber Chamonix nach St. Gervais-Le Fayet, knapp 55 Kilometer lang, bietet uns eine faszinierende Eisenbahnreise, tief in die verschneite Welt des h&ouml;chsten Berges des europ&auml;ischen Kontinents. (ESD: arte 11.06.2013 - 45 Minuten)
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Normandie - Cap Nez.html"><img width="100%" height="auto" src="_Poster/Mit dem Zug zum Mont Blanc.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Mit dem Wohnmobil entlang der franzoesischen Pyrenaeen.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Normandie - Cap Nez.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

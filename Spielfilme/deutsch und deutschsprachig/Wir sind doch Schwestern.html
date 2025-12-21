@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Wir sind doch Schwestern</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Winterschlaf.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Wir sind doch Schwestern"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Wir wollten aufs Meer.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Wir sind doch Schwestern</b> - 1:33:09 Eine zentrale Rolle spielt Benjamin Sadler als Politiker und Gutshofbesitzer: W&auml;hrend die eine ihm die Schuld f&uuml;r den Tod ihres Verlobten gibt, hielt ihm die andere zeitlebens die Treue und verursachte den Bruch mit ihren Schwestern. Auf dem niederrheinischen Gutshof Verhoeven kommen im Jahr 1994 die drei Janssen-Schwestern zusammen, um den 100. Geburtstag der &Auml;ltesten zu feiern. Die Jubilarin Hiltrud ist jedoch alles andere als freiwillig angereist. Ihre zwei Jahre j&uuml;ngere Schwester Martha m&ouml;chte erzwingen, dass sie nach Jahrzehnten der Funkstelle wieder mit dem inzwischen 84-j&auml;hrigen &quot;Nesth&auml;kchen&quot; Betty spricht. Obwohl es vielleicht die letzte Gelegenheit sein k&ouml;nnte, zeigt die strenge Hiltrud wenig Bereitschaft, sich mit Betty auszus&ouml;hnen, deren Lebensstil als Haush&auml;lterin und heimliche Frau des verstorbenen Gutsherrn Heinrich Verhoeven sie zutiefst verabscheut. Ihn macht die zeitlebens unverheiratete Hiltrud daf&uuml;r verantwortlich, dass ihr Verlobter, Heinrichs j&uuml;ngerer Bruder Franz, im Ersten Weltkrieg gefallen ist. Ihrer Schwester Betty kann die ehemalige Schulleiterin nicht verzeihen, dass sie bei einem Prozess in den 1950er-Jahren eine folgenschwere Falschaussage machen musste, um das Ansehen der Familie zu verteidigen. Hiltruds eisige H&auml;rte belastet auch das Verh&auml;ltnis zu Martha, die sich von ihr in wichtigen Situationen alleingelassen f&uuml;hlte. Als die Studentinnen Annekatrin und Ira das Trio f&uuml;r einen Kurzfilm vor der Kamera interviewen, brechen alten Wunden wieder auf. &Uuml;ber alle Streitereien hinweg verbindet die Frauen eine jahrzehntelang totgeschwiegene Schuld, der sie sich nun stellen m&uuml;ssen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Wir wollten aufs Meer.html"><img width="100%" height="auto" src="_Poster/Wir sind doch Schwestern.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Winterschlaf.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Wir wollten aufs Meer.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

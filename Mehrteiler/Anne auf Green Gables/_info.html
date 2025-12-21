@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Anne auf Green Gables 1.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.themoviedb.org/movie/17663-anne-of-green-gables?language=de-DE">Details</a> Die kanadische Miniserie ist eine sehr liebevoll umgesetzte und mit hervorragenden Schauspielern besetzte Adaption des gleichnamigen klassischen Kinderromans von Lucy Maud Montgomery. Erz&auml;hlt wird die Geschichte des Waisenm&auml;dchens Anne Shirley (Megan Follows), die im endenden 19. Jahrhundert durch eine Verwechslung bei dem &auml;lteren Geschwisterpaar Marilla und Mathew Cutbert (Colleen Dewhurst und Richard Farnsworth) in Green Gables auf Prince Edward Island landet. Die beiden wollten eigentlich einen Jungen adoptieren, der ihnen bei der Arbeit auf ihrer Farm helfen sollte, und sind zun&auml;chst entsprechend irritiert. Schlie&szlig;lich entscheiden sie sich aber, die lebhafte und redselige Anne zu behalten. Die Zuschauer begleiten Anne auf ihrem abenteuerlichen Weg ins Erwachsenenleben. Sie erleben, wie Anne sich mit der h&uuml;bschen Diana Barry (Schuyler Grant) anfreundet und sich in der Schule mit M&auml;dchenschwarm Gilbert Blythe (Jonathan Crombie) verfeindet, der sie wegen ihrer roten Haare aufzieht. Anne ist in der Schule sehr erfolgreich und beschlie&szlig;t, Lehrerin zu werden.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Anne auf Green Gables 1.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Anne auf Green Gables 1.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>3 1_2 Stunden</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="25 km h.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#3 1_2 Stunden"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Aber jetzt erst recht.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>3 1_2 Stunden</b> - 1:35:46 Die Reisenden des Interzonenzugs von M&uuml;nchen &uuml;ber Augsburg, N&uuml;rnberg, Bamberg und Ludwigsstadt nach Ost-Berlin stehen am Tag des Mauerbaus am 13. August 1961 vor der schwierigen Entscheidung, in der Bundesrepublik vor der innerdeutschen Grenze auszusteigen oder in die DDR weiterzureisen. Sie haben 3½ Stunden Zeit bis zum Grenz&uuml;bertritt.  Gezeigt werden eine junge Band, die von einem schlecht besuchten Konzert im Westen kommt, unter ihnen ein schwules Paar in dem Bewusstsein, dass ihre Liebe im Westen noch unter Strafe steht, eine Turntrainerin mit ihrer besten Elevin, ein Paar mit unehelichem Kind, das am kommenden Tag in Ludwigsstadt heiraten will, ein altes Ehepaar, das die Urne des verstorbenen Bruders der Frau dabei hat und dessen Sohn vor zwei Jahren in den Westen geflohen ist, und die vierk&ouml;pfige Familie K&uuml;gler. Gerd K&uuml;gler hatte in M&uuml;nchen ein Vorstellungsgespr&auml;ch als Flugzeugingenieur, seine linientreue Frau Marlies ist die Tochter des Volkspolizei-Offiziers Paul Fuchs. Au&szlig;erdem ermittelt der bayerische Kommissar Arthur Koch in einer Dopinggeschichte mit Todesfolge. Schlie&szlig;lich sieht man die Lokf&uuml;hrerin Edith Salzmann, die am Grenz&uuml;bergang in Ludwigsstadt/Probstzella den Zug nach Ost-Berlin &uuml;bernehmen soll und dazu nach Ludwigsstadt f&auml;hrt. Dabei wird sie vom DEFA-Dokumentarfilmer Kurt Blochwitz begleitet, der sie als verdienstvolle Werkt&auml;tige im Auftrag der Partei portr&auml;tieren soll, wobei sich die beiden verlieben, auch weil sie die Vorliebe f&uuml;r den Western Weites Land teilen. Er muss jedoch bei der Hinfahrt nach Ludwigsstadt an der Grenze zur&uuml;ckbleiben, vor der Edith auf der R&uuml;ckfahrt bremst, um dann im Westen zu bleiben.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Aber jetzt erst recht.html"><img width="100%" height="auto" src="_Poster/3 1_2 Stunden.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("25 km h.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Aber jetzt erst recht.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Muenchner Geschichten Folge 1.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.fernsehserien.de/muenchner-geschichten">Details</a> Tscharlie, ein in die Jahre gekommener Berufsjugendlicher, wohnt bei seiner Oma in M&uuml;nchen. Er h&auml;lt viel von sich und versucht seine diversen Existenzgr&uuml;ndungsideen in die Tat umzusetzen (z. B. Betreuer einer K&uuml;nstleragentur, systematische Wetterfolge durch Gro&szlig;computeranalyse und Erkundung diverser Reitst&auml;lle, Produzent von Brettl-Kom&ouml;dianten und -musikern in der Wirtschaft der Eltern seiner Verlobten, Inhaber eines „Tschiens-Gesch&auml;fts“ [Tscharlie’s Tschiens] etc.).  Die Episoden schildern ebenso den Zeitgeist M&uuml;nchens in den siebziger Jahren (Bauspekulanten, die Tscharlies Oma aus der Wohnung schmei&szlig;en und Zimmer teuer an Ausl&auml;nder weitervermieten wollen, Wohnungssuche der Oma in der neu erbauten Trabantenstadt, Besuch Tscharlies bei Freunden (Wirtschaftswunderprofiteure, die seinen Neid erwecken), Heiratsambitionen von Tscharlies Freundin, das gutb&uuml;rgerliche Leben seines besten Freundes, eines Versicherungsangestellten. Tscharlie landet trotz aller anf&auml;nglichen Erfolge immer wieder auf dem Nullpunkt, da er es nicht auf die Reihe bringen will, mit seinen Existenzgr&uuml;ndungen Erfolg zu haben. Eigentlich m&ouml;chte er, dass alles so unbestimmt bleibt wie es ist.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Muenchner Geschichten Folge 1.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Muenchner Geschichten Folge 1.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

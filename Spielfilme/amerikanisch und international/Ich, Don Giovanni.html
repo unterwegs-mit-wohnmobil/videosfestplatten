@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Ich, Don Giovanni</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ich, Daniel Blake.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Ich, Don Giovanni"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Identitaet.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Ich, Don Giovanni</b> - 1:26:37 Venedig 1763: Lorenzo Da Ponte konvertiert zum Christentum, er wird Priester, ist Freimaurer sowie mit Casanova bekannt. Beim Gl&uuml;cksspiel im Casino lernt Da Ponte einen wohlhabenden Venezianer kennen, der ihm seine Tochter (Annetta) zur Frau &uuml;berlassen will. Wegen des Verfassens freidenkerischer Schriften, Blasphemie und Konkubinats wird Lorenzo Da Ponte f&uuml;r 15 Jahre aus Venedig verbannt. Mit einem Empfehlungsschreiben Casanovas an Antonio Salieri ausgestattet, macht sich Da Ponte nach Wien auf, wo er 1781 eintrifft. Hier wird er bei Salieri vorstellig, um f&uuml;r diesen als Librettist arbeiten zu k&ouml;nnen. Joseph II. veranlasst, dass Da Ponte das Libretto f&uuml;r eine italienische Oper (Le Nozze di Figaro) Mozarts verfassen kann, die ein Erfolg wird. Der Kaiser l&auml;sst eine weitere Oper bei Mozart in Auftrag geben, f&uuml;r die Lorenzo Da Ponte das Libretto schreibt und sein eigenes Privatleben in die Geschichte einflie&szlig;en l&auml;sst: Don Giovanni.  Annetta ist nach dem Tod ihres Vaters ebenfalls in Wien bei ihrer Tante wohnhaft. Sie nimmt Musikunterricht bei Mozart, &uuml;ber diesen sie Da Ponte wiedertrifft. Die deswegen eifers&uuml;chtige Operns&auml;ngerin Catarina Cavalieri erh&auml;lt von Casanova eine Liste mit allen bisherigen Liebschaften Da Pontes, die sie Annetta zukommen l&auml;sst. Infolgedessen entfremdet sich Annetta von Lorenzo, erkennt aber durch die Oper Don Giovanni Parallelen zu Da Ponte und sich selbst, sodass beide wieder zueinanderfinden.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Identitaet.html"><img width="100%" height="auto" src="_Poster/Ich, Don Giovanni.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ich, Daniel Blake.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Identitaet.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

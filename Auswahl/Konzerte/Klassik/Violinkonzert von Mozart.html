@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Violinkonzert von Mozart</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="SR 1 Christmas Classics.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Violinkonzert von Mozart"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Vivaldi 2_0 - Daniel Hope spielt die Vier Jahreszeiten.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Violinkonzert von Mozart</b> - 0:43:09 Dirigent Paavo J&auml;rvi und Christian Tetzlaff nehmen den Zuschauer mit auf eine ganz besondere Reise: Zusammen mit der Deutschen Kammerphilharmonie Bremen spielen sie das Dritte Violinkonzert in G-Dur (KV 216), ein Meilenstein in Mozarts Werk. Christian Tezlaff, Paavo J&auml;rvi und die Kammerphilharmonie Bremen - eine Kombination, die ein ganz besonderes Konzerterlebnis verspricht.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Vivaldi 2_0 - Daniel Hope spielt die Vier Jahreszeiten.html"><img width="100%" height="auto" src="../../../Konzerte/Klassik/_Poster/Violinkonzert von Mozart.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("SR 1 Christmas Classics.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Vivaldi 2_0 - Daniel Hope spielt die Vier Jahreszeiten.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

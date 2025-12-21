@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Agatha Christies Poirot 3 - Poirot und der Kidnapper</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Agatha Christies Poirot 2 - Poirot riecht den Braten.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Agatha Christies Poirot 3 - Poirot und der Kidnapper"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Agatha Christies Poirot 4 - Vierundzwanzig Schwarzdrosseln.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Agatha Christies Poirot 3 - Poirot und der Kidnapper</b> - 0:49:34 Dieses Mal kommt Poirot zu sp&auml;t zu seinem eigenen Fall, und das alles nur, weil er nicht auf ein anst&auml;ndiges englisches Fr&uuml;hst&uuml;ck verzichten kann. In seiner Abwesenheit wird das Kind der Waverlys trotz h&ouml;chster Sicherheitsvorkehrungen entf&uuml;hrt. Alles deutet darauf hin, dass der T&auml;ter im Haus der Familie Waverly ein und aus geht. Poirot kommt zu einem &uuml;berraschenden Ergebnis.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Agatha Christies Poirot 4 - Vierundzwanzig Schwarzdrosseln.html"><img width="100%" height="auto" src="_Poster/Agatha Christies Poirot 3 - Poirot und der Kidnapper.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Agatha Christies Poirot 2 - Poirot riecht den Braten.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Agatha Christies Poirot 4 - Vierundzwanzig Schwarzdrosseln.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

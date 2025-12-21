@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Totgeschwiegen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Tom Sawyer.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Totgeschwiegen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Toto der Held.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Totgeschwiegen</b> - 1:28:53 Als ein obdachloser Mann am U-Bahn-Gleis ermordet aufgefunden wird, geben Kameraaufzeichnungen erste Hinweise auf drei Jugendliche. Die Eltern beschlie&szlig;en, die Tat zu vertuschen. Doch St&uuml;ck f&uuml;r St&uuml;ck kommt die Wahrheit ans Licht.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Toto der Held.html"><img width="100%" height="auto" src="_Poster/Totgeschwiegen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Tom Sawyer.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Toto der Held.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

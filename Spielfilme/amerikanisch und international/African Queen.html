@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>African Queen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Adaption.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#African Queen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="All or Nothing.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>African Queen</b> - 1:40:48 Nachdem die Missionsstation ihres Bruders im afrikanischen Dschungel zu Beginn des Ersten Weltkriegs zerst&ouml;rt wurde, l&auml;sst sich die englische Missionarin Rose von dem trinkfreudigen Schmuggler Charlie auf seinem Schiff, der &quot;African Queen&quot;, mitnehmen ... - Einer der erfolgreichsten Filme (1951, Regie: John Huston) des gro&szlig;en Humphrey Bogart, der f&uuml;r diese Rolle den Oscar gewann.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="All or Nothing.html"><img width="100%" height="auto" src="_Poster/African Queen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Adaption.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("All or Nothing.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

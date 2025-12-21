@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Morden im Norden 017 - Auf der Klippe</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Morden im Norden 016 - Das Horn von Luebeck.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Morden im Norden 017 - Auf der Klippe"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Morden im Norden 018 - Der Pudelkaiser.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Morden im Norden 017 - Auf der Klippe</b> - 0:48:33 Ein Toter an der Steilklippe. Die Kommissare Finn Kiesewetter und Sandra Schwartenbeck werden gerufen und stellen die Identit&auml;t des Toten fest. Es handelt sich um den Apotheker Rosenthal, der unweit der Stelle, an der er gefunden wurde, in einem kleinen Haus seinen Ruhestand verbrachte. Eine Augenzeugin sagt aus, er sei voller Panik aus dem Haus zur Klippe gerannt, wirkte verfolgt und sei dort wah
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Morden im Norden 018 - Der Pudelkaiser.html"><img width="100%" height="auto" src="_Poster/Morden im Norden 017 - Auf der Klippe.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Morden im Norden 016 - Das Horn von Luebeck.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Morden im Norden 018 - Der Pudelkaiser.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

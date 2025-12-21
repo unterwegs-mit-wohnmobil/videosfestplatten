@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Pompeji, in Stein verewigt</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Nicht laenger nichts_ Geschichte der Arbeiterbewegung (4 von 4) - Aufloesung.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Pompeji, in Stein verewigt"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Primo Carnera - Liebenswuerdiges Schwergewicht.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Pompeji, in Stein verewigt</b> - 1:30:29 Pompeij, die antike Stadt am Vesuv, drohte ein zweites Mal unterzugehen. Das mit Mitteln der EU finanzierte Gro&szlig;projekt The Great Pompeii Project hat sich zur Aufgabe gemacht, das kulturelle Erbe zu bewahren. Es will die ber&uuml;hmte Stadt und ihren Alltag vor dem verheerenden Vulkanausbruch mit modernster Technik wieder zum Leben erwecken.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Primo Carnera - Liebenswuerdiges Schwergewicht.html"><img width="100%" height="auto" src="_Poster/Pompeji, in Stein verewigt.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Nicht laenger nichts_ Geschichte der Arbeiterbewegung (4 von 4) - Aufloesung.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Primo Carnera - Liebenswuerdiges Schwergewicht.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

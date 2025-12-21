@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der junge Inspektor Morse 09 - Nimmerland</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der junge Inspektor Morse 08 - Dunkle Maechte.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der junge Inspektor Morse 09 - Nimmerland"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der junge Inspektor Morse 10 - Illusionen.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der junge Inspektor Morse 09 - Nimmerland</b> - 1:28:47 Der in Ungnade gefallene Reporter Eric Patterson wird tot aufgefunden. Zuletzt stellte er unbequeme Fragen zu einer Baufirma, die auch Verbindungen zu Oxfords Polizei pflegt. Zudem sucht Morse den elfj&auml;hrigen Tommy Cork, der von zu Hause weggelaufen ist. Morse kann Tommy in seinem Versteck finden, doch er ist schockiert von dessen zerr&uuml;tteten Familienverh&auml;ltnissen. Tommys Vater ist ein ehemaliger H&auml;ftling, der sich im Gef&auml;ngnis mit George Aldridge angefreundet hat. Dieser ist vor Kurzem aus dem Gef&auml;ngnis ausgebrochen. Als Tommy das zweite Mal wegl&auml;uft, wird nahe des Ortes, an dem er sich das erste Mal versteckt hat, Aldridge tot aufgefunden. Morse glaubt, dass Tommy Zeuge des Mordes an Aldridge wurde und sich nun vor dem M&ouml;rder versteckt. Bei seinen Nachforschungen zu Aldridge findet Morse eine Verbindung zu der Baufirma Landesman Construction, die auch in den Mordfall des Reporters Patterson verstrickt ist. Die Firma hat vor Kurzem den Auftrag bekommen, ein Grundst&uuml;ck zu sanieren, das einst ein Erziehungsheim f&uuml;r Kinder war.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der junge Inspektor Morse 10 - Illusionen.html"><img width="100%" height="auto" src="_Poster/Der junge Inspektor Morse 09 - Nimmerland.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der junge Inspektor Morse 08 - Dunkle Maechte.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der junge Inspektor Morse 10 - Illusionen.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

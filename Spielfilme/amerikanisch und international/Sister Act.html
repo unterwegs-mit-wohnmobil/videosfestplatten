@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Sister Act</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Sieben Jahre in Tibet.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Sister Act"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Sleepers.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Sister Act</b> - 1:32:50 Die wenig erfolgreiche Lounges&auml;ngerin Deloris van Cartier wird Zeugin eines Mordes. Ihr verheirateter Liebhaber Vince LaRocca, ein bedeutender Mann der Unterwelt und verantwortlich f&uuml;r den Mord, gibt seinen Gefolgsm&auml;nnern den Auftrag, sie auszuschalten.  Weil Deloris die einzige Zeugin ist, wird sie nach ihrer Flucht von Lieutenant Eddie Souther als Schwester Mary Clarence gegen ihren Willen in einem katholischen Kloster versteckt. Dort hat sie erhebliche Eingew&ouml;hnungsprobleme; schlie&szlig;lich wird sie von der Mutter Oberin angewiesen, im Nonnenchor, dessen Gesangsk&uuml;nste nicht gerade erbaulich sind, mitzusingen.  Doch Mary Clarence kann der Gruppe eine klare Struktur geben, lockt Talente hervor und wird Leiterin des Chores, den sie schwungvoll die Gospel der Harlem-Tradition lehrt. Das neue Programm des Chores lockt wieder viele Menschen in die Kirche; schlie&szlig;lich erf&auml;hrt auch Papst Johannes Paul II. auf einer Amerikareise von der inzwischen ber&uuml;hmt gewordenen Gruppe und k&uuml;ndigt seinen Besuch f&uuml;r ein Konzert an.  Doch bevor die Nonnen den Papst mit ihrem Gesang erfreuen k&ouml;nnen, gibt ein polizeiinterner Spion dem Gangster Vince einen Hinweis auf den Aufenthaltsort seiner ehemaligen Geliebten. Deloris wird entf&uuml;hrt, doch die Schwestern des Konvents geben sie nicht auf und starten eine Rettungsaktion. In Reno angekommen, gibt es eine Verfolgungsjagd durch die Casinos mit reichlichen Verwechslungen, da Deloris und die Nonnen ihre Ordenstracht tragen. Der Spion wird enttarnt und Lt. Souther kommt gerade noch rechtzeitig, um Deloris zu retten und Vince zu verhaften.  In der letzten Szene geben die Schwestern das erwartete Konzert f&uuml;r den Papst. Schwester Mary Clarence – zwar im Habit, aber ohne Schleier – verhilft dem Chor wiederum zu einem fulminanten Auftritt
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Sleepers.html"><img width="100%" height="auto" src="_Poster/Sister Act.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Sieben Jahre in Tibet.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Sleepers.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Altausseekrimi 1 - Letzter Kirtag</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="_info.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Altausseekrimi 1 - Letzter Kirtag"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Altausseekrimi 2 - Letzter Gipfel.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Altausseekrimi 1 - Letzter Kirtag</b> - 1:31:44 Dorfpolizist Franz Gasperlmaier findet im Festzelt des Altausseer Kirtags einen Toten, den er vor das Festzelt zur Toilette schleppt und dort ablegt. Das Opfer, Dr. Hubert Naglreiter, war ein wohlhabender Wiener Anwalt und wurde mit einem Hirschf&auml;nger erstochen. Bei den Ermittlungen erhalten Gasperlmaier und sein gem&uuml;tlicher Postenkommandant Friedrich Kahl&szlig; Unterst&uuml;tzung von Kommissarin Doktorin Renate Kohlross vom Bezirkspolizeikommando. Gerichtsmediziner Doktor Kapaun berichtet ihnen, dass der Tote einige Zeit nach seinem Tod nochmals bewegt wurde. Gegen&uuml;ber Kohlross gibt Gasperlmaier an, die Leiche nicht ber&uuml;hrt zu haben. Auf einer Bank im Festzelt werden Blutspuren gefunden, in der Wohnung des Toten findet Gasperlmaier im Kleiderschrank eine Speicherkarte.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Altausseekrimi 2 - Letzter Gipfel.html"><img width="100%" height="auto" src="_Poster/Altausseekrimi 1 - Letzter Kirtag.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("_info.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Altausseekrimi 2 - Letzter Gipfel.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

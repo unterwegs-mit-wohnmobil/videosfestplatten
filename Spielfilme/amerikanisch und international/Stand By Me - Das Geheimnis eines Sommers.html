@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Stand By Me - Das Geheimnis eines Sommers</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Spy Game - Der finale Countdown.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Stand By Me - Das Geheimnis eines Sommers"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Stolz und Vorurteil.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Stand By Me - Das Geheimnis eines Sommers</b> - 1:20:20 Gordie Lachance und Chris Chambers sind zw&ouml;lfj&auml;hrige Jungen, die den Sp&auml;tsommer 1959 in ihrer beschaulichen Heimatstadt Castle Rock in Oregon verbringen. Zusammen mit ihren gleichaltrigen Freunden Teddy Duchamp und Vern Tessio beschlie&szlig;en die beiden, sich auf die Suche nach der Leiche von Ray Brower zu machen. Brower ist ein Junge in ihrem Alter, &uuml;ber dessen Verschwinden das Radio seit Tagen berichtet. Nun hatte Vern seinen &auml;lteren Bruder belauscht, als dieser vom Fund der Leiche Browers in der N&auml;he eines Waldst&uuml;ckes an einem Bahndamm berichtete. Mit diesem Wissen brechen die Jungen zu einer zweit&auml;gigen Wanderung auf, welche immer wieder von diversen Problemen aufgehalten wird. Sie werden von dem Wachhund eines r&uuml;den Schrottplatzh&auml;ndlers gejagt, geraten beim &Uuml;berqueren einer Eisenbahnbr&uuml;cke in Lebensgefahr und m&uuml;ssen sich ihrer Angst vor Blutegeln und dem &Uuml;bernachten im Wald erwehren.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Stolz und Vorurteil.html"><img width="100%" height="auto" src="_Poster/Stand By Me - Das Geheimnis eines Sommers.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Spy Game - Der finale Countdown.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Stolz und Vorurteil.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

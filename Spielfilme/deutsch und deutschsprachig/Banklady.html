@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Banklady</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Balthasar Berg - Sylt sehen und sterben.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Banklady"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Barbara.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Banklady</b> - 1:49:59 <a href="https://de.wikipedia.org/wiki/Banklady_(Film)">Details</a> Im Hamburg der 1960er Jahre arbeitete Gisela Werler als Packerin in einer Tapetenfirma. Sie lebt mit ihren Eltern in einer kleinen Wohnung und hat wenige soziale Kontakte. &Uuml;ber ihren Kollegen Uwe lernt sie Hermann Wittorf kennen. Sie erliegt seinem Charme und l&auml;sst sich auch nicht davon abschrecken, dass er Bankr&auml;uber ist. Schnell wird sie erst zur Mitt&auml;terin und dann zur treibenden Kraft bei den &Uuml;berf&auml;llen mit Hermann und Uwe. Da sie immer mit Per&uuml;cke, Sonnenbrille und vorgehaltener Pistole in den Bankfilialen h&ouml;flich die Herausgabe des Geldes fordert, wird sie von der Presse die „Banklady“ genannt. Da sich die &Uuml;berf&auml;lle in Hamburg und im Umland h&auml;ufen, wird Kommissar Fischer auf die Bankr&auml;uber angesetzt. Gisela wird immer mutiger durch ihre Rolle der „Banklady“ und sie &uuml;berf&auml;llt eine Bank w&auml;hrend der Hochzeit von Beatrix, da in dieser Zeit die meisten Menschen die Hochzeit verfolgen. Nach l&auml;ngerer erfolgloser Fahndung kommt es bei einem &Uuml;berfall zu Komplikationen: Die Angestellten der Bank leisten Widerstand. Es folgt ein l&auml;ngerer Schusswechsel und die &uuml;berhastete Flucht der Bankr&auml;uber. Bei einem so verursachten Autounfall werden die T&auml;ter von der Polizei gestellt. Alle drei werden zu langj&auml;hrigen Haftstrafen verurteilt. Sp&auml;ter heiraten Gisela und Hermann im Gef&auml;ngnis.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Barbara.html"><img width="100%" height="auto" src="_Poster/Banklady.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Balthasar Berg - Sylt sehen und sterben.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Barbara.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

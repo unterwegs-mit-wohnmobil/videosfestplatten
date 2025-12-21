@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Donnie Brasco</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Doktor Schiwago.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Donnie Brasco"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Doppelmord.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Donnie Brasco</b> - 2:00:53 n den sp&auml;ten 1970er Jahren wird der FBI-Agent Joseph Pistone als verdeckter Ermittler in eine New Yorker Mafia-Familie eingeschleust. Er gibt sich als Juwelenh&auml;ndler namens Donnie Brasco aus und gewinnt so das Vertrauen der Mafia-Mitglieder „Lefty“ Ruggiero und Dominic Napolitano. Lefty ist ein alternder Kleinganove und Auftragskiller, der immer knapp bei Kasse ist und sich bei den Bef&ouml;rderungsvorg&auml;ngen innerhalb der Familie &uuml;bergangen f&uuml;hlt. Immer wieder erinnert er Donnie daran, dass er bereits 30 Jahre f&uuml;r die Mafia schuftet, 26 Morde begangen hat und dennoch ohne Geld dasteht. Mit Hilfe von Lefty und Dominic, der als Caporegime eine Crew f&uuml;hrt, macht Donnie Karriere in der Mafia und wird als Freund der Familie (niedrigster Rang innerhalb der Mafia) akzeptiert, auch wenn er nie den Rang eines Vollmitglieds erreicht.  Donnies Frau, die von Anfang an versucht, ihn zu &uuml;berreden, &ouml;fter nach Hause zu kommen, bemerkt, wie ihr Mann immer mehr den Mafiagewohnheiten verf&auml;llt. Mit der Zeit kann Donnie auch in den wenigen Stunden, die er w&ouml;chentlich zu Hause verbringt, nicht mehr aus seiner Rolle heraus, was eine starke Belastung f&uuml;r ihre Ehe darstellt. Auch seine Kinder leiden unter der Abwesenheit ihres Vaters. Die Situation spitzt sich zu, als klar wird, dass der kleinste Fehler in seiner Rolle, der zur Aufdeckung seiner Identit&auml;t f&uuml;hrt, nicht nur seinen Tod, sondern auch den seiner Familie bedeuten w&uuml;rde. Mit der Aufdeckung seiner Aktion w&uuml;rde auch das Todesurteil f&uuml;r seinen Vertrauten, Lefty, gesprochen, da sich dieser f&uuml;r Donnie verb&uuml;rgt hat. Lefty ist im Laufe der Zeit so etwas wie ein Freund f&uuml;r Donnie geworden, weswegen er den Versuch unternimmt, ihm mit einer Tasche unterschlagenen Geldes die Flucht zu erm&ouml;glichen. Als Donnie sogar anf&auml;ngt, Befehle seiner Vorgesetzten zu missachten und den Kontakt abzubrechen, und zusammen mit Lefty einen Auftragsmord begehen soll, beendet das FBI die Mission.  Einige Zeit sp&auml;ter, Lefty und Napolitano sind noch im Unklaren &uuml;ber Donnies wahre Identit&auml;t, erscheinen Pistones Auftraggeber vom FBI in der Stammkneipe der Mafiosi. Sie kl&auml;ren die Mitglieder anhand von Fotos aus Donnies FBI-Ausbildung &uuml;ber seine wahre Herkunft auf. Die Mafiosi glauben den FBI-M&auml;nnern nicht, dass Donnie ein Spitzel war. Einige Tage sp&auml;ter sieht man Lefty in seiner Wohnung sitzen und telefonieren, er soll vorgeladen werden. Das bedeutet, dass er f&uuml;r Donnie gerade stehen muss, da er ihn in die Familie geschleust hat und sich f&uuml;r ihn verb&uuml;rgte. Am Ende sieht man Joe Pistone, wie er einen Orden und einen Scheck &uuml;ber 500 Dollar f&uuml;r seinen Verdienst &uuml;berreicht bekommt. Er sieht sich seine Auszeichnung an, blickt dann nach oben. Man h&ouml;rt die Stimme seiner Frau im Off: „Komm Joe, gehen wir nach Hause.“
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Doppelmord.html"><img width="100%" height="auto" src="_Poster/Donnie Brasco.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Doktor Schiwago.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Doppelmord.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

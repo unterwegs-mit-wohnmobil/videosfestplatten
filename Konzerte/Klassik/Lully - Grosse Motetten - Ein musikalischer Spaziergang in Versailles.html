@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Lully - Gro&szlig;e Motetten - Ein musikalischer Spaziergang in Versailles</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ludwig van Beethoven Sinfonie Nr_ 9 d-Moll op_ 125.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Lully - Grosse Motetten - Ein musikalischer Spaziergang in Versailles"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Marek und Michel.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Lully - Gro&szlig;e Motetten - Ein musikalischer Spaziergang in Versailles</b> - 1:10:32 Der Name Jean-Baptiste Lully ist untrennbar mit Ludwig XIV. verbunden. Kein Wunder also, dass der Barockkomponist, der den Sonnenk&ouml;nig mit seinen Balletten, Opern und Motetten in Verz&uuml;ckung versetzte, in der Reihe Promenades a Versailles zu besonderen Ehren kommt. Drei dieser Motetten wird das Ensemble Les Epopees heute zur Auff&uuml;hrung bringen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Marek und Michel.html"><img width="100%" height="auto" src="_Poster/Lully - Grosse Motetten - Ein musikalischer Spaziergang in Versailles.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ludwig van Beethoven Sinfonie Nr_ 9 d-Moll op_ 125.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Marek und Michel.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

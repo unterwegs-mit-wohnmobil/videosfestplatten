@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Ausgerechnet Sibirien</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Aufgetischt im suessen Wien.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Ausgerechnet Sibirien"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Becoming the Beatles.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Ausgerechnet Sibirien</b> - 1:34:23 Basierend auf dem preisgekr&ouml;nten Roman Der Neuling von Michael Ebmeyer, der f&uuml;r das Drehbuch des Films mitverantwortlich ist, gelang Regisseur Ralf Huettner nach seinem Abr&auml;umer Vincent will Meer (2010) mit Ausgerechnet Sibirien (2012) eine charmante Kino-Kom&ouml;die um das Aufeinanderprallen zweier grundverschiedener Kulturen und die damit verbundenen Probleme.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Becoming the Beatles.html"><img width="100%" height="auto" src="_Poster/Ausgerechnet Sibirien.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Aufgetischt im suessen Wien.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Becoming the Beatles.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

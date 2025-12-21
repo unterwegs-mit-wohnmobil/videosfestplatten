@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Wildes Spanien (1) Der atlantische Norden</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Wilder Yak - Wildes China.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Wildes Spanien (1) Der atlantische Norden"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Zauberhaftes Albanien (1 von 2) - Der Norden_ Von den Bergen in die Hauptstadt.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Wildes Spanien (1) Der atlantische Norden</b> - 0:43:21 Spanien zählt zu den beliebtesten Reisezielen der Welt. Doch Badestrände, Flamenco und Städte wie Sevilla und Granada sind nur eine Seite Spaniens. Es findet sich auch eine Artenvielfalt, die in anderen Regionen Europas selten geworden ist.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Zauberhaftes Albanien (1 von 2) - Der Norden_ Von den Bergen in die Hauptstadt.html"><img width="100%" height="auto" src="_Poster/Wildes Spanien (1) Der atlantische Norden.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Wilder Yak - Wildes China.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Zauberhaftes Albanien (1 von 2) - Der Norden_ Von den Bergen in die Hauptstadt.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Hitchcock - Der unsichtbare Dritte</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Herr der Gezeiten.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Hitchcock - Der unsichtbare Dritte"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Hitchcock - Die Voegel.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Hitchcock - Der unsichtbare Dritte</b> - 2:10:39 Der New Yorker Werbefachmann Roger Thornhill wird w&auml;hrend einer Gesch&auml;ftsbesprechung im Plaza-Hotel von bewaffneten M&auml;nnern abgefangen, als er gerade telefonieren m&ouml;chte. Die Gangster halten ihn f&uuml;r einen Mann namens George Kaplan, den sie gezielt ans Telefon haben rufen lassen. Als der Hotelbedienstete Kaplan ausrufen lie&szlig;, hatte sich zuf&auml;llig Thornhill bei ihm gemeldet, um ein Telegramm aufzugeben. Durch diesen Zufall kommt die auf einer Verwechslung beruhende Geschichte in Gang. Thornhill wird mit vorgehaltener Pistole in ein Auto verfrachtet und zu einer Villa auf Long Island gebracht, deren Adresse und Eigent&uuml;mer er dort auf einem offen herumliegenden Briefumschlag identifizieren kann. Ein elegant gekleideter Mann betritt sodann, ohne sich vorzustellen, den Raum in Begleitung eines Sekret&auml;rs, und Thornhill wird aufgefordert, mit ihnen zu kooperieren. Thornhill lehnt dies strikt ab. Er wei&szlig; &uuml;berhaupt nicht, was die M&auml;nner von ihm wollen. Seinen Beteuerungen, dass er nicht Kaplan sei, schenken die Entf&uuml;hrer keinen Glauben. Schlie&szlig;lich fl&ouml;&szlig;en sie ihm zwangsweise Bourbon ein, setzen ihn in ein gestohlenes Auto und wollen es &uuml;ber eine Klippe rollen lassen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Hitchcock - Die Voegel.html"><img width="100%" height="auto" src="_Poster/Hitchcock - Der unsichtbare Dritte.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Herr der Gezeiten.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Hitchcock - Die Voegel.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

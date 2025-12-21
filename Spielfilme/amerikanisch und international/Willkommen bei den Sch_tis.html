@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Willkommen bei den Sch'tis</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Wiedersehen in Howards End.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Willkommen bei den Sch_tis"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Zeit der Zaertlichkeit.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Willkommen bei den Sch'tis</b> - 1:41:35 Die hinrei&szlig;ende Kulturschock-Kom&ouml;die &uuml;ber einen Postmann z&auml;hlt zu Frankreichs gro&szlig;en Kinoerfolgen. Mit unnachahmlichem Witz widerlegen Dany Boon und Kad Merad ein verbreitetes Vorurteil.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Zeit der Zaertlichkeit.html"><img width="100%" height="auto" src="_Poster/Willkommen bei den Sch_tis.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Wiedersehen in Howards End.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Zeit der Zaertlichkeit.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>
