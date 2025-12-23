@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Zivilcourage</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Zimmer mit Tante.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Zivilcourage"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Zum Kuckuck mit der Liebe.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Zivilcourage</b> - 1:28:32 <a href="https://www.fernsehserien.de/zivilcourage">Info auf Fernsehserien.de</a> Peter Jordan lebt seit fast 30 Jahren in einem sogenannten Berliner Problemviertel. Der kulturbeflissene &auml;ltere Herr passt nicht wirklich in diesen sozialen Brennpunkt. Doch Jordan hat sich arrangiert. Als er eines Tages einen Obdachlosen vor einer Jugendbande sch&uuml;tzt, muss er mit schwerwiegenden Konsequenzen rechnen. Da findet sich eine &uuml;berraschende Verb&uuml;ndete.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Zum Kuckuck mit der Liebe.html"><img width="100%" height="auto" src="../../../Spielfilme/deutsch und deutschsprachig/_Poster/Zivilcourage.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Zimmer mit Tante.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Zum Kuckuck mit der Liebe.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

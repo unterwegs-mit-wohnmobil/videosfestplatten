@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der Duft von Holunder</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Club der singenden Metzger.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der Duft von Holunder"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der Fall Harry Woerz.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der Duft von Holunder</b> - 1:27:40 In der Hamburger Edelgastronomie ist Sofie M&ouml;ller als strenge Restaurantkritikerin gef&uuml;rchtet. Doch den Erfolg im Job kann die attraktive, unnahbar wirkende junge Frau nicht auf ihr Privatleben &uuml;bertragen. Gerade von ihrem Freund verlassen, erf&auml;hrt Sofie, dass ihre geliebte Gro&szlig;mutter Helene gestorben ist. Sofie ist bei Helene aufgewachsen, derweil ihre Mutter Agnes als &Auml;rztin in fernen L&auml;ndern un
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der Fall Harry Woerz.html"><img width="100%" height="auto" src="../../../Spielfilme/deutsch und deutschsprachig/_Poster/Der Duft von Holunder.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Club der singenden Metzger.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der Fall Harry Woerz.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

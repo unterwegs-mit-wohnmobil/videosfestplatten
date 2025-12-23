@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Familie ist kein Wunschkonzert</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Eins ist nicht von dir.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Familie ist kein Wunschkonzert"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fischer fischt Frau.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Familie ist kein Wunschkonzert</b> - 1:28:41 Kurz vor der Silberhochzeit ihrer Eltern erf&auml;hrt die 22-j&auml;hrige Philomena das ihr Papa gar nicht ihr leiblicher Vater ist. Sie hat sich schon immer gefragt, warum sie anders ist als der Rest der Familie. Jetzt hat sie die Antwort, aber warum haben ihre Eltern sie so viele Jahre belogen? Bei der Familienfeier will sie reinen Tisch machen. Gemeinsam mit ihren Schwestern Laura und Kristin reist sie v
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fischer fischt Frau.html"><img width="100%" height="auto" src="../../../Spielfilme/deutsch und deutschsprachig/_Poster/Familie ist kein Wunschkonzert.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Eins ist nicht von dir.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fischer fischt Frau.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>
