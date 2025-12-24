@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der Vater der Braut</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Tod in Venedig.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der Vater der Braut"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der Vorleser.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der Vater der Braut</b> - 1:46:54 <a href="https://de.wikipedia.org/wiki/Der_Vater_der_Braut_(2022)">Details</a> Der Architekt Guillermo „Billy“ Herrera und seine Frau Ingrid sind ein Paar kubanischer Herkunft, das in Miami lebt und zwei T&ouml;chter hat. Tochter Sofia hat gerade ihr Jurastudium abgeschlossen, Cora ist eine angehende Modedesignerin.  Ingrid er&ouml;ffnet ihrem Mann im Zuge einer Paartherapie, dass sie sich scheiden lassen m&ouml;chte, weil sie ihn f&uuml;r einen Workaholic h&auml;lt. Beim Besuch ihrer Eltern erz&auml;hlt Sofia, dass sie mit ihrem Anwaltskollegen Adan Castillo verlobt ist und sie in einem Monat heiraten wollen. Billy und Ingrid vereinbaren, ihre Scheidung bis nach der Hochzeit geheim zu halten.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der Vorleser.html"><img width="100%" height="auto" src="_Poster/Der Vater der Braut.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Tod in Venedig.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der Vorleser.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

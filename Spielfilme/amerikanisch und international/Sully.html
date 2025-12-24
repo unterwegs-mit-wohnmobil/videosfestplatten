@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Sully</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Suffragette - Taten statt Worte.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Sully"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Supermarkt.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Sully</b> - 1:29:07 <a href="https://de.wikipedia.org/wiki/Sully_(Film)">Details</a> Ein gro&szlig;es Passagierflugzeug fliegt durch die H&auml;userschluchten von New York und st&uuml;rzt ab. Aus diesem Albtraum erwacht der Pilot Chesley „Sully“ Sullenberger, der sich zusammen mit seinem Co-Piloten Jeff Skiles vor der US-amerikanischen Flugsicherheitsbeh&ouml;rde National Transportation Safety Board (NTSB) verantworten muss. Die beiden hatten wenige Minuten nach dem Start vom New Yorker Flughafen LaGuardia aufgrund von Problemen mit den Triebwerken nach Vogelschlag eine Notwasserung auf dem Hudson River durchgef&uuml;hrt. Alle 155 Personen an Bord hatten &uuml;berraschenderweise &uuml;berlebt. Der Fluglotse hatte zuvor vorgeschlagen, nach LaGuardia zur&uuml;ckzukehren oder auf dem nahen Flughafen Teterboro notzulanden. Sullenberger sch&auml;tzte die Zeit hierf&uuml;r wegen der geringen Flugh&ouml;he der Maschine als zu knapp ein. Die Beh&ouml;rde ist dagegen der Meinung, dass eine Landung auf den beiden Flugh&auml;fen m&ouml;glich gewesen w&auml;re, und sieht sich durch Computersimulationen des Flugzeugherstellers Airbus best&auml;tigt. Die Untersuchung soll nun aufkl&auml;ren, ob Sullenberger die Passagiere wom&ouml;glich unn&ouml;tig in Gefahr gebracht und das Flugzeug zum Totalschaden ruiniert hat. F&uuml;r die &Ouml;ffentlichkeit ist „Sully“ dagegen ein Held. Er hat M&uuml;he, sich des Ansturms auf seine Person zu erwehren. Die beiden in einem Hotel einquartierten Piloten verschaffen sich durch Joggen und einem Auftritt beim Talkmaster David Letterman Abwechslung. Derweil sorgt sich Sullenbergers Frau um die Zukunft, als er ihr telefonisch von der Untersuchung berichtet, da die Familie wegen einer nicht vermietbaren Immobilie finanzielle Probleme und Sully f&uuml;r die Zeit der Untersuchung kein Einkommen hat.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Supermarkt.html"><img width="100%" height="auto" src="_Poster/Sully.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Suffragette - Taten statt Worte.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Supermarkt.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

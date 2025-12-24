@@ -10,7 +10,7 @@ div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.te
 <body>
 <table border="0" width="100%">
  <tr>
-  <td width="20%"><div class="textLinks"><a href="Der Wuergeengel.html"><big>voriges</big></a></div></td>
+  <td width="20%"><div class="textLinks"><a href="Der zerrissene Vorhang.html"><big>voriges</big></a></div></td>
   <td><div class="textMitte"><a href="index.htm#Der Ueberfall - Es geht um mehr als Geld"><big>Index</big></a></div></td>
   <td width="25%"><div class="textRechts"><a href="Die Abenteuer des Robinson Crusoe.html"><big>n&auml;chstes</big></a></div></td>
 </tr></table>
@@ -31,7 +31,7 @@ swiperCallback: function() {},
     swiper.touchEndX = event.changedTouches[0].screenX;
     swiper.handleSwipeGesture(); }, false); },
   handleSwipeGesture: function () {
-    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Wuergeengel.html", "_self", openWindowParm) }
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der zerrissene Vorhang.html", "_self", openWindowParm) }
     if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Abenteuer des Robinson Crusoe.html", "_self", openWindowParm) } },
   swipe: function (direction, movedPixels) { var ret = {}
     ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };

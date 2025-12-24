@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der zerrissene Vorhang</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Wuergeengel.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der zerrissene Vorhang"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der Ueberfall - Es geht um mehr als Geld.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der zerrissene Vorhang</b> - 2:02:14 <a href="https://de.wikipedia.org/wiki/Der_zerrissene_Vorhang">Details</a> Eine Gruppe von Wissenschaftlern trifft zu einem Kongress in Kopenhagen ein. Zu ihnen geh&ouml;ren der US-amerikanische Professor Michael Armstrong, seine Assistentin und Verlobte Dr. Sarah Sherman sowie der DDR-Wissenschaftler Prof. Karl Manfred. Armstrong, der an einer Formel f&uuml;r ein neues Raketen-Abwehrsystem, genannt GAMMA 5, arbeitet, &uuml;berrascht seine Verlobte mit der Neuigkeit, dass er Kopenhagen sofort in Richtung Stockholm verlassen werde, um neue Geldgeber f&uuml;r sein Projekt aufzusuchen. Damit wird sich auch die geplante Hochzeit der beiden auf unbestimmte Zeit verschieben. Armstrong schl&auml;gt Sarah vor, an seiner Stelle den Kongress in Kopenhagen weiter zu verfolgen. Sarah ist entsetzt &uuml;ber den pl&ouml;tzlichen Sinneswandel und m&ouml;chte umgehend nach New York zur&uuml;ckreisen, als sie im Hotel zuf&auml;llig erf&auml;hrt, dass Michael gar nicht Stockholm, sondern Ost-Berlin gebucht hat. Kurzerhand l&auml;sst sie sich auch f&uuml;r diesen Flug eintragen und wird noch in der Maschine von dem entsetzten Armstrong entdeckt.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der Ueberfall - Es geht um mehr als Geld.html"><img width="100%" height="auto" src="_Poster/Der zerrissene Vorhang.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Wuergeengel.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der Ueberfall - Es geht um mehr als Geld.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>
