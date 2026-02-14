@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>SOKO Stuttgart 160 - Major Mimis Ende</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="SOKO Stuttgart 159 - Sein letzter Pfiff.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#SOKO Stuttgart 160 - Major Mimis Ende"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="SOKO Stuttgart 161 - Klassenfahrt in den Tod.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>SOKO Stuttgart 160 - Major Mimis Ende</b> - 0:43:00 Das Fotoshooting einer Gruppe Cosplayer endet f&uuml;r die junge Krankenschwester Inka Fellner t&ouml;dlich. Beim allj&auml;hrlichen Wandertag der SOKO Stuttgart finden die Ermittler die erstochene Frau.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="SOKO Stuttgart 161 - Klassenfahrt in den Tod.html"><img width="100%" height="auto" src="_Poster/SOKO Stuttgart 160 - Major Mimis Ende.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("SOKO Stuttgart 159 - Sein letzter Pfiff.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("SOKO Stuttgart 161 - Klassenfahrt in den Tod.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

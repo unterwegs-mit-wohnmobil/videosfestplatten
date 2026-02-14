@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Nord bei Nordwest 26 - Haare Hartmann</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Nord bei Nordwest 25 - Fette Ente mit Pilzen.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Nord bei Nordwest 26 - Haare Hartmann"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Nord bei Nordwest 27 - Das Nolden-Haus.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Nord bei Nordwest 26 - Haare Hartmann</b> - 1:28:52 Grit Hartmann (Julika Jenkins) hegt ein gut geh&uuml;tetes Geheimnis: Vor ihrer Zeit als Friseurin von Schwanitz war sie viele Jahre als Auftragskillerin f&uuml;r die Hamburger Unterwelt t&auml;tig. Irgendwann hatte sie genug von dem schmutzigen Gesch&auml;ft und ist in Schwanitz untergetaucht. Nach zehn Jahren hat nun ihr fr&uuml;herer Auftraggeber Tjark (J&ouml;rg Pose) Wind von ihrem Aufenthalt .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Nord bei Nordwest 27 - Das Nolden-Haus.html"><img width="100%" height="auto" src="_Poster/Nord bei Nordwest 26 - Haare Hartmann.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Nord bei Nordwest 25 - Fette Ente mit Pilzen.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Nord bei Nordwest 27 - Das Nolden-Haus.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

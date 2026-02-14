@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Magische Gaerten - Bois des Moutiers (Frankreich).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.fernsehserien.de/magische-gaerten">Details</a>  F&uuml;r die franz&ouml;sische Dokumenationsreihe f&uuml;hrt Landschaftsarchitekt Jean Philippe Teyssier die Zuschauer durch die sch&ouml;nsten G&auml;rten Europas. Er stellt Menschen vor, die G&auml;rten wie die des k&ouml;niglichen Palastes Alcázar in Sevilla pflegen und mit gro&szlig;er Leidenschaft und Fachwissen zu Werke gehen.  Aber nicht nur Pflanzen, deren Pflege und Anordnung bestimmen das Bild der pr&auml;sentierten G&auml;rten. Auch aufwendige k&uuml;nstlerische Bauten und technisch ausgekl&uuml;gelte Wasserversorgungssysteme wie im barocken Garten des Palastes der Marquis de Fronteira in Lissabon spielen eine Rolle. Und auch bestimmte Funktionen wie wissenschaftliche Forschung in botanischen G&auml;rten oder die Lebensmittelversorgung mit Obst und Gem&uuml;se wie zum Beispiel im S&uuml;denglischen „Naturgarten“ von Gravetye werden thematisiert.  Durch Teyssiers Begegnungen und Beobachtungen erschlie&szlig;t sich die Bedeutung der Gartenkunst und ihre Entwicklungen und Ver&auml;nderungen im Laufe der Jahrhunderte
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Magische Gaerten - Bois des Moutiers (Frankreich).html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Magische Gaerten - Bois des Moutiers (Frankreich).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Matterns Revier (4)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Matterns Revier (3).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Matterns Revier (4)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Matterns Revier (5).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Matterns Revier (4)</b> - 0:48:11 Opa Rudi ist weg. Schon zweimal ist er nicht bei Manfred Matterns Freund Ecki zum Schnitzeltag erschienen. Und auch Frau Dr. Elshoff macht sich Sorgen, weil der alte Herr seine Herztabletten seit Tagen nicht abholen kommt. Als schlie&szlig;lich noch Evelyn Mattern den Teufel an die Wand malt, geht der 'Mama' auf die Suche. Und recherchiert an Opa Rudis liebstem Aufenthaltsort, dem Kleingartenverein. Kei
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Matterns Revier (5).html"><img width="100%" height="auto" src="_Poster/Matterns Revier (4).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Matterns Revier (3).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Matterns Revier (5).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Deutschlands Traumstra&szlig;en - Die Alleenstra&szlig;e</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Deutschland wie es einmal war.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Deutschlands Traumstrassen - Die Alleenstrasse"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Deutschlands Traumstrassen - Die Silberstrasse.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Deutschlands Traumstra&szlig;en - Die Alleenstra&szlig;e</b> - 0:43:10 Deutschlands Traumstra&szlig;en f&uuml;hren an Fl&uuml;ssen entlang, &uuml;ber einsame Gebirgsp&auml;sse, zu geschichtstr&auml;chtigen oder abgelegenen Pl&auml;tzen - und immer wieder zu au&szlig;ergew&ouml;hnlichen Menschen. In dieser Folge: Eichen, Kastanien, Buchen und Linden sollten einst die f&uuml;rstlichen Reisewege versch&ouml;nern. Heute pr&auml;gen sie entlang der Deutschen Alleenstra&szlig;e viele Landstriche.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Deutschlands Traumstrassen - Die Silberstrasse.html"><img width="100%" height="auto" src="_Poster/Deutschlands Traumstrassen - Die Alleenstrasse.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Deutschland wie es einmal war.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Deutschlands Traumstrassen - Die Silberstrasse.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

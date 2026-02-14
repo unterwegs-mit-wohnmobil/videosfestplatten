@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Herbert Knebel - Im Liegen geht's</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="25 Jahre Herbert Knebels Affentheater.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Herbert Knebel - Im Liegen geht_s"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Herbert Knebel Solo - Ich glaub, ich geh kaputt.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Herbert Knebel - Im Liegen geht's</b> - 1:28:34 Die Sch&uuml;tzenhalle der Sankt-Andreas-Sch&uuml;tzenbruderschaft in Bestwig-Velmede ist bis auf den letzten Platz besetzt, denn ein Star tritt auf: Uwe Lyko, vor allem bekannt als Herbert Knebel, der ewig junge Rentner aus dem Ruhrgebiet. Unterst&uuml;tzt von seinem langj&auml;hrigen Gitarristen Georg G&ouml;bel-Jakobi alias Ozzy Ostermann und begleitet von einem Team des WDR, das erstmals ein Gastspiel der Beiden vor u .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Herbert Knebel Solo - Ich glaub, ich geh kaputt.html"><img width="100%" height="auto" src="_Poster/Herbert Knebel - Im Liegen geht_s.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("25 Jahre Herbert Knebels Affentheater.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Herbert Knebel Solo - Ich glaub, ich geh kaputt.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

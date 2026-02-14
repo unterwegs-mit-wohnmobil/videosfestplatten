@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Ihr letzter Wille kann mich mal</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ich und Kaminski.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Ihr letzter Wille kann mich mal"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Im Dreieck - Eine Beziehungsgeschichte.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Ihr letzter Wille kann mich mal</b> - 1:28:02 Heinrich Gruber (Heiner Lauterbach), ein Staatsanwalt, wie er im Buche steht, und der Reisejournalist Tom Gruber (Uwe Ochsenknecht) haben im Leben wenig gemeinsam. Umso mehr staunen die beiden Herren um die 60, als sie sich bei einer Testamentser&ouml;ffnung kennenlernen - und zwar als Ehem&auml;nner der Verstorbenen! Die mit dem Auto verungl&uuml;ckte Sophia hat jahrzehntelang ein ebenso geheimes wie gl&uuml;ckliche .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Im Dreieck - Eine Beziehungsgeschichte.html"><img width="100%" height="auto" src="_Poster/Ihr letzter Wille kann mich mal.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ich und Kaminski.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Im Dreieck - Eine Beziehungsgeschichte.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

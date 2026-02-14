@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Weissensee (19 und 20) Alte Wunden + Geister</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Weissensee (17 und 18) Am Abgrund _ Kaltes Herz.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Weissensee (19 und 20) Alte Wunden _ Geister"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Weissensee (21 und 22) Der erste Stein _ Bluehendes Land.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Weissensee (19 und 20) Alte Wunden + Geister</b> - 1:35:58 Martin, seine Freundin Katja und seine zwei T&ouml;chter sind zu einer kleinen Familie zusammengewachsen. Falk bekommt eine Akte vorgelegt, aus der hervorgeht, dass sein Vater vor langer Zeit in Westberlin einen Mann ermordet haben soll.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Weissensee (21 und 22) Der erste Stein _ Bluehendes Land.html"><img width="100%" height="auto" src="_Poster/Weissensee (19 und 20) Alte Wunden _ Geister.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Weissensee (17 und 18) Am Abgrund _ Kaltes Herz.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Weissensee (21 und 22) Der erste Stein _ Bluehendes Land.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>SOKO Stuttgart 114 - Falsche Zeit, falscher Ort</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="SOKO Stuttgart 113 - Haeuslebauer.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#SOKO Stuttgart 114 - Falsche Zeit, falscher Ort"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="SOKO Stuttgart 115 - Auf fremde Rechnung.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>SOKO Stuttgart 114 - Falsche Zeit, falscher Ort</b> - 0:43:16 <a href="https://www.fernsehserien.de/soko-stuttgart">Details</a> Am fr&uuml;hen Morgen, mitten in einem Stuttgarter Villenviertel, wird eine junge Frau auf offener Stra&szlig;e entf&uuml;hrt. Bei dem Versuch zu helfen, wird ein Jogger kaltbl&uuml;tig &uuml;berfahren.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="SOKO Stuttgart 115 - Auf fremde Rechnung.html"><img width="100%" height="auto" src="_Poster/SOKO Stuttgart 114 - Falsche Zeit, falscher Ort.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("SOKO Stuttgart 113 - Haeuslebauer.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("SOKO Stuttgart 115 - Auf fremde Rechnung.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

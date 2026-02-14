@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Am wilden Flu&szlig;</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="All or Nothing.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Am wilden Fluss"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Amadeus.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Am wilden Flu&szlig;</b> - 1:42:45 <a href="https://de.wikipedia.org/wiki/Am_wilden_Fluß">Details</a> Die sportlich aktive Gail Hartman wohnt mit ihrer vierk&ouml;pfigen Familie in Boston, Massachusetts. F&uuml;r den Geburtstag ihres Sohns Roarke plant sie eine mehrt&auml;gige Rafting-Tour auf einem Gebirgsfluss in ihrer alten Heimat Idaho. Wie schon in den Jahren zuvor sagt Gails Ehemann, der Architekt Tom, seine Mitreise aus beruflichen Gr&uuml;nden kurzfristig ab, worauf Gail und die Kinder entt&auml;uscht reagieren und sie schlie&szlig;lich allein an den Salmon River reisen. Begleitet von ihren Eltern und der Tochter Willa, bereitet Gail zusammen mit Roarke und ihrer H&uuml;ndin Maggy ein Boot f&uuml;r die Tour vor. Beim Abholen der f&uuml;r die Flussfahrt erforderlichen Plaketten trifft Roarke auf einen jungen Mann namens Wade, der augenscheinlich mit seinen Freunden Frank und Terry ebenfalls den Fluss hinabfahren m&ouml;chte.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Amadeus.html"><img width="100%" height="auto" src="_Poster/Am wilden Fluss.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("All or Nothing.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Amadeus.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>WaPo Bodensee 52 - Seitenstechen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="WaPo Bodensee 47 - Mann im Kessel.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#WaPo Bodensee 52 - Seitenstechen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="WaPo Bodensee 54 - Toete mich.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>WaPo Bodensee 52 - Seitenstechen</b> - 0:47:36 Das morgendliche Kr&auml;ftemessen beim Kajakfahren auf dem Bodensee endet f&uuml;r Jakob und Niklas mit einer schlimmen Entdeckung. Pl&ouml;tzlich m&uuml;ssen sie einen Leistungsschwimmer, der gerade noch an ihnen vorbeikraulte, tot aus dem See bergen ...
+</big></big></p>
+<div class="container" id="myImage">
+<a href="WaPo Bodensee 54 - Toete mich.html"><img width="100%" height="auto" src="../../../Krimis/WaPo Bodensee/_Poster/WaPo Bodensee 52 - Seitenstechen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("WaPo Bodensee 47 - Mann im Kessel.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("WaPo Bodensee 54 - Toete mich.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

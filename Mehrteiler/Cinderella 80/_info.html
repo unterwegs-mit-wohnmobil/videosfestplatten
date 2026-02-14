@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Cinderella 80 (1 von 2).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.fernsehserien.de/cinderella-87">Details</a> I/F 1983 (Cenerentola 80) Miniserie in 4 Teilen (SDR-Version) Fernsehfilm in 2 Teilen (DEFA-Version) Spielfilm (DEFA-Version) Deutsche Erstausstrahlung: 01.02.1987 Das Erste Originalsprache: Italienisch Titel der DEFA-Version: Cinderella 80 Die h&uuml;bsche Cindy ist mit einer tollen Stimme gesegnet worden. Aber sie leidet unter einer b&ouml;sen Stiefmutter und zickigen Stiefschwestern, die sie wie Aschenputtel behandeln. Sie trifft bei einer Italienreise auf Mizio, der ihre Liebe zur Musik teilt. Dass er ein leibhaftiger Prinz ist, erf&auml;hrt sie erst sp&auml;ter. Aber da ist aus Aschenputtel schon die Rockprinzessin geworden.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Cinderella 80 (1 von 2).html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Cinderella 80 (1 von 2).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

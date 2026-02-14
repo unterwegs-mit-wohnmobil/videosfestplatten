@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Supermarkt</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Sully.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Supermarkt"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Szenen einer Ehe (1973).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Supermarkt</b> - 1:20:01 Roland Klicks Kultfilm mit Eva Mattes und Musik von Marius M&uuml;ller-Westernhagen, gefilmt von Jost Vacano: Willi lebt in der Gro&szlig;stadt, wo sie am grellsten und h&auml;rtesten ist. Er sucht Liebe, doch alles dreht sich nur um Geld.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Szenen einer Ehe (1973).html"><img width="100%" height="auto" src="_Poster/Supermarkt.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Sully.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Szenen einer Ehe (1973).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

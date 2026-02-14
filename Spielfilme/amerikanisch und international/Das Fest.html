@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Das Fest</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Das China-Syndrom.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Das Fest"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Das Geheimnis der Dame in Weiss 1957Jean Gabin.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Das Fest</b> - 1:40:36 <a href="https://de.wikipedia.org/wiki/Das_Fest_(Film)">Details</a> Der Hotelier Helge Klingenfeldt-Hansen feiert seinen 60. Geburtstag auf dem Familiensitz. Kurz vor Beginn der Feier treffen in dem Hotel seine drei Kinder Christian, Michael und Helene auf drei sehr unterschiedliche Arten ein. Beide Br&uuml;der sind als Lokalbesitzer in der Gastronomie t&auml;tig – Christian erfolgreich in Paris, Michael mit einer Klitsche am S&uuml;dhafen in Kopenhagen – die Schwester Helene studiert zum Unmut ihrer Eltern seit langer Zeit. Die Stimmung scheint hin- und hergerissen zwischen Wiedersehensfreude, den pers&ouml;nlichen Differenzen der einzelnen Protagonisten und der Trauer &uuml;ber den Selbstmord von Christians Zwillingsschwester Linda. Gemeinsam begr&uuml;&szlig;en sie dann die ankommenden G&auml;ste. Das Fest beginnt, als Helge und seine Frau Elsie den Saal betreten
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Das Geheimnis der Dame in Weiss 1957Jean Gabin.html"><img width="100%" height="auto" src="_Poster/Das Fest.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Das China-Syndrom.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Das Geheimnis der Dame in Weiss 1957Jean Gabin.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

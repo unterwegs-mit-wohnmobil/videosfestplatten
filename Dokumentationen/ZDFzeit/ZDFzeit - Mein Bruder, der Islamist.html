@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>ZDFzeit - Mein Bruder, der Islamist</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="ZDFzeit - Koenigliche Dynastien - Die Romanows.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#ZDFzeit - Mein Bruder, der Islamist"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="ZDFzeit - Mein Bruder, der Terrorist.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>ZDFzeit - Mein Bruder, der Islamist</b> - 0:44:08
+</big></big></p>
+<div class="container" id="myImage">
+<a href="ZDFzeit - Mein Bruder, der Terrorist.html"><img width="100%" height="auto" src="_Poster/ZDFzeit - Mein Bruder, der Islamist.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("ZDFzeit - Koenigliche Dynastien - Die Romanows.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("ZDFzeit - Mein Bruder, der Terrorist.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

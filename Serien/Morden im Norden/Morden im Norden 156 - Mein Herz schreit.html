@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Morden im Norden 156 - Mein Herz schreit</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Morden im Norden 155 - Der tote Clown.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Morden im Norden 156 - Mein Herz schreit"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Morden im Norden 157 - Die letzte Bestellung.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Morden im Norden 156 - Mein Herz schreit</b> - 0:47:53 Auf der Trave kollidiert ein f&uuml;hrerlos treibendes Segelboot mit der F&auml;hre nach Helsinki. Das Boot schl&auml;gt leckt und sinkt. An Bord finden Rettungskr&auml;fte die Leiche einer Frau. Sie hatte keine Chance, dem eindringenden Wasser zu entkommen, denn die Kaj&uuml;te der Yacht war von au&szlig;en verschlossen. Es handelt sich um Tessa Hadam aus L&uuml;beck, 46, verheiratet und Mutter zweier Kinder. Tessa war trockene Alk .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Morden im Norden 157 - Die letzte Bestellung.html"><img width="100%" height="auto" src="_Poster/Morden im Norden 156 - Mein Herz schreit.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Morden im Norden 155 - Der tote Clown.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Morden im Norden 157 - Die letzte Bestellung.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

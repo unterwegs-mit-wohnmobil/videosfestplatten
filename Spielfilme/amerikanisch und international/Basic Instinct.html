@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Basic Instinct</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Bank Job.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Basic Instinct"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Begabt - Die Gleichung eines Lebens.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Basic Instinct</b> - 1:57:25 <a href="https://de.wikipedia.org/wiki/Basic_Instinct">Details</a> In San Francisco untersucht Detective Nick Curran den Mord an dem einstmals erfolgreichen Rockstar Johnny Boz, der beim Sex mit einer mysteri&ouml;sen blonden Frau mit einem Eispickel erstochen wurde. Im Fokus der polizeilichen Ermittlungen steht die Kriminalromanautorin Catherine Tramell, die einen Roman geschrieben hat, der das Verbrechen widerspiegelt. Es wird vermutet, dass entweder Catherine die M&ouml;rderin ist oder jemand versucht, ihr diesen Mord anzuh&auml;ngen. Catherine scheint jedoch nicht kooperativ. Zudem hat sie ein Alibi, auch der L&uuml;gendetektortest bringt unauff&auml;llige Ergebnisse. Bei weiteren Ermittlungen stellt sich heraus, dass das Umfeld von Catherine aus verurteilten M&ouml;rdern besteht, darunter ihre Freundin Roxy, die impulsiv ihre beiden j&uuml;ngeren Br&uuml;der t&ouml;tete, als sie sechzehn Jahre alt war, und Hazel Dobkins, die ohne ersichtlichen Grund ihren Mann und ihre Kinder t&ouml;tete.  Nick ist fasziniert von der geheimnisvollen und eiskalten blonden Sch&ouml;nheit, die M&auml;nnern wie Frauen nicht abgeneigt ist und anscheinend jedes Detail aus seiner Vergangenheit kennt. Mit ihrer Art zieht sie die Ermittler in ihren Bann, und Nick l&auml;sst sich auf eine Aff&auml;re mit ihr ein. Catherine k&uuml;ndigt an, dass in ihrem n&auml;chsten Buch ein Polizist, der sich in die falsche Frau verliebt, das Zeitliche segnen werde. Nick wird wegen eines t&auml;tlichen Angriffs auf einen Beamten der Dienstaufsichtsbeh&ouml;rde vom Dienst suspendiert. Dieser hatte vor einiger Zeit gegen ihn ermittelt, weil er aufgrund inzwischen &uuml;berwundener Drogenprobleme bei einem Undercover-Einsatz irrt&uuml;mlich zwei Touristen erschossen hatte.  Nick erf&auml;hrt, dass Lieutenant Marty Nielsen die Informationen aus seiner psychiatrischen Akte an Catherine weitergegeben hat. Er greift Nielsen in dessen B&uuml;ro an und wird, als Nielsen get&ouml;tet wird, zum Hauptverd&auml;chtigen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Begabt - Die Gleichung eines Lebens.html"><img width="100%" height="auto" src="_Poster/Basic Instinct.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Bank Job.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Begabt - Die Gleichung eines Lebens.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

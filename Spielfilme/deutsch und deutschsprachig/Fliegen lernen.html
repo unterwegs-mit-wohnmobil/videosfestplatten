@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Fliegen lernen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Fischgeschichten.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Fliegen lernen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fliegende Fische muessen ins Meer.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Fliegen lernen</b> - 1:28:40 Apothekerin Eva musste nach der schmerzlichen Trennung von ihrem Mann Christian Alltag und Gef&uuml;hle neu ordnen. Eine neue Beziehung kommt f&uuml;r die 42-J&auml;hrige erst einmal nicht infrage, sie will nur noch f&uuml;r ihre beiden fast erwachsenen S&ouml;hne da sein und eines Tages die Apotheke ihrer Noch-Schwiegermutter &uuml;bernehmen. Aus heiterem Himmel platzt jedoch der mehr als zehn Jahre j&uuml;ngere Arzt Hendrik in ih
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fliegende Fische muessen ins Meer.html"><img width="100%" height="auto" src="_Poster/Fliegen lernen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Fischgeschichten.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fliegende Fische muessen ins Meer.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

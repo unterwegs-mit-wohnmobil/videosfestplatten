@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Roy Orbison - Black and White Night</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ringo Starr and The Roundheads Live at Soundstage.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Roy Orbison - Black and White Night"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Santana in Ostberlin 1987.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Roy Orbison - Black and White Night</b> - 1:29:11 Im September 1987 feierte Roy Orbison mit &quot;Black and White Night&quot; sein Comeback. Das Konzert wurde in Los Angeles live aufgezeichnet und als TV-Special ausgestrahlt. Neben Orbison standen Musiklegenden wie Jackson Browne, T Bone Burnett, Elvis Costello, Bonnie Raitt, Bruce Springsteen und Tom Waits auf der B&uuml;hne. Ein einmaliger Rock-'n'-Roll-Abend, gefilmt in Schwarz-Wei&szlig;.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Santana in Ostberlin 1987.html"><img width="100%" height="auto" src="_Poster/Roy Orbison - Black and White Night.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ringo Starr and The Roundheads Live at Soundstage.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Santana in Ostberlin 1987.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

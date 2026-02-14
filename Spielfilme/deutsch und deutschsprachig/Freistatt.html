@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Freistatt</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Frauen verstehen.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Freistatt"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fuenf Tage Vollmond.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Freistatt</b> - 1:37:58 Sommer, 1968: W&auml;hrend die Studenten rebellieren und nach Freiheit streben, wird der 14-j&auml;hrige Wolfgang von seinem Stiefvater in die F&uuml;rsorgeanstalt Freistatt, ein Heim f&uuml;r Schwererziehbare, abgeschoben. Verschlossene T&uuml;ren, vergitterte Fenster und milit&auml;rischer Drill sind allgegenw&auml;rtig. - &quot;Freistatt&quot; (2014) wurde mit dem Deutschen Filmpreis f&uuml;r das beste Drehbuch ausgezeichnet.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fuenf Tage Vollmond.html"><img width="100%" height="auto" src="_Poster/Freistatt.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Frauen verstehen.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fuenf Tage Vollmond.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

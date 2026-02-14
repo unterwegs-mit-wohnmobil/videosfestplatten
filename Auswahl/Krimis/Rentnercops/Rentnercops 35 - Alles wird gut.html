@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Rentnercops 35 - Alles wird gut</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Rentnercops 34 - Ich war das nicht.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Rentnercops 35 - Alles wird gut"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Rentnercops 36 - Mord im Dunkeln.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Rentnercops 35 - Alles wird gut</b> - 0:48:26 In einem verlassenen Auto werden Blutspuren gefunden. Wie sich herausstellt, wurde der Besitzer des Wagens von seiner Lebensgef&auml;hrtin vermisst gemeldet. Dann geht ein Erpresserbrief ein ...
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Rentnercops 36 - Mord im Dunkeln.html"><img width="100%" height="auto" src="../../../Krimis/Rentnercops/_Poster/Rentnercops 35 - Alles wird gut.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Rentnercops 34 - Ich war das nicht.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Rentnercops 36 - Mord im Dunkeln.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

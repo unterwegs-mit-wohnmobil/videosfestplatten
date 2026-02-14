@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Stralsund 02 - Ausser Kontrolle.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.fernsehserien.de/stralsund">Details</a> D 2009– bisher 16 Folgen Deutsche Erstausstrahlung: 30.03.2009 ZDF Die Stralsunder Kommissarin Nina Petersen (Katharina Wackernagel) ermittelt Mord- und andere Kriminalf&auml;lle in der nord&ouml;stlichen Hansestadt an der Ostsee. Mit ihrer energischen Art &uuml;berschreitet sie manchmal auch berufliche sowie pers&ouml;nliche Grenzen.  An ihrer Seite: Kriminalhauptkommissar Karl Hidd (Alexander Held), der seinen Job eher etwas gelassener nimmt. Trotz einer Beinprothese, die er in Folge eines Bombenanschlags tragen muss, ist er auch weiterhin im Au&szlig;endienst t&auml;tig.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Stralsund 02 - Ausser Kontrolle.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Stralsund 02 - Ausser Kontrolle.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

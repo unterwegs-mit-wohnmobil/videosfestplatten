@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>E.T.A. Hoffmann</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Brueder Grimm.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#E_T_A_ Hoffmann"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Edgar Allan Poe.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>E.T.A. Hoffmann</b> - 0:14:44 Seine Zeitgenossen nannten ihn &quot;Gespenster Hoffmann&quot;. Das Fantastische, das seine Texte durchdringt, lag den Lesern im 19. Jahrhundert fern. Erst nach seinem Tod fanden Hoffmanns B&uuml;cher ein wachsendes Publikum sowie Musiker und Schriftsteller, die sich auf seine Motive bezogen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Edgar Allan Poe.html"><img width="100%" height="auto" src="_Poster/E_T_A_ Hoffmann.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Brueder Grimm.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Edgar Allan Poe.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

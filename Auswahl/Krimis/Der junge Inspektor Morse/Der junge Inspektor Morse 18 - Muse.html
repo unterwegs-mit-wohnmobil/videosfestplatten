@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der junge Inspektor Morse 18 - Muse</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der junge Inspektor Morse 17 - Sonnenglanz.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der junge Inspektor Morse 18 - Muse"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der junge Inspektor Morse 19 - Kartusche.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der junge Inspektor Morse 18 - Muse</b> - 1:27:57 <a href="https://de.wikipedia.org/wiki/Der_junge_Inspektor_Morse">Details</a> In der Holywell Lane wird der kleine Gauner und Taxifahrer Joey Sikes tot in einem Auto aufgefunden. Die Besonderheit in diesem Fall: Joey Sikes wurde ein Metalldorn ins Ohr getrieben. Und um seine Lippen herum befindet sich Lippenstift. Die Ermittlungen f&uuml;hren die Oxford City Police zum ehemaligen Boxer und jetzigem Promoter Eddie. Als w&auml;re das noch nicht genug, hat auf dem Gel&auml;nde des Lonsdale College hat ein Einbruch stattgefunden. Und zwar genau in dem Raum, in dem demn&auml;chst ein angeblich lange verschollenes Fabergé-Ei auf einer Auktion versteigert werden soll. Es wurde allerdings nichts gestohlen, und man findet nur eine rote Rose vor.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der junge Inspektor Morse 19 - Kartusche.html"><img width="100%" height="auto" src="../../../Krimis/Der junge Inspektor Morse/_Poster/Der junge Inspektor Morse 18 - Muse.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der junge Inspektor Morse 17 - Sonnenglanz.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der junge Inspektor Morse 19 - Kartusche.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

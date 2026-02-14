@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Doktor Schiwago</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Dog - Das Glueck hat vier Pfoten.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Doktor Schiwago"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Donnie Brasco.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Doktor Schiwago</b> - 3:02:34 Die Handlung des Films erstreckt sich &uuml;ber die Jahre vor, w&auml;hrend und nach der Russischen Revolution 1917. Die Haltung des Titelhelden Doktor Schiwago gegen&uuml;ber den Umw&auml;lzungen in seinem Land bleibt dabei durchg&auml;ngig im Hintergrund. In einer Zeit, in der viele Leute vorgeben, mit Blick auf das Allgemeinwohl zu agieren, beh&auml;lt Schiwago einzelne Menschen im Auge. Im Zentrum seiner Aufmerksamkeit – und damit auch im Zentrum des Films – stehen die beiden Liebesbeziehungen des Protagonisten.  Jurij Schiwago wird im Alter von circa f&uuml;nf Jahren Vollwaise. Er wird von der Familie seines Onkels Alexander Gromeko aufgenommen und w&auml;chst in deren Haus in Moskau auf.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Donnie Brasco.html"><img width="100%" height="auto" src="_Poster/Doktor Schiwago.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Dog - Das Glueck hat vier Pfoten.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Donnie Brasco.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

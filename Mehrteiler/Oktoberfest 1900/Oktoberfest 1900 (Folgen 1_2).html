@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Oktoberfest 1900 (Folgen 1+2)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="_info.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Oktoberfest 1900 (Folgen 1_2)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Oktoberfest 1900 (Folgen 3_4).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Oktoberfest 1900 (Folgen 1+2)</b> - 1:34:38 Der N&uuml;rnberger Gro&szlig;brauer Curt Prank plant, f&uuml;nf Budenpl&auml;tze auf dem Oktoberfest zu ergaunern. Er will eine &quot;Bierburg&quot; f&uuml;r 6.000 G&auml;ste errichten. Und das als Ausw&auml;rtiger! Ein Affront gegen die M&uuml;nchner Brauergilde.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Oktoberfest 1900 (Folgen 3_4).html"><img width="100%" height="auto" src="_Poster/Oktoberfest 1900 (Folgen 1_2).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("_info.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Oktoberfest 1900 (Folgen 3_4).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

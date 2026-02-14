@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Harry und Sally</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Harry Potter und der Stein der Weisen.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Harry und Sally"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Harry und Sohn.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Harry und Sally</b> - 1:28:44 <a href="https://de.wikipedia.org/wiki/Harry_und_Sally">Details</a> Der Film erz&auml;hlt die Geschichte einer langsam wachsenden Freundschaft und Liebe. Die Handlung wird immer wieder unterbrochen durch kurze Passagen, in denen alte Ehepaare erz&auml;hlen, wie sie sich kennen und lieben gelernt haben.  Harry und Sally, die beide 1977 ihren College-Abschluss an der University of Chicago gemacht haben, lernen sich auf einer gemeinsamen Autofahrt nach New York kennen. Die 18-st&uuml;ndige Reise stellt sich als wenig harmonisch heraus, da beide st&auml;ndig unterschiedlicher Meinung sind. So ist Harry der Meinung, M&auml;nner und Frauen k&ouml;nnten niemals Freunde sein, weil ihnen immer der Sex dazwischen komme. Sally widerspricht dieser Auffassung. In New York angekommen, trennen sie sich sofort wieder. F&uuml;nf Jahre sp&auml;ter treffen sich die beiden zuf&auml;llig am Flughafen und im Flugzeug. Sally ist zu diesem Zeitpunkt mit Joe zusammen und Harry ist mit Helen verlobt. Die gegenseitige Sympathie ist seit ihrer ersten Begegnung nicht gewachsen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Harry und Sohn.html"><img width="100%" height="auto" src="_Poster/Harry und Sally.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Harry Potter und der Stein der Weisen.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Harry und Sohn.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

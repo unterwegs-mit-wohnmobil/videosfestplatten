@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Twister</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="True Grit.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Twister"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Um jeden Preis.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Twister</b> - 1:41:19 Die Handlung beginnt im Juni 1969: Dort wird eine Familie innerhalb der Tornado Alley der USA Opfer eines Tornados der Kategorie F 5. Die kleine JoAnne Thornton muss mit ansehen, wie ihr Vater durch den Tornado zu Tode kommt.  Jahre sp&auml;ter kehrt Bill Harding in seine Heimat Oklahoma zur&uuml;ck, um sich von seiner Frau, JoAnne Thornton-Harding, scheiden zu lassen. Der Meteorologe lebt jetzt mit der Psychologin Melissa Reeves zusammen und arbeitet als Wetteransager. Zuvor hatte er mit seiner Forschergruppe ein neues Verfahren namens DOROTHY zur Erforschung von Tornados entwickelt, und dieses Projekt wird nun von seiner zuk&uuml;nftigen Ex-Frau geleitet. Sein ehrgeiziger und skrupelloser Kollege Dr. Jonas Miller hat sich Hardings Arbeit bem&auml;chtigt und eine eigene Maschine gebaut. So beginnt ein Wettlauf um den ersten erfolgreichen Feldversuch.  Bill schlie&szlig;t sich dem Team um seine Frau wieder an, wodurch sich beide wieder n&auml;herkommen. Das sieht auch Melissa Reeves, die ihren Freund verl&auml;sst. Nachdem mehrere Versuche des Einsatzes von DOROTHY fehlgeschlagen sind, zerst&ouml;rt ein Tornado die Stadt Wakita. Dabei &uuml;berlebt JoAnnes Tante Meg nur knapp. Die Einwohner haben sich kaum vom Schock erholt, als sich ein neuer Tornado ank&uuml;ndigt.  JoAnne und Bill verzichten auf eine Evakuierung und planen einen letzten Versuch mit DOROTHY. Sie k&ouml;nnen das Ger&auml;t ins Auge des Sturms bringen und in einen Unterschlupf fliehen. Auch Jonas Miller versucht, seine Maschine in dem Tornado „zum Fliegen zu bringen“. Bill warnt Miller vor der St&auml;rke des Tornados, doch Miller schl&auml;gt die Warnung in den Wind und stirbt, als er dem Tornado zu nahe kommt. Nachdem die Gefahr vor&uuml;ber ist, erfahren die beiden, dass ihre Aktion erfolgreich war und dadurch wichtige neue Informationen zur Tornadovorhersage gewonnen wurden. Beide beschlie&szlig;en, ihrer Ehe eine weitere Chance zu geben.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Um jeden Preis.html"><img width="100%" height="auto" src="_Poster/Twister.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("True Grit.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Um jeden Preis.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

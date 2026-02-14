@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>WaPo Bodensee 062 - Gnadensee</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="WaPo Bodensee 061 - Blindgaenger.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#WaPo Bodensee 062 - Gnadensee"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="WaPo Bodensee 063 - Speed.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>WaPo Bodensee 062 - Gnadensee</b> - 0:48:00 Mechthild l&auml;sst Nele und den fast kahl rasierten Jakob an ihrer Ausbildung zur Fremdenf&uuml;hrerin teilhaben. Besonders anschaulich schildert sie die Geschichte vom Gnadensee. Zum Tode Verurteilte wurden im Mittelalter nach dem L&auml;uten einer Glocke vom Boot in den See gesto&szlig;en – mit der Chance, sich schwimmend zu retten … Franziska Gr&uuml;nwald, die Besitzerin der Segelschule Magellan, meldet Lea Klein .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="WaPo Bodensee 063 - Speed.html"><img width="100%" height="auto" src="../../../Krimis/WaPo Bodensee/_Poster/WaPo Bodensee 062 - Gnadensee.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("WaPo Bodensee 061 - Blindgaenger.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("WaPo Bodensee 063 - Speed.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

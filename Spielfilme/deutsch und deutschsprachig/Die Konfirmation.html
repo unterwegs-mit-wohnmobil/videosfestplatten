@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Konfirmation</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Kirche bleibt im Dorf.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Konfirmation"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Kunst zu lieben.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Konfirmation</b> - 1:29:17 Johanna Winkler (Ulrike C. Tscharre) kann stolz sein, bei der Erziehung ihres Sohnes Ben (Tim Litwinschuh) vieles richtig zu machen. Sie tut sich aber schwer zu akzeptieren, dass der Teenager nun fl&uuml;gge wird und immer mehr mit sich selbst ausmacht. Nur seinen Opa (Reiner Sch&ouml;ne) zieht er bei dem Vorhaben ins Vertrauen, f&uuml;r ein Jahr mit einem Stipendium in die USA zu gehen. Das ist nicht das einzig
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Kunst zu lieben.html"><img width="100%" height="auto" src="_Poster/Die Konfirmation.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Kirche bleibt im Dorf.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Kunst zu lieben.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

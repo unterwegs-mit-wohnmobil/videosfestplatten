@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Und wieder 48 Stunden</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Um jeden Preis.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Und wieder 48 Stunden"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Ungezaehmtes Leben.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Und wieder 48 Stunden</b> - 1:28:03 <a href="https://de.wikipedia.org/wiki/Und_wieder_48_Stunden">Details</a> Der Film beginnt mit einem Treffen dreier Rocker in einer abseits gelegenen W&uuml;stenbar. Einer von ihnen beauftragt die anderen mit der T&ouml;tung von Reggie Hammond. Die Bar wird von Polizisten besucht, die von den Rockern erschossen werden. Kurz darauf wird auch der Barbesitzer erschossen.  Der in San Francisco t&auml;tige Polizeiermittler Jack Cates verfolgt seit vier Jahren Spuren eines Drogendealers, der sich selbst als The Iceman bezeichnet. Cates erschie&szlig;t in Notwehr einen Mann, dessen Leiche in der anschlie&szlig;enden Explosion einer Tankstelle verbrennt. Die Waffe des Mannes kann nicht gefunden werden, weswegen Cates eine Anklage wegen Totschlags droht.  Cates findet in den Resten der Tankstelle ein angebranntes Foto von Reggie Hammond, woraus er schlie&szlig;t, dass der Iceman ein Kopfgeld auf Reggie Hammond aussetzte, der am n&auml;chsten Tag aus dem Gef&auml;ngnis entlassen werden soll. Er versucht, Hammond zu einer Zusammenarbeit zu &uuml;berzeugen, aber Hammond fordert, dass Cates ihm zuvor Geld &uuml;bergibt, das er f&uuml;r Hammond aufbewahrt. Cates will das Geld nur dann &uuml;bergeben, wenn Hammond ihm hilft. Als Hammond es h&ouml;rt, verpr&uuml;gelt er den Polizisten.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Ungezaehmtes Leben.html"><img width="100%" height="auto" src="_Poster/Und wieder 48 Stunden.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Um jeden Preis.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Ungezaehmtes Leben.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

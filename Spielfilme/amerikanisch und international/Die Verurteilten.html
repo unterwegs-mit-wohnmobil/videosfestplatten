@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Verurteilten</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Verfuehrten (2017).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Verurteilten"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die vier Musketiere (1974).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Verurteilten</b> - 2:11:51 Die Handlung beginnt 1947, als der Bankmanager Andy Dufresne anhand von Indizien wegen Mordes an seiner Frau und deren Liebhaber zu zweimal lebenslanger Haft verurteilt wird, obwohl er seine Unschuld beteuert. Diese Strafe soll er in dem gef&uuml;rchteten Gef&auml;ngnis von Shawshank in Maine absitzen. Von Beginn an passt er &uuml;berhaupt nicht in die Gesellschaft der &uuml;brigen Strafgefangenen, er wird durch &Uuml;bergriffe und Vergewaltigungen durch Mith&auml;ftlinge sowie durch die brutalen und korrupten Aufseher gequ&auml;lt.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die vier Musketiere (1974).html"><img width="100%" height="auto" src="_Poster/Die Verurteilten.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Verfuehrten (2017).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die vier Musketiere (1974).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

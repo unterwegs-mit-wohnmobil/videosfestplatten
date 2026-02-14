@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Schwere Jungs</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Schweig Bub.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Schwere Jungs"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Schoene heile Welt.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Schwere Jungs</b> - 1:27:34 Spielfilm Deutschland 2006 Die Bobfahrer Gamser (Sebastian Bezzel) und Dorfler (Nicholas Ofczarek) verbindet seit Kindertagen eine erbitterte Rivalit&auml;t. Als 1952 die Olympischen Winterspiele in Oslo anstehen, bei denen Deutsche erstmals nach dem Zweiten Weltkrieg teilnehmen, ruhen alle Hoffnungen auf dem amtierenden Weltmeister Dorfler. Ausgerechnet Gamser, der die marode Schreinerei seiner Fam .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Schoene heile Welt.html"><img width="100%" height="auto" src="_Poster/Schwere Jungs.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Schweig Bub.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Schoene heile Welt.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

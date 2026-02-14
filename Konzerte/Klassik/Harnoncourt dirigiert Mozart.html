@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Harnoncourt dirigiert Mozart</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Georg-Friedrich Haendel im Pariser Theatre du Chatelet.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Harnoncourt dirigiert Mozart"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Haendel - Messias.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Harnoncourt dirigiert Mozart</b> - 1:50:48 Zehn Wochen des Sommers 1788 gen&uuml;gten Wolfgang Amadeus Mozart, um die Trias seiner letzten Symphonien zu vollenden. F&uuml;r Nikolaus Harnoncourt sind sie mehr als drei einzelne symphonische...
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Haendel - Messias.html"><img width="100%" height="auto" src="_Poster/Harnoncourt dirigiert Mozart.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Georg-Friedrich Haendel im Pariser Theatre du Chatelet.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Haendel - Messias.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

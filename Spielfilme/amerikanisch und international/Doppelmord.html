@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Doppelmord</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Donnie Brasco.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Doppelmord"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Dragonheart.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Doppelmord</b> - 1:36:11 Libby Parsons, mit dem scheinbar wohlhabenden Nick gl&uuml;cklich verheiratet, wacht auf einer gemeinsamen Segeltour eines Morgens in einem blutverschmierten Morgenmantel auf. Blutspuren weisen darauf hin, dass Nick an Deck gegangen und dann &uuml;ber Bord gest&uuml;rzt ist. Sie hebt ein blutiges Messer auf und schaut sich verst&ouml;rt um. So wird sie von der K&uuml;stenwache aufgefunden, wegen Mordes an Nick angeklagt und verurteilt, obwohl sie ihre Unschuld beteuert. Nick hatte eine Lebensversicherung &uuml;ber zwei Millionen Dollar abgeschlossen. Die Geschworenen erkennen darin ein hinreichendes Mordmotiv. Vor ihrer Inhaftierung bittet sie ihre beste Freundin Angie, ihren Sohn Matty zu adoptieren, damit seine Zukunft gesichert ist.  Im Gef&auml;ngnis bricht der Kontakt zu Angie bald ab. Mit einem Trick findet sie heraus, dass Angie nach San Francisco umgezogen ist. Als sie dort anruft und mit Matty spricht, ruft er pl&ouml;tzlich „Daddy!“, dann bricht die Leitung ab, am n&auml;chsten Tag ist der Anschluss abgemeldet. Libby wird klar: Nick ist am Leben, er hat einen Versicherungsbetrug begangen, sie dabei kaltgestellt und lebt nun mit Angie zusammen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Dragonheart.html"><img width="100%" height="auto" src="_Poster/Doppelmord.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Donnie Brasco.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Dragonheart.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

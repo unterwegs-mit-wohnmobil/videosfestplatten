@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Bamberger Reiter - Frankenkrimi</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Alleingang.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Bamberger Reiter - Frankenkrimi"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Begierde - Mord im Zeichen des Zen.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Bamberger Reiter - Frankenkrimi</b> - 1:28:13 Cowboys in Oberfranken, ein n&auml;chtlicher Reiter vor dem Dom, eine geheimnisvolle Buchh&auml;ndlerin und eine tote Westernreiterin. Von wegen erst mal ruhig zu Hause ankommen. Kommissar Haller, der nach dem Tod seiner Mutter nach Bamberg zur&uuml;ckgekehrt ist, bleibt keine Zeit, ihre Hinterlassenschaften zu ordnen. Ein Franken-Krimi mit Thomas Schmauser und Theresa Wei&szlig;bach.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Begierde - Mord im Zeichen des Zen.html"><img width="100%" height="auto" src="_Poster/Bamberger Reiter - Frankenkrimi.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Alleingang.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Begierde - Mord im Zeichen des Zen.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

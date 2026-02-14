@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>William Shakespeare (I)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="William Faulkner.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#William Shakespeare (I)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="William Shakespeare (II).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>William Shakespeare (I)</b> - 0:14:10 Im London des 16. Jahrhunderts dient das Theater dem Massenspektakel. Wer die meisten Zuschauer unterh&auml;lt, &uuml;berlebt. Nur ein Theatermacher wird so reich, dass er sich ein Haus kaufen und zur&uuml;ckziehen kann: William Shakespeare.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="William Shakespeare (II).html"><img width="100%" height="auto" src="_Poster/William Shakespeare (I).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("William Faulkner.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("William Shakespeare (II).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

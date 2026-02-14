@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der junge Inspektor Morse 03 - Mord nach Noten</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der junge Inspektor Morse 02 - Maedchen.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der junge Inspektor Morse 03 - Mord nach Noten"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der junge Inspektor Morse 04 - Alte Liebe.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der junge Inspektor Morse 03 - Mord nach Noten</b> - 1:28:43 Zwei Frauen unterschiedlichen Alters werden kurz hintereinander tot aufgefunden die eine erw&uuml;rgt, die andere vergiftet. Morse entdeckt an beiden Tatorten Opernzitate und vermutet einen Zusammenhang zwischen den beiden F&auml;llen. Ebenso weisen die Todesarten der beiden Frauen Verbindungen zu den Opern auf, aus denen die Zitate entnommen wurden. Die Theorie von Morse ist, dass der T&auml;ter nach einem pr&auml;zisen Muster vorgeht, das sich an Opernfiguren orientiert. Morse kann Thursday &uuml;berzeugen, dass es durch die Opern eine Verbindung zwischen den Morden gibt und diese somit von ein und demselben T&auml;ter ver&uuml;bt wurden. Das bedeutet allerdings, dass sie es nun mit einem Serienm&ouml;rder zu tun haben.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der junge Inspektor Morse 04 - Alte Liebe.html"><img width="100%" height="auto" src="_Poster/Der junge Inspektor Morse 03 - Mord nach Noten.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der junge Inspektor Morse 02 - Maedchen.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der junge Inspektor Morse 04 - Alte Liebe.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

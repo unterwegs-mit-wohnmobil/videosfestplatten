@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Es geschah am hellichten Tag</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Emil und die Detektive (1954).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Es geschah am hellichten Tag"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fontane - Effi Briest (1974).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Es geschah am hellichten Tag</b> - 1:35:01 Dr. Matth&auml;i von der Z&uuml;rcher Kantonspolizei soll in Jordanien die dortige Polizei ausbilden. Kurz vor seiner Abreise erh&auml;lt er einen Anruf des Hausierers Jacquier. Dieser hat im Wald von M&auml;gendorf, einem kleinen Ort nahe Z&uuml;rich, die Leiche des kleinen M&auml;dchens Gritli Moser gefunden. Matth&auml;i f&auml;hrt nach M&auml;gendorf, nimmt den Hausierer mit, und dieser zeigt den Polizisten den Fundort. Matth&auml;i geht zu Gritlis Eltern und verspricht der Mutter, den M&ouml;rder Gritlis zu finden. Bei seinen Ermittlungen in der Volksschule zeigt ihm Gritlis Freundin ein Bild, das Gritli gemalt hatte. Auf dem Bild sind ein Riese, ein kleines M&auml;dchen, mehrere Igel, ein Kasperle, ein Auto und ein merkw&uuml;rdiges Tier mit H&ouml;rnern zu sehen. Doch zun&auml;chst kann Matth&auml;i diese Darstellungen nicht in einen Zusammenhang mit dem Verbrechen bringen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fontane - Effi Briest (1974).html"><img width="100%" height="auto" src="_Poster/Es geschah am hellichten Tag.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Emil und die Detektive (1954).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fontane - Effi Briest (1974).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

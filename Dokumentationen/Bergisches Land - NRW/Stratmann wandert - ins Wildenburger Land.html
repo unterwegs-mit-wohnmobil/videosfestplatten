@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Stratmann wandert - ins Wildenburger Land</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Stratmann wandert - Es geht wieder los.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Stratmann wandert - ins Wildenburger Land"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Stratmann wandert - Rauf auf den Hermann.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Stratmann wandert - ins Wildenburger Land</b> - 0:44:05 In dieser Folge verlassen Ludger Stratmann und Fidel den Lauf der Sieg, um das Oberbergische Land zu erkunden. Wie schon bei den Wanderungen zieht es das eingeschworene Wanderteam durch W&auml;lder und D&ouml;rfer, &uuml;ber kleine Stra&szlig;en, Wiesen und Br&uuml;cken. Dabei lernen sie Ecken des Landes kennen, die so in keinem Reisef&uuml;hrer zu finden sind. Autoren: Jutta Pinzler/ Iris Bettray
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Stratmann wandert - Rauf auf den Hermann.html"><img width="100%" height="auto" src="_Poster/Stratmann wandert - ins Wildenburger Land.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Stratmann wandert - Es geht wieder los.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Stratmann wandert - Rauf auf den Hermann.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

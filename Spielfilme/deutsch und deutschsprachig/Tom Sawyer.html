@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Tom Sawyer</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Terror - Ihr Urteil.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Tom Sawyer"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Totgeschwiegen.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Tom Sawyer</b> - 1:41:55 <a href="https://www.fernsehserien.de/tom-sawyer">Info auf Fernsehserien.de</a> In einem St&auml;dtchen am Mississippi erleben der Landstreicher Huckleberry Finn und sein Freund Tom Sawyer viele Abenteuer, Streiche und kleine Gaunereien, sehr zum Leidwesen von Toms Tante Polly. Doch als die Jungs sich nachts auf den gruseligen Friedhof schleichen, geraten sie in ernsthafte Schwierigkeiten: Sie werden Zeugen eines Verbrechens. Aus Wut &uuml;ber die Schm&auml;hungen der Stadtbewohner ersticht .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Totgeschwiegen.html"><img width="100%" height="auto" src="_Poster/Tom Sawyer.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Terror - Ihr Urteil.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Totgeschwiegen.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

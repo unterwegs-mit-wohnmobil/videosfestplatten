@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Es ist nicht vorbei</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Erbin mit Herz.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Es ist nicht vorbei"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Familie ist kein Wunschkonzert.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Es ist nicht vorbei</b> - 1:30:04 Carola Weber sa&szlig; zwei Jahre im ber&uuml;chtigten DDR-Frauengef&auml;ngnis Hoheneck. Ihr Vergehen: versuchte Republikflucht. Sie hatte die Ereignisse verdr&auml;ngt. Jetzt stehen sie wieder vor ihrem inneren Auge. Ausl&ouml;ser ist eine Stimme von damals. Sie geh&ouml;rt Professor Dr. Limberg, dem neuen Chefarzt f&uuml;r Chirurgie in der Klinik, in der ihr Mann arbeitet. In ihm erkennt sie einen ihrer gr&ouml;&szlig;ten Peiniger. Drama mi
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Familie ist kein Wunschkonzert.html"><img width="100%" height="auto" src="_Poster/Es ist nicht vorbei.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Erbin mit Herz.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Familie ist kein Wunschkonzert.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

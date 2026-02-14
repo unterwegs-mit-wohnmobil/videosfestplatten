@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Nachtschicht 17 - Blut und Eisen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Nachtschicht 16 - Cash und Carry.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Nachtschicht 17 - Blut und Eisen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"> </div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Nachtschicht 17 - Blut und Eisen</b> - 1:29:20 &quot;Ich liebe meinen Job&quot;, sagt der Koch Kevin Kruse in die Videokamera  Sturmhaube auf, Nazi-Tattoos am Hals, Pistole in der Hand. Er sucht seit Monaten eine neue Stelle.
+</big></big></p>
+<div class="container" id="myImage">
+<a> <img width="100%" height="auto" src="../../../Krimis/Nachtschicht/_Poster/Nachtschicht 17 - Blut und Eisen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Nachtschicht 16 - Cash und Carry.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

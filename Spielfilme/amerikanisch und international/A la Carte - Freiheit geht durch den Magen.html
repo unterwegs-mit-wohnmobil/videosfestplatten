@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>A la Carte - Freiheit geht durch den Magen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="50 50 - Freunde fuers (Ueber)Leben.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#A la Carte - Freiheit geht durch den Magen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="About Schmidt.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>A la Carte - Freiheit geht durch den Magen</b> - 1:45:28 Spielfilm Frankreich 2020 Frankreich kurz vor der Revolution im Jahr 1789. Der begnadete Koch Pierre Manceron (Grégory Gadebois) hat es aus einfachen Verh&auml;ltnissen geschafft, zum K&uuml;chenchef des Duc de Chamfort (Benjamin Lavernhe) aufzusteigen. Als er bei dem geltungss&uuml;chtigen Adligen in Ungnade f&auml;llt, kehrt Manceron zusammen mit seinem erwachsenen Sohn Benjamin (Lorenzo Lefèbvre) auf den verlas .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="About Schmidt.html"><img width="100%" height="auto" src="_Poster/A la Carte - Freiheit geht durch den Magen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("50 50 - Freunde fuers (Ueber)Leben.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("About Schmidt.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Stra&szlig;en von San Francisco 13 - Nur ein Unfall</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Strassen von San Francisco 12 - Die verzweifelten Brueder.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Strassen von San Francisco 13 - Nur ein Unfall"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Strassen von San Francisco 14 - Laestige Zeugen.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Stra&szlig;en von San Francisco 13 - Nur ein Unfall</b> - 0:49:27 Kunstmaler Robb Evanhauer st&uuml;rzt aus dem Fenster und erliegt kurz darauf seinen schweren Verletzungen. Stone und Heller &uuml;bernehmen den Fall. Ein Portr&auml;t, an dem Evanhauer offenbar kurz zuvor gearbeitet hat, f&uuml;hrt Mike und Steve auf die Spur von Genea Dancy, der Tochter eines bekannten Lyrikers. Genea wird unter Mordverdachts verhaftet. Da gesteht ihr Vater den Mord.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Strassen von San Francisco 14 - Laestige Zeugen.html"><img width="100%" height="auto" src="_Poster/Die Strassen von San Francisco 13 - Nur ein Unfall.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Strassen von San Francisco 12 - Die verzweifelten Brueder.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Strassen von San Francisco 14 - Laestige Zeugen.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

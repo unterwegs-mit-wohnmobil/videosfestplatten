@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der junge Inspektor Morse 15 - Irrungen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der junge Inspektor Morse 14 - Totenmasken.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der junge Inspektor Morse 15 - Irrungen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der junge Inspektor Morse 16 - Bett zehn.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der junge Inspektor Morse 15 - Irrungen</b> - 1:28:44 Die selbst ernannte Sittenw&auml;chterin Joy Pettybon ist in Oxford zu Besuch, um f&uuml;r ihre Kampagne zur Bewahrung der gesellschaftlichen Moral zu werben. Als sie Todesdrohungen per Post erh&auml;lt, wird Morse beauftragt, sie zu besch&uuml;tzen. Zudem ermittelt er im Todesfall des Maurers Brian Finch, der anscheinend mit einem Strick erw&uuml;rgt wurde. Bei der Obduktion stellt sich dann heraus, dass er an Herzversagen starb. Deshalb vermutet Morse, dass der Mord eine Inszenierung ist. Finch arbeitete zuletzt in einer Villa, die von der umstrittenen Pop-Gruppe Wildwood gemietet wurde. In der Villa finden derzeit Aufnahmen f&uuml;r eine bekannte TV-Show statt. Joy Pettybon findet die Show anst&ouml;&szlig;ig und m&ouml;chte sie am liebsten verbieten.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der junge Inspektor Morse 16 - Bett zehn.html"><img width="100%" height="auto" src="_Poster/Der junge Inspektor Morse 15 - Irrungen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der junge Inspektor Morse 14 - Totenmasken.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der junge Inspektor Morse 16 - Bett zehn.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

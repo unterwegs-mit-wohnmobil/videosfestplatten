@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Solange ich atme</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Slow West - Grossbritannien (2015).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Solange ich atme"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Sommersby.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Solange ich atme</b> - 1:47:46 England, in den 1950er Jahren. Als sich der junge Gesch&auml;ftsmann Robin Cavendish und die sch&ouml;ne Diana begegnen, ist es f&uuml;r beide Liebe auf den ersten Blick. Nach der Hochzeit bricht das Traumpaar nach Afrika auf, wo er seinen Job mit der gemeinsamen Abenteuerlust verbindet. Ein neuer Lebensabschnitt k&uuml;ndigt sich an, als Diana ein Kind erwartet. Die Vorfreude wird jedoch von einer schweren Erkrankung zerst&ouml;rt. Robin hat sich in Kenia mit dem Poliovirus infiziert. Die Folgen sind ersch&uuml;tternd: Er ist vom Hals abw&auml;rts gel&auml;hmt und hat nach Ansicht des Arztes nur noch wenige Monate zu leben. W&auml;hrend ihn der Lebensmut verl&auml;sst, denkt Diana nicht einmal ans Aufgeben. Sie kehrt mit ihrem Mann und dem Sohn Jonathan nach England zur&uuml;ck. F&uuml;r Robin ist das nicht einfach, denn er liegt in einem sterilen Krankenhauszimmer und wird rund um die Uhr von einer Maschine beatmet. Der sonst so optimistische Mann wird immer depressiver. Erst als Diana beschlie&szlig;t, ihn gegen alle &auml;rztlichen Widerst&auml;nde nach Hause zu holen, sch&ouml;pft er neue Kraft. Dank eines neuartigen Atemger&auml;ts, der Erfindung seines Freundes Teddy Hall, hat er nun die Hoffnung, seinen Sohn im heimischen Umfeld aufwachsen zu sehen. Nun beginnt seine Mission: Er m&ouml;chte nicht nur sein Leben verbessern, sondern auch das vieler anderer schwerbehinderter Menschen. Andrew Garfield („The Amazing Spider-Man“, „Hacksaw Ridge – Die Entscheidung“) spielt in „Solange ich atme“ einen schwerkranken Mann im Rollstuhl, dessen humorvoller Lebensmut schlie&szlig;lich alle &auml;rztlichen Prognosen &uuml;ber den Haufen wirft.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Sommersby.html"><img width="100%" height="auto" src="_Poster/Solange ich atme.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Slow West - Grossbritannien (2015).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Sommersby.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

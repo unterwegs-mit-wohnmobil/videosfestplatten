@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Landkrimi (07) - Sommernachtsmord</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Landkrimi (06) - Wenn du wuesstest, wie schoen es hier ist.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Landkrimi (07) - Sommernachtsmord"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Landkrimi (08) - Drachenjungfrau.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Landkrimi (07) - Sommernachtsmord</b> - 1:27:48 Im Tiroler Hochgebirge liegt eine aufgebahrte junge Frau. Am Kopf trägt sie einen Blumenkranz, rund um sie brennen Grablichter. Die Innsbrucker Kommissarin steht vor mehreren Rätseln, denn als der Polizeihubschrauber eintrifft ist nicht nur der Mörder sondern auch die Leiche spurlos verschwunden.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Landkrimi (08) - Drachenjungfrau.html"><img width="100%" height="auto" src="../../../Krimis/Landkrimi/_Poster/Landkrimi (07) - Sommernachtsmord.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Landkrimi (06) - Wenn du wuesstest, wie schoen es hier ist.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Landkrimi (08) - Drachenjungfrau.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

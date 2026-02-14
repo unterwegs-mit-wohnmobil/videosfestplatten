@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>SOKO Stuttgart 120 - Die Tote auf dem Eis</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="SOKO Stuttgart 119 - Traumprinz.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#SOKO Stuttgart 120 - Die Tote auf dem Eis"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="SOKO Stuttgart 122 - Mord unter Freunden.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>SOKO Stuttgart 120 - Die Tote auf dem Eis</b> - 0:43:29 <a href="https://www.fernsehserien.de/soko-stuttgart">Details</a> Mitten auf der Eisfl&auml;che des Stuttgarter Eisstadions der Steelers liegt eine weibliche Leiche: Gina Springer, die Ehefrau des einst so erfolgreichen Eishockeytorh&uuml;ters Andi Springer.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="SOKO Stuttgart 122 - Mord unter Freunden.html"><img width="100%" height="auto" src="../../../Serien/SOKO Stuttgart/_Poster/SOKO Stuttgart 120 - Die Tote auf dem Eis.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("SOKO Stuttgart 119 - Traumprinz.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("SOKO Stuttgart 122 - Mord unter Freunden.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

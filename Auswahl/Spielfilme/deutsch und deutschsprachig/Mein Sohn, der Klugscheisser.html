@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Mein Sohn, der Klugschei&szlig;er</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Mein Schwiegervater, der Stinkstiefel.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Mein Sohn, der Klugscheisser"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Meine Schwester und ich.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Mein Sohn, der Klugschei&szlig;er</b> - 1:28:49 Debbie H&ouml;ffner und ihr Sohn Jerome k&ouml;nnten nicht unterschiedlicher sein. Jerome ist anders und seine Mitsch&uuml;ler k&ouml;nnen ihn nicht leiden. Als eine Psychologin feststellt, dass er hochbegabt ist, nimmt er sein Leben selbst in die Hand.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Meine Schwester und ich.html"><img width="100%" height="auto" src="../../../Spielfilme/deutsch und deutschsprachig/_Poster/Mein Sohn, der Klugscheisser.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Mein Schwiegervater, der Stinkstiefel.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Meine Schwester und ich.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

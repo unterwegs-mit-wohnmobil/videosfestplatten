@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Walk the Line</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Von Ewigkeit zu Ewigkeit.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Walk the Line"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Was das Herz begehrt.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Walk the Line</b> - 2:05:17 <a href="https://de.wikipedia.org/wiki/Walk_the_Line">Details</a> Die erste Szene er&ouml;ffnet die Rahmenhandlung: Es ist 1968, und man wartet im Gef&auml;ngnis Folsom State Prison auf Cashs Auftritt.  Die R&uuml;ckblende beginnt 1944: J.R. Cash lebt mit Eltern und Geschwistern in &auml;rmlichen Verh&auml;ltnissen auf einer gepachteten Baumwollfarm in der Stadt Dyess in Arkansas. J.R. h&ouml;rt im Radio die junge Country-S&auml;ngerin June Carter; sein Vater Ray fordert ihn lautstark auf, das Radio auszuschalten. J.R. unterh&auml;lt sich mit seinem &auml;lteren Bruder Jack dar&uuml;ber, dass dieser viel mehr Baumwolle pfl&uuml;cken k&ouml;nne als er und jede Geschichte aus der Bibel kenne. Der erwidert, dass J.R. daf&uuml;r jedes Lied aus Mutters Gesangbuch kenne. Er singt in der Kirche und auf dem Feld mit seiner Mutter Carrie.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Was das Herz begehrt.html"><img width="100%" height="auto" src="_Poster/Walk the Line.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Von Ewigkeit zu Ewigkeit.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Was das Herz begehrt.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

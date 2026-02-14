@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Oktoberfest 1959</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Oberammergauer Passionsspiele (1960).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Oktoberfest 1959"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Philharmoniker in Ravello (1956).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Oktoberfest 1959</b> - 0:48:18 Fritz Stra&szlig;ner sitzt am Vormittag im Garten eines Bierzelts auf dem Oktoberfest und l&auml;dt die Zuschauer ein, mit ihm einen Tag lang &uuml;ber die Wiesn zu wandern. Davor jedoch verweist Stra&szlig;ner auf den ber&uuml;hmten Trachtenumzug durch die M&uuml;nchner Innenstadt am ersten Wiesn-Sonntag. Danach geht es auf das Landwirtschaftsfest und von dort aus auf die eigentliche Wiesn mit Fahrgesch&auml;ften, Vogel-Jakob, Schie
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Philharmoniker in Ravello (1956).html"><img width="100%" height="auto" src="_Poster/Oktoberfest 1959.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Oberammergauer Passionsspiele (1960).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Philharmoniker in Ravello (1956).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

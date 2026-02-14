@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Fargo - Blutiger Schnee</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Everybody_s Fine.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Fargo - Blutiger Schnee"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fegefeuer der Eitelkeiten.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Fargo - Blutiger Schnee</b> - 1:33:38 Im Winter des Jahres 1987 arbeitet Jerry Lundegaard in Minneapolis als Verkaufsleiter in dem Autohaus seines dominanten Schwiegervaters Wade Gustafson, steckt aber in gro&szlig;en finanziellen Schwierigkeiten. Mit Hilfe des vorbestraften indianischen Werkstattmitarbeiters Shep Proudfoot heuert er deshalb in Fargo zwei Kriminelle an, den schweigsamen Gaear Grimsrud und den nerv&ouml;sen Schw&auml;tzer Carl Showalter. Sie sollen seine Ehefrau Jean ohne Brutalit&auml;t entf&uuml;hren, um von Jerrys Schwiegervater ein L&ouml;segeld in H&ouml;he von 80.000 US-Dollar zu erpressen. Lundegaard stellt den beiden einen Neuwagen zur Verf&uuml;gung und verspricht ihnen die H&auml;lfte des L&ouml;segeldes. Tats&auml;chlich will er aber von seinem reichen Schwiegervater eine Million Dollar erpressen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fegefeuer der Eitelkeiten.html"><img width="100%" height="auto" src="_Poster/Fargo - Blutiger Schnee.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Everybody_s Fine.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fegefeuer der Eitelkeiten.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

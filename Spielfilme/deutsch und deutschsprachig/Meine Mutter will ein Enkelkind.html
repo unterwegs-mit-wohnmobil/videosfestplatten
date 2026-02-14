@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Meine Mutter will ein Enkelkind</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Meine Frau, ihr Traummann und ich.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Meine Mutter will ein Enkelkind"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Meine Mutter, meine Maenner.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Meine Mutter will ein Enkelkind</b> - 1:28:04 Rufus (Stephan Luca) m&ouml;chte endlich seinen irrt&uuml;mlich aberkannten Gourmetstern zur&uuml;ckerobern. Bei dem Kongress der Chefk&ouml;che auf der Sonneninsel Madeira bietet sich die ideale Gelegenheit. Dort will er zeigen, dass seine neue, bodenst&auml;ndige Gourmetk&uuml;che a la Kupferkanne sogar noch besser ist als die fr&uuml;here in seinem K&ouml;lner Nobelrestaurant.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Meine Mutter, meine Maenner.html"><img width="100%" height="auto" src="_Poster/Meine Mutter will ein Enkelkind.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Meine Frau, ihr Traummann und ich.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Meine Mutter, meine Maenner.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

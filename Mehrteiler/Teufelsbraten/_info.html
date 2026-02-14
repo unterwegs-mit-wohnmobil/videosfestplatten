@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Teufelsbraten 1.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.themoviedb.org/movie/183079-teufelsbraten?language=de-DE">Details</a> D 2008 Fernsehfilm in 3 Teilen Deutsche Erstausstrahlung: 07.03.2008 arte 3. Teil: Aufbruch „Teufelsbraten“ erz&auml;hlt nach dem Roman „Das verborgene Wort“ der Lyrikerin Ulla Hahn die schmerzhafte Emanzipationsgeschichte einer Arbeitertochter in den 50er Jahren, die mit ihrem unbeugsamen Willen, lesen und schreiben zu lernen, bei ihren k&ouml;lsch sprechenden, in tiefster Armut lebenden Eltern und ihrer Gro&szlig;mutter auf gewaltigen Widerstand st&ouml;&szlig;t. Allein der gutm&uuml;tige Gro&szlig;vater versteht sie, von ihm lernt Hildegard als kleines M&auml;dchen „Buchsteine“ kennen, die ihre Fantasie in Gang setzen und sie darin best&auml;rken, dass Sprache und Literatur sie aus dem einengenden katholisch-rheinisch gepr&auml;gten Elternhaus herausf&uuml;hren werden. Unterst&uuml;tzt von ihren Lehrern, die Hildegards Talent erkennen, und angeregt durch neue Freundschaften und Erfahrungen au&szlig;erhalb der Familie und des Proletariermilieus, gelingt es der heranwachsenden jungen Frau, ihren Weg trotz der Einsch&uuml;chterungsversuche der v&ouml;llig &uuml;berforderten Eltern unbeirrt fortzusetzen. Doch bis zur Aufnahme ins ersehnte Gymnasium bleibt dieser sehr steinig.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Teufelsbraten 1.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Teufelsbraten 1.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>
