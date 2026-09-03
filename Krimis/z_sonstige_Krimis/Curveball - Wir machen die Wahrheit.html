@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Curveball - Wir machen die Wahrheit</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Boese Wetter.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Curveball - Wir machen die Wahrheit"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Das Dorf des Schweigens.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Curveball - Wir machen die Wahrheit</b> - 1:46:53 <a href="https://de.wikipedia.org/wiki/Curveball_–_Wir_machen_die_Wahrheit">Details</a> Der Film &ouml;ffnet mit den Worten: „Eine wahre Geschichte. Leider.“[2] Der Biowaffenexperte und BND-Mitarbeiter Wolf ist besessen von der Idee, dass im Irak trotz der UN-Kontrollen immer noch Anthrax hergestellt wird. Eines Tages teilt ihn sein Vorgesetzter Schatz als F&uuml;hrungsoffizier f&uuml;r den irakischen Asylbewerber Rafid Alwan ein, der behauptet, er sei als Ingenieur Teil von Saddam Husseins geheimem Biowaffenprogramm gewesen. Eine Sensation f&uuml;r den nicht gerade mit Erfolg verw&ouml;hnten BND: Endlich w&auml;re man der CIA eine Information voraus. Allerdings fehlt der Beweis. Doch die Suche danach ist schwierig, denn Rafid Alwan alias „Curveball“ wei&szlig;, was er wert ist. Seine Aussagen spielen ganz unterschiedlichen Interessen in die H&auml;nde – die CIA, die Bundesregierung, alle benutzen seine unglaubliche Story f&uuml;r ihre Zwecke. So wird eine konstruierte Geschichte zur Realit&auml;t und eine L&uuml;ge zur Wahrheit, die eine Entwicklung in Gang setzt, die die Weltpolitik nachhaltig ver&auml;ndert.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Das Dorf des Schweigens.html"><img width="100%" height="auto" src="_Poster/Curveball - Wir machen die Wahrheit.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Boese Wetter.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Das Dorf des Schweigens.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Martha Liebermann - Ein gestohlenes Leben</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Marleneken 1.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Martha Liebermann - Ein gestohlenes Leben"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Mary - Queen of Scots.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Martha Liebermann - Ein gestohlenes Leben</b> - 1:28:00 Die vielfach ausgezeichnete Thekla Carola Wied beeindruckt in &quot;Martha Liebermann - ein gestohlenes Leben als j&uuml;dische Titelheldin, die sich von dem NS-Regime ihre W&uuml;rde nicht nehmen l&auml;sst. Ihren bewegenden &Uuml;berlebenskampf verbindet das historische Drama mit der bislang recht wenig bekannten Geschichte des Solf-Kreises, einer von Frauen angef&uuml;hrten Widerstandsgruppe. Drehbuchautor Marco Rossi .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Mary - Queen of Scots.html"><img width="100%" height="auto" src="_Poster/Martha Liebermann - Ein gestohlenes Leben.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Marleneken 1.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Mary - Queen of Scots.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

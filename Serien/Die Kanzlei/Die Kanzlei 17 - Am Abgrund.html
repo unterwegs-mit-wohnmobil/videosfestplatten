@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Kanzlei 17 - Am Abgrund</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Kanzlei 16 - Im Netz.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Kanzlei 17 - Am Abgrund"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Kanzlei 18 - Harte Zeiten.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Kanzlei 17 - Am Abgrund</b> - 0:48:58 Markus Gellert legt die Vertretung von Daniel Bienert nieder. Die TEDCOM hat ihm und Isa von Brede ein Video pr&auml;sentiert, das eindeutig belegt, dass Benedikt Vollmer und nicht Daniel Bienert die App entwickelt hat. Am folgenden Tag erscheint der Anwalt Gisbert Rottmann im Auftrag von Daniel Bienert in der Kanzlei. Er kann belegen, dass Yasmin und Gudrun das Video, das die Unschuld von Benedikt Vol
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Kanzlei 18 - Harte Zeiten.html"><img width="100%" height="auto" src="_Poster/Die Kanzlei 17 - Am Abgrund.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Kanzlei 16 - Im Netz.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Kanzlei 18 - Harte Zeiten.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

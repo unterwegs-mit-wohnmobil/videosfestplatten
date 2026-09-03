@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Familienfest</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Familie Woehler auf Mallorca.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Familienfest"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fanny und die geheimen Vaeter.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Familienfest</b> - 1:28:32 <a href="https://www.fernsehserien.de/familienfest">Details</a> Familie Westhoff findet sich zum 70. Geburtstag des Vaters (G&uuml;nther Maria Halmer), eines ber&uuml;hmten Pianisten, in der Familienvilla zusammen. Doch von Feierlaune ist nichts zu sp&uuml;ren. Alte Wunden rei&szlig;en auf. - Herausragend besetztes Psychodrama (2014) unter anderem mit Lars Eidinger, G&uuml;nther Maria Halmer und Hannelore Elsner.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fanny und die geheimen Vaeter.html"><img width="100%" height="auto" src="_Poster/Familienfest.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Familie Woehler auf Mallorca.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fanny und die geheimen Vaeter.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

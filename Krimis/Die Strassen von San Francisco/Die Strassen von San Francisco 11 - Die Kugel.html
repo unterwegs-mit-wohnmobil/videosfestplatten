@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Stra&szlig;en von San Francisco 11 - Die Kugel</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Strassen von San Francisco 10 - Die Ferguson-Gang.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Strassen von San Francisco 11 - Die Kugel"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Strassen von San Francisco 12 - Die verzweifelten Brueder.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Stra&szlig;en von San Francisco 11 - Die Kugel</b> - 0:49:30 Wegen eines Vergehens wurde Polizist Dayton vorzeitig in den Ruhestand versetzt. Einen Nebenerwerb hat der Geschasste schnell gefunden. Seine Kenntnisse aus den Strafakten missbraucht er, um ehemalige Straft&auml;ter zu erpressen, die sich nach ihrer Entlassung eine neue Existenz aufgebaut haben. Kurz darauf ist Dayton und damit ein Fall f&uuml;r Stone und Heller.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Strassen von San Francisco 12 - Die verzweifelten Brueder.html"><img width="100%" height="auto" src="_Poster/Die Strassen von San Francisco 11 - Die Kugel.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Strassen von San Francisco 10 - Die Ferguson-Gang.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Strassen von San Francisco 12 - Die verzweifelten Brueder.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

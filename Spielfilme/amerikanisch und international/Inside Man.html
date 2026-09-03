@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Inside Man</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="In Sachen Henry.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Inside Man"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Interview mit einem Vampir.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Inside Man</b> - 2:00:42 <a href="https://de.wikipedia.org/wiki/Inside_Man">Details</a> Der Bankr&auml;uber Dalton Russell will den „perfekten Bankraub“ begehen. Er und seine vier Komplizen nehmen Geiseln in einer Bankfiliale in New York City. Die Geiseln werden wie die R&auml;uber verkleidet, damit die Polizei diese von den T&auml;tern nicht unterscheiden kann. Der Polizist Keith Frazier, der wegen eines ungerechtfertigten Korruptionsverdachtes unter Druck steht, f&uuml;hrt die Verhandlungen.  Der Bankchef Arthur Case l&auml;sst die lokalpolitisch einflussreiche Anw&auml;ltin Madeline White ein Mandantengespr&auml;ch unterbrechen und bittet sie, an den Verhandlungen teilzunehmen. Er bef&uuml;rchtet, die R&auml;uber k&ouml;nnten ein Dokument aus einem Schlie&szlig;fach stehlen, das – wie sp&auml;ter bekannt wird – belegt, dass er in den 1940er Jahren viel Geld bei Gesch&auml;ften mit den Nazis gemacht hat und deswegen nach dem Krieg die Bank aufbauen konnte. Des Weiteren befinden sich wertvolle, „arisierte“ Diamanten und ein seit langem verschwundener Ring, der einem bekannten Pariser Juden im Zweiten Weltkrieg von der Gestapo abgenommen worden war, in diesem Schlie&szlig;fach. Case wollte der befreundeten Familie nicht helfen und sah tatenlos mit an, wie sie ins KZ kam. Den Ring erhielt er als Dank f&uuml;r seine Kooperation. Und tats&auml;chlich gelingt es Madeline, zu den Bankr&auml;ubern vorgelassen zu werden, und sie schl&auml;gt ihnen einen Deal vor.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Interview mit einem Vampir.html"><img width="100%" height="auto" src="_Poster/Inside Man.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("In Sachen Henry.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Interview mit einem Vampir.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Puzzle</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Pretty Woman.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Puzzle"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Rain Man.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Puzzle</b> - 1:33:23 <a href="https://de.wikipedia.org/wiki/Puzzle_(2018)">Details</a> Agnes lebt in Bridgeport in Connecticut und verl&auml;sst das Haus nur selten. Sie bereitet gerade alles f&uuml;r eine Geburtstagsfeier vor. Das Haus, das fr&uuml;her ihren Eltern geh&ouml;rte, wurde lange nicht mehr renoviert und ist auch nur wenig dekoriert. W&auml;hrend sie den G&auml;sten Getr&auml;nke und Snacks serviert, wartet sie auf ihren Mann Louie und ihre erwachsenen S&ouml;hne Ziggy und Gabe. Von ihrem ersten Smartphone, das sie geschenkt bekommt, ist sie nur wenig begeistert, doch das 1.000-teilige Puzzle bereitet ihr in ruhigen Stunden Freude. Nachdem sie dieses mehrere Male zusammengesetzt und wieder in seine Einzelteile zerlegt hat, f&auml;hrt sie mit dem Zug nach Lower Manhattan, um in einem Fachgesch&auml;ft weitere Puzzles zu kaufen. Dort entdeckt sie ein Schild an der Kasse, dass ein Puzzle-Champion einen Partner f&uuml;r verschiedene Wettbewerbe sucht. Agnes rei&szlig;t die Telefonnummer von dem Hinweis und trifft sich mit Robert, einem sehr reichen Mann. Nach und nach erkennt Agnes, dass Selbstverwirklichung und eine romantische Liebe die Dinge waren, die in ihrem Leben fehlten.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Rain Man.html"><img width="100%" height="auto" src="../../../Spielfilme/amerikanisch und international/_Poster/Puzzle.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Pretty Woman.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Rain Man.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

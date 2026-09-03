@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Herzogin</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Gaertnerin von Versaille.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Herzogin"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Jury.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Herzogin</b> - 1:40:13 Keira Knightley, Ralph Fiennes, Charlotte Rampling und Dominic Cooper in einem bewegenden Liebesdrama. England, gegen Ende des 18. Jahrhunderts: Georgiana Spencer heiratet mit 17 Jahren den Herzog von Devonshire; die Ehe wurde von ihrer Mutter arrangiert. Die einzigen Anspr&uuml;che, die der Herzog an diese Ehe hat, sind Loyalit&auml;t und die Geburt eines Erben. Georgiana beginnt sich schon bald f&uuml;r die Politik zu interessieren und wird zur F&ouml;rderin der Whig-Partei. Georgiana bringt zwei T&ouml;chter zur Welt, was ihr der Herzog zum Vorwurf macht. Als das Ehepaar einige Zeit in Bath zur Kur verbringt, lernen sie Lady Elisabeth Foster (Bess) kennen. Diese wird schnell zur engsten Freundin Georgianas, die arrangiert, dass Bess mit nach London zur&uuml;ckkehren und fortan bei den Devonshires wohnen kann. Der Herzog nimmt sich Bess bald zur Geliebten. Diese hat dadurch die M&ouml;glichkeit, mit Hilfe seines Einflusses ihre drei S&ouml;hne aus erster Ehe zur&uuml;ckzubekommen. Georgiana versucht zun&auml;chst, sich gegen diese Ménage-à-trois zu wehren, und fordert schlie&szlig;lich das gleiche Recht f&uuml;r sich. Als sie dem Herzog mitteilt, dass sie sich den Politiker Charles Grey, den sie schon lange politisch unterst&uuml;tzt, als Liebhaber nehmen m&ouml;chte, vergewaltigt er sie. Als Folge kommt es zur Geburt des langersehnten Erben namens Hart.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Jury.html"><img width="100%" height="auto" src="_Poster/Die Herzogin.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Gaertnerin von Versaille.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Jury.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

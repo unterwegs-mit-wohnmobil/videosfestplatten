@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Immer Drama um Tamara</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Im falschen Leben.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Immer Drama um Tamara"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Immer Wirbel um Marie.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Immer Drama um Tamara</b> - 1:44:58 Ewedown in der englischen Grafschaft Dorset  l&auml;ndlich und beschaulich. Doch als die Journalistin Tamara Drewe aus London in ihr Heimatdorf zur&uuml;ckkehrt, ist es mit der Ruhe vorbei ...- Regisseur Stephen Frears entz&uuml;ckt mit pointierten Dialogen in dem Portr&auml;t eines verschlafenen Dorfes. In Cannes wurde dem Film der Palm Dog Award verliehen, der den besten Filmhund auszeichnet!
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Immer Wirbel um Marie.html"><img width="100%" height="auto" src="_Poster/Immer Drama um Tamara.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Im falschen Leben.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Immer Wirbel um Marie.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

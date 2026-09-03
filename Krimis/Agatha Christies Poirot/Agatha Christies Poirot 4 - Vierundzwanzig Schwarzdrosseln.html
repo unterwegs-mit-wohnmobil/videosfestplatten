@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Agatha Christies Poirot 4 - Vierundzwanzig Schwarzdrosseln</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Agatha Christies Poirot 3 - Poirot und der Kidnapper.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Agatha Christies Poirot 4 - Vierundzwanzig Schwarzdrosseln"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"> </div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Agatha Christies Poirot 4 - Vierundzwanzig Schwarzdrosseln</b> - 0:50:13 Es hat auch Vorteile, wenn Menschen ihre Gewohnheiten pflegen. Der Maler Henry Gascoigne kommt seit Jahren immer mittwochs und samstags in ein bestimmtes Restaurant. In letzter Zeit hat er die Bedienung allerdings zweimal mit ungew&ouml;hnlichen Essensw&uuml;nschen verbl&uuml;fft. Kurz darauf stirbt er. Was zun&auml;chst wie ein Unfall aussieht, entpuppt sich als heimt&uuml;ckischer Mord, bei dem es um viel Geld geht.
+</big></big></p>
+<div class="container" id="myImage">
+<a> <img width="100%" height="auto" src="_Poster/Agatha Christies Poirot 4 - Vierundzwanzig Schwarzdrosseln.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Agatha Christies Poirot 3 - Poirot und der Kidnapper.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

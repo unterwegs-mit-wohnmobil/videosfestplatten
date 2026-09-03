@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Hilfe, die Familie kommt</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Heute stirbt hier Kainer.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Hilfe, die Familie kommt"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Hochzeit in Rom (Harald Krassnitzer).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Hilfe, die Familie kommt</b> - 1:28:14 Seit &uuml;ber 30 Jahren ist Susanne mit Leo verheiratet. Aus harmonischer Zweisamkeit ist Routine geworden. die beiden sind so mit ihren Karrieren besch&auml;ftigt, dass sie kaum Zeit f&uuml;r einander finden. Das soll sich &auml;ndern. Zu Susannes 60. Geburtstag schenkt Leo ihr ein Haus an einem See in Schweden. Entschlossen brechen sie ihre Zelte in Deutschland ab um in Skandinavien einen Neuanfang zu wagen. Ferna
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Hochzeit in Rom (Harald Krassnitzer).html"><img width="100%" height="auto" src="_Poster/Hilfe, die Familie kommt.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Heute stirbt hier Kainer.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Hochzeit in Rom (Harald Krassnitzer).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

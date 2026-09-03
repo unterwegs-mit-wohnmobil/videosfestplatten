@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Alle Jahre wieder - Weihnachten mit den Coopers</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Aktion C_M_B.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Alle Jahre wieder - Weihnachten mit den Coopers"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Alle unter eine Tanne.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Alle Jahre wieder - Weihnachten mit den Coopers</b> - 1:29:35 Familienhund Rag erz&auml;hlt die Geschichte „seiner Familie“ aus Sicht eines Hundes: Mit der Ehe zwischen Charlotte und Sam Cooper steht es nicht zum Besten. Nachdem die Kinder aus dem Haus sind, gibt es wenig, was beide miteinander verbindet. Aber die Coopers sind nicht die Einzigen, die so ihre Probleme miteinander haben. Nun steht das Weihnachtsfest vor der T&uuml;r und auch weitere Familienmitglieder wollen die Schwierigkeiten, mit denen sie zu k&auml;mpfen haben, vor den Anderen geheim halten, um die weihnachtliche Stimmung nicht zu tr&uuml;ben.  So ist Hank, dem Sohn der Coopers, gerade gek&uuml;ndigt worden und er verheimlicht seine Arbeitslosigkeit, weil er nach seiner Scheidung nicht als „Verlierer“ dastehen m&ouml;chte. Eleanor, seiner Schwester, geht es auf die Nerven, jedes Jahr gefragt zu werden, warum sie noch Single sei und sie hat daher Joe, einen Soldaten, dessen Bekanntschaft sie zuf&auml;llig auf dem Flughafen gemacht hat, mitgebracht, um ihn als ihren Freund vorzustellen.  Charlottes Vater Bucky w&uuml;rde Weihnachten lieber in seiner Stammkneipe verbringen und hat die junge Kellnerin Ruby mitgebracht, die nichts mit ihrem Leben anzufangen wei&szlig;. Emma, die Schwester von Charlotte, leidet unter Minderwertigkeitskomplexen gegen&uuml;ber Charlotte und wird bei einem Ladendiebstahl ertappt.  Am Weihnachtsabend kommen die Geheimnisse der Familie dann aber doch ans Licht.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Alle unter eine Tanne.html"><img width="100%" height="auto" src="_Poster/Alle Jahre wieder - Weihnachten mit den Coopers.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Aktion C_M_B.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Alle unter eine Tanne.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

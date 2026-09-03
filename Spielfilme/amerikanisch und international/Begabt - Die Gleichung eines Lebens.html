@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Begabt - Die Gleichung eines Lebens</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Basic Instinct.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Begabt - Die Gleichung eines Lebens"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Besser gehts nicht.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Begabt - Die Gleichung eines Lebens</b> - 1:32:14 <a href="https://de.wikipedia.org/wiki/Begabt_–_Die_Gleichung_eines_Lebens">Details</a> Die siebenj&auml;hrige Mary wird von ihrem Onkel Frank gro&szlig;gezogen. Sie mag ihre ein&auml;ugige Katze Fred und versteht sich sehr gut mit der Nachbarin Roberta, die &ouml;fter auf sie aufpasst. Ihre Mutter Diane beging kurz nach Marys Geburt Suizid. Sie war Mathematikerin und stand, so scheint es zun&auml;chst, kurz vor der L&ouml;sung des Navier-Stokes-Problems, eines der sogenannten Millennium-Probleme. Auch Mary ist &uuml;beraus intelligent. Obwohl Frank sich ihrer Hochbegabung bewusst ist, m&ouml;chte er, dass sie eine normale Kindheit erlebt und gleichaltrige Freunde gewinnt. Deshalb geht sie in die &ouml;rtliche Grundschule, wo sie gleich am ersten Tag durch das m&uuml;helose L&ouml;sen komplizierter Rechenaufgaben auff&auml;llt. Ihre Lehrerin Bonnie Stevenson und die Schuldirektorin versuchen Frank vergeblich zu bewegen, sie auf eine renommierte Schule zu schicken, wo ihre Begabung gef&ouml;rdert werden kann. Daraufhin macht die Schulleiterin Franks Mutter Evelyn ausfindig. Obwohl sie ihre Enkelin nicht kennt, kommt sie angereist und m&ouml;chte Mary zu sich nehmen. Bei einem zweit&auml;gigen Besuch bei Evelyn in Boston, wo sie auch einem Mathematik-Professor ihre Kenntnisse demonstrieren kann, ist Mary von der Umgebung zwar angetan, aber leben m&ouml;chte sie bei der resoluten Gro&szlig;mutter nicht.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Besser gehts nicht.html"><img width="100%" height="auto" src="_Poster/Begabt - Die Gleichung eines Lebens.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Basic Instinct.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Besser gehts nicht.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

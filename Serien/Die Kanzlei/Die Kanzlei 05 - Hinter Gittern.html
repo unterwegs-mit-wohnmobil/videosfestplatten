@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Kanzlei 05 - Hinter Gittern</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Kanzlei 04 - Die Sterne luegen nicht.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Kanzlei 05 - Hinter Gittern"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Kanzlei 06 - Nichts als die Wahrheit.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Kanzlei 05 - Hinter Gittern</b> - 0:48:26 Isa von Brede verabredet sich mit ihrem Bruder Egin, um ihn wegen seiner Drohungen gegen ihre Mutter zur Rede zu stellen. Das Treffen auf einem Kutter im Hamburger Hafen, auf dem Egin sich versteckt h&auml;lt, endet in einem handfesten Streit. Am n&auml;chsten Morgen erscheint Kommissar Hansen in der Kanzlei. Egins Leiche ist im Hamburger Hafen gefunden worden. Ein Zeuge hat die Auseinandersetzung zwischen
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Kanzlei 06 - Nichts als die Wahrheit.html"><img width="100%" height="auto" src="_Poster/Die Kanzlei 05 - Hinter Gittern.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Kanzlei 04 - Die Sterne luegen nicht.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Kanzlei 06 - Nichts als die Wahrheit.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

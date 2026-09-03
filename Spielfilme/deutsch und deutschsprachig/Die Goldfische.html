@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Goldfische</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die glaeserne Fackel.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Goldfische"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die goettliche Ordnung - Schweiz 2017.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Goldfische</b> - 1:42:47 Der Banker und Portfoliomanager Oliver lebt nur f&uuml;r seinen Beruf. Um einen Termin einzuhalten, f&auml;hrt er mit &uuml;berh&ouml;hter Geschwindigkeit an einem Stau auf einer Landstra&szlig;e vorbei und verursacht so einen schweren Verkehrsunfall. Durch eine daraus resultierende Querschnittl&auml;hmung sitzt er fortan im Rollstuhl und verbringt seine Tage in einer Reha-Klinik. Hier trifft er auf Laura, die eine Behinderten-WG betreut. Auf der Suche nach WLAN verschl&auml;gt es Oliver in ebendiese WG, die sich „Die Goldfische“ nennt. Sie besteht aus der blinden Magda, den beiden Autisten Rainman und Michi und Franzi mit Down-Syndrom.  Er erf&auml;hrt, dass die Finanzbeh&ouml;rde in der Schweiz Schlie&szlig;f&auml;cher auf Schwarzgelder &uuml;berpr&uuml;ft und fasst als Betroffener einen Plan, um sein Geld in Sicherheit zu bringen. Oliver spendiert der WG eine Kamel-Therapie in der Schweiz. W&auml;hrenddessen f&auml;hrt er heimlich gemeinsam mit dem Pfleger Eddy nach Z&uuml;rich, um sein Schwarzgeld aus der Bank abzuholen. Laut Olivers Plan soll das Geld in dem Bus der Behindertengruppe &uuml;ber die Grenze geschmuggelt werden, da dieser keinen Verdacht erregt. Durch einen Zufall erf&auml;hrt Laura von dem Vorhaben und zwingt Oliver dazu, das Geld zur&uuml;ckzubringen.  Wieder in Z&uuml;rich angekommen, wird Laura von der Gruppe getrennt, und Oliver bringt erst Rainman und dann Magda dazu, den Bus &uuml;ber die Grenze zu fahren. Sein Schwarzgeld stopft Oliver unter Michis Kleidung. An der Grenze st&ouml;&szlig;t Laura erneut zu der Gruppe, daf&uuml;r ist Michi nun verschwunden. Die WG entdeckt ihn in einem Freizeitpark, wo er gerade in eine Bungeekugel einsteigt. Als er hochgeschleudert wird, verliert er das an ihm befestigte Schwarzgeld, das sich nun &uuml;ber das gesamte Gel&auml;nde des Parks verteilt und von Besuchern aufgefangen wird.  Wieder in der Reha-Klinik angekommen, stiftet die Leiterin Ingeborg Zschetzsche die Gruppe an, k&uuml;nftig als professionelle Schmuggelbande nach Luxemburg zu fahren, um gegen Spenden f&uuml;r die Klinik die Schwarzgelder von Gesch&auml;ftsleuten &uuml;ber die Grenze zu bef&ouml;rdern.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die goettliche Ordnung - Schweiz 2017.html"><img width="100%" height="auto" src="_Poster/Die Goldfische.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die glaeserne Fackel.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die goettliche Ordnung - Schweiz 2017.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

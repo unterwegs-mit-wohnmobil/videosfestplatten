@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Alle unter eine Tanne</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Alle Jahre wieder - Weihnachten mit den Coopers.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Alle unter eine Tanne"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Ausgerechnet Weihnachten.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Alle unter eine Tanne</b> - 1:27:57 Als Paartherapeutin und Bestsellerautorin feiert die 65-j&auml;hrige Elli Berger-Voigt Erfolge. Ihr Privatleben hat sie dagegen weniger gut im Griff: Die Ehe mit dem Arzt Robert Berger ist l&auml;ngst geschieden, mit dem 22 Jahre j&uuml;ngeren Micha lebt sie nun ihre Abenteuerlust aus. Das sollen ihre Kinder allerdings nicht erfahren, weshalb Elli und Robert ihnen zum allj&auml;hrlichen Familientreffen an Weihachten
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Ausgerechnet Weihnachten.html"><img width="100%" height="auto" src="_Poster/Alle unter eine Tanne.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Alle Jahre wieder - Weihnachten mit den Coopers.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Ausgerechnet Weihnachten.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

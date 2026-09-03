@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Stendhal</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Stanislaw Lem.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Stendhal"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Thomas Mann.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Stendhal</b> - 0:13:51 Der franz&ouml;sische Schriftsteller Stendhal gilt als bedeutender Vertreter des Realismus. Seine Zeitgenossen empfinden seinen Stil als n&uuml;chtern und kalt. 1830 erscheint sein wohl ber&uuml;hmtester Roman &quot;Rot und Schwarz&quot;, f&uuml;r den er zu Lebzeiten kaum Anerkennung erh&auml;lt.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Thomas Mann.html"><img width="100%" height="auto" src="_Poster/Stendhal.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Stanislaw Lem.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Thomas Mann.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

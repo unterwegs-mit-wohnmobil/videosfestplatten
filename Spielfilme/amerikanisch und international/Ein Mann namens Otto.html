@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Ein Mann namens Otto</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ein geliebter Feind (2018).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Ein Mann namens Otto"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Ein Mann namens Ove.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Ein Mann namens Otto</b> - 1:51:44 <a href="https://de.wikipedia.org/wiki/Ein_Mann_namens_Otto">Details</a> Nach dem Tod seiner Ehefrau Sonya sieht der 63-j&auml;hrige, in Pittsburgh lebende Witwer Otto kaum noch einen Sinn in seinem Leben. Zwar dreht er weiterhin seine t&auml;glichen Runden durch die Nachbarschaft, auf denen er seine Mitmenschen &uuml;ber richtige M&uuml;lltrennung und falsch parkende Autos belehrt, doch zwischenmenschlich pflegt der Rentner kaum noch Kontakte und tritt seinen Nachbarn gegen&uuml;ber m&uuml;rrisch und unh&ouml;flich auf. In Erinnerung an Sonya schwelgend und den Wunsch versp&uuml;rend, bei ihr zu sein, m&ouml;chte Otto seinem Leben ein Ende setzen. Mehrere seiner Suizidversuche werden jedoch durch die neue Nachbarsfamilie Mendes gest&ouml;rt, die gerade in das gegen&uuml;berliegende Haus gezogen ist.  Otto wird von den Eltern Marisol und Tommy immer wieder um Hilfe bei Problemen im Haushalt gebeten und baut so zun&auml;chst widerwillig eine Beziehung zur Familie auf. An einigen Abenden passt er auf die beiden T&ouml;chter Luna und Abbie auf, w&auml;hrend er Marisol an anderen Tagen Fahrstunden gibt. Durch die Freundschaft sch&ouml;pft Otto vor&uuml;bergehend neuen Lebensmut und nimmt auch eine Stra&szlig;enkatze bei sich auf. Als er Marisol allerdings eines Tages von seiner Frau Sonya erz&auml;hlt, kehrt sein m&uuml;rrischer Zustand zur&uuml;ck.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Ein Mann namens Ove.html"><img width="100%" height="auto" src="_Poster/Ein Mann namens Otto.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ein geliebter Feind (2018).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Ein Mann namens Ove.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

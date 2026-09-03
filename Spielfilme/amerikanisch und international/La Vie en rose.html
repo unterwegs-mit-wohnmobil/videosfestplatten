@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>La Vie en rose</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="La Strada (1954).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#La Vie en rose"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Lady Chatterley (2006).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>La Vie en rose</b> - 2:09:25 Der Film stellt episodenhaft das Leben der franz&ouml;sischen Chanson-S&auml;ngerin Édith Piaf dar. Er beginnt 1959, als Piaf bei einem Konzert in New York auf der B&uuml;hne zusammenbricht. Von diesem Ausgangspunkt aus wird in R&uuml;ckblenden ihre Lebensgeschichte erz&auml;hlt: die Kindheit, in der sie im Bordell ihrer Gro&szlig;mutter aufw&auml;chst und eine enge emotionale Bindung zu der Prostituierten Titine aufbaut, sp&auml;ter Reisen mit ihrem Vater Louis als Schausteller. Im Alter von 15 Jahren verl&auml;sst Edith ihren Vater und geht nach Paris. Hier lernt sie Simone Berteaut kennen, die bis zum Tod ihre treueste Freundin bleibt.  1935 wird Edith von dem Theaterbesitzer Louis Leplée zu einem Vorsingen eingeladen, nachdem er sie an einer Stra&szlig;enecke hat singen h&ouml;ren. Leplée erfindet mit Piaf (Spatz) ihren K&uuml;nstlernamen und verschafft ihr Kontakte in der Pariser Musikszene. Sp&auml;ter wird Piaf der Teilnahme an der Ermordung Leplées verd&auml;chtigt.  In den folgenden Jahren entwickelt sich Piaf zu der au&szlig;ergew&ouml;hnlichen und exzentrischen K&uuml;nstlerin, als die sie sp&auml;ter bekannt wurde. Einen Tiefschlag erlebt sie nach dem Tod ihres Freundes Marcel Cerdan im Jahre 1949.  Der Film beleuchtet insbesondere die dunklen Seiten der S&auml;ngerin, so ihre Drogenabh&auml;ngigkeit, ihre schweren Erkrankungen und die damit verbundenen, immer wieder auftretenden Zusammenbr&uuml;che. In st&auml;ndigen Zeitspr&uuml;ngen verfolgt die Biografie das Wirken Piafs bis zu ihrem Tod am 10. Oktober 1963.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Lady Chatterley (2006).html"><img width="100%" height="auto" src="_Poster/La Vie en rose.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("La Strada (1954).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Lady Chatterley (2006).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

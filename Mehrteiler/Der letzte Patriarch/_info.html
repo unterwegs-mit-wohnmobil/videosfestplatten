@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der letzte Patriarch - Teil 1.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.fernsehserien.de/der-letzte-patriarch">Details</a> D 2010 Fernsehfilm in 2 Teilen Deutsche Erstausstrahlung: 10.09.2010 Das Erste Konrad Hansen &uuml;bergibt sein erfolgreiches Unternehmen an seinen Sohn Lars. Der soll das Marzipan in China etablieren. Doch Hansens anderer Sohn Sven f&uuml;hlt sich als Erstgeborener &uuml;bergangen. Die daraus entstehenden Streitigkeiten in der Familie f&uuml;hren Konrad zu seiner langj&auml;hrigen Vertrauten Ruth, einer eigenwilligen K&uuml;nstlerin, die in aller Einsamkeit in Ostfriesland lebt. Eine gro&szlig;e Liebe beginnt. Dann taucht in China gef&auml;lschtes Hansen-Marzipan auf, was die Zukunftspl&auml;ne zunichte machen k&ouml;nnte. Doch bei der Aufkl&auml;rung dieses Betrugsfalls holt die Familie ihre Vergangenheit wieder ein.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der letzte Patriarch - Teil 1.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der letzte Patriarch - Teil 1.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

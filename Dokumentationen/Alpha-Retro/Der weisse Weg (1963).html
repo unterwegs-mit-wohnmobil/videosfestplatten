@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der wei&szlig;e Weg (1963)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Das fraenkische Weinjahr (1957).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der weisse Weg (1963)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Familien der Gastarbeiter (1966).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der wei&szlig;e Weg (1963)</b> - 0:30:15 Als erstes Filmteam ohne Tr&auml;ger auf das Matterhorn - dieses Triumphs kann sich das Filmteam des BR r&uuml;hmen, das den Gipfel 1959 erstieg. Auf dem Weg m&uuml;ssen die Kletterer allerdings einige R&uuml;ckschl&auml;ge in Kauf nehmen, zum Beispiel die Erkenntnis, dass die Zahnradbahn schon ganz bequem Touristen in 3100 Meter H&ouml;he absetzt und dass die H&ouml;rnli-H&uuml;tte so &uuml;berf&uuml;llt ist, dass es Strafgeb&uuml;hr kostet, dort l&auml;n
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Familien der Gastarbeiter (1966).html"><img width="100%" height="auto" src="_Poster/Der weisse Weg (1963).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Das fraenkische Weinjahr (1957).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Familien der Gastarbeiter (1966).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

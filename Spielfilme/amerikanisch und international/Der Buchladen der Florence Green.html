@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der Buchladen der Florence Green</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Auftrag - Fuer einen letzten Coup ist es nie zu spaet.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der Buchladen der Florence Green"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der Club der toten Dichter.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der Buchladen der Florence Green</b> - 1:44:59 Florence Green hat fr&uuml;h ihren Mann verloren und verwirklicht nun den Traum deseigenen Buchladens. Und das ausgerechnet im vertr&auml;umten englischen Hardborough, Ende der 50er Jahre, wo die Arbeiter dem B&uuml;cherlesen skeptisch gegen&uuml;berstehen und die Aristokratie die Hochkultur diktiert. - Mit drei Goyas pr&auml;mierte Adaption(2017) des Romans von Penelope Fitzgerald. Regie: Isabel Coixet.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der Club der toten Dichter.html"><img width="100%" height="auto" src="_Poster/Der Buchladen der Florence Green.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Auftrag - Fuer einen letzten Coup ist es nie zu spaet.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der Club der toten Dichter.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

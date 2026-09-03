@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der Club der toten Dichter</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Buchladen der Florence Green.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der Club der toten Dichter"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der Drachenlaeufer.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der Club der toten Dichter</b> - 2:00:09 <a href="https://de.wikipedia.org/wiki/Der_Club_der_toten_Dichter">Details</a> Todd Anderson kommt zu Beginn des Schuljahres 1959 an die traditionsbewusste Welton Academy, ein konservatives Internat f&uuml;r Jungen im US-Bundesstaat Vermont. Der sch&uuml;chterne, in sich gekehrte Todd besitzt wenig Selbstvertrauen und steht im Schatten seines &auml;lteren Bruders, der einer der besten Absolventen der Schule war.  Ebenfalls neu an der Schule ist der Englischlehrer John Keating, selbst einst Sch&uuml;ler Weltons. Sein Unterricht verbl&uuml;fft die Sch&uuml;ler schon in der ersten Stunde. Mit unkonventionellen Methoden fordert der Lehrer sie zu selbst&auml;ndigem Handeln und freiem Denken auf. Da ihm die F&ouml;rderung der Individualit&auml;t seiner Sch&uuml;ler sehr wichtig ist, ermutigt er sie immer wieder, sich mehr zuzutrauen und ihre M&ouml;glichkeiten auszuloten.  Keating vermittelt seinen Sch&uuml;lern die Welt der Literatur und der sch&ouml;nen Dinge des Lebens; sie sollen Poesie nachvollziehen und in sich selbst entdecken, anstatt nur auswendig Gelerntes zu wiederholen. Dazu geh&ouml;rt auch das Verfassen und Vortragen eigener Gedichte. Keating bezieht sich dabei wiederholt auf die Dichter Whitman, Thoreau und Frost.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der Drachenlaeufer.html"><img width="100%" height="auto" src="_Poster/Der Club der toten Dichter.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Buchladen der Florence Green.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der Drachenlaeufer.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die glorreichen Sieben</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Deadlock.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die glorreichen Sieben"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Fuer ein paar Dollar mehr (1965).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die glorreichen Sieben</b> - 2:02:31 <a href="https://www.fernsehserien.de/die-glorreichen-sieben">Info auf Fernsehserien.de</a> Ein armes mexikanisches Dorf wird regelm&auml;&szlig;ig von Banditen bedroht und ausgeraubt. Einige der Dorfbewohner suchen eine Grenzstadt zu den USA auf, um Gewehre f&uuml;r ihre Verteidigung zu kaufen. Sie erfahren dort von dem US-Amerikaner Chris, dass ihnen ohne Kampferfahrung Gewehre nichts nutzen. Er r&auml;t ihnen, M&auml;nner mit Gewehren f&uuml;r eine bestimmte Zeit zu engagieren. Chris l&auml;sst sich f&uuml;r ihre Sache gewinnen und schafft es, mit dem wenigen Geld und Wertgegenst&auml;nden der Dorfbewohner, f&uuml;nf f&auml;hige Revolverm&auml;nner aus den USA f&uuml;r den zu erwartenden Kampf gegen die Banditen zu gewinnen. Ein jugendlicher Hei&szlig;sporn (Chico) wird nach einigem Dr&auml;ngen und Wirbel auch noch in die Gruppe aufgenommen. Spielfilm USA 1960 (The Magnificent Seven)
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Fuer ein paar Dollar mehr (1965).html"><img width="100%" height="auto" src="_Poster/Die glorreichen Sieben.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Deadlock.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Fuer ein paar Dollar mehr (1965).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

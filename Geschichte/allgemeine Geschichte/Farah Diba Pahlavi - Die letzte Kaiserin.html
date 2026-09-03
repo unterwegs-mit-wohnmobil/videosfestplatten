@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Farah Diba Pahlavi - Die letzte Kaiserin</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ein Tag im Mittelalter.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Farah Diba Pahlavi - Die letzte Kaiserin"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Frauen, die Geschichte machten - Sophie Scholl - Die Seele des Widerstands.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Farah Diba Pahlavi - Die letzte Kaiserin</b> - 0:52:22 Sie war die einzige Kaiserin Persiens, Stilikone, Reformerin eines autokratischen Landes, das so vieles vers&auml;umte im Versuch, Anschluss an die westliche Moderne zu finden. Mit ihr als Kaiserin bekamen die Frauen im Iran umfassende Rechte, sie war eine wichtige Beraterin des Schahs. Gero von Boehm f&uuml;hrt ein pers&ouml;nliches Interview, zeigt Fotografien aus Farah Dibas Privatarchiv.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Frauen, die Geschichte machten - Sophie Scholl - Die Seele des Widerstands.html"><img width="100%" height="auto" src="_Poster/Farah Diba Pahlavi - Die letzte Kaiserin.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ein Tag im Mittelalter.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Frauen, die Geschichte machten - Sophie Scholl - Die Seele des Widerstands.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Ein wahres Verbrechen</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ein verruecktes Paar.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Ein wahres Verbrechen"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Eine Frage der Ehre.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Ein wahres Verbrechen</b> - 2:00:18 <a href="https://de.wikipedia.org/wiki/Ein_wahres_Verbrechen">Details</a> Der schwarze Mechaniker Frank Louis Beechum sitzt im kalifornischen Staatsgef&auml;ngnis San Quentin, verurteilt zur Todesstrafe wegen Raubmordes an der Kassiererin Amy Wilson. Es ist der Tag vor seiner geplanten Hinrichtung.  Michelle Ziegler, Reporterin der &ouml;rtlichen Tageszeitung The Oakland Tribune hat den Auftrag, Beechum zu interviewen. Sie kommt jedoch in der Nacht zuvor bei einem Autounfall ums Leben, und so erh&auml;lt ihr Kollege, der Ex-Trinker Steve Everett vom „Abstellgleis“ der Redaktion, den Auftrag, dieses Interview durchzuf&uuml;hren. Bereits als er von einer Redaktionsassistentin &uuml;ber Beechums Fall eingearbeitet wird, regt sich sein ausgepr&auml;gter Sinn f&uuml;r Geschichten, an denen etwas faul ist.  Bevor er der Sache noch genauer nachgehen kann, muss Everett vor seiner knappen Zeit noch mit seiner vierj&auml;hrigen Tochter in den Zoo, weil er ihr das bereits versprochen hat. Um sein Versprechen zu halten, aber m&ouml;glichst wenig Zeit zu verlieren, packt er sie in einen Kinderwagen und f&auml;hrt sie im Laufschritt an den Tieren vorbei. Dabei passiert ein Unfall, und die Kleine zieht sich Sch&uuml;rfwunden zu. Als er sp&auml;ter mit seiner Tochter mit Pflaster im Gesicht an der Haust&uuml;r seiner Frau Barbara auftaucht, ist diese entsetzt und knallt ihm die T&uuml;r vor der Nase zu.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Eine Frage der Ehre.html"><img width="100%" height="auto" src="_Poster/Ein wahres Verbrechen.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ein verruecktes Paar.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Eine Frage der Ehre.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

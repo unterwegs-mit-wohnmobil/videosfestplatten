@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Mr. Bill</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Monsieur Pierre geht online.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Mr_ Bill"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Music of the Heart.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Mr. Bill</b> - 1:52:36 <a href="https://de.wikipedia.org/wiki/Mr._Bill">Details</a> Bill Rago ist Werbetexter und Angestellter bei einer gro&szlig;en Werbeagentur. Ausgerechnet vor einem wichtigen Termin, auf dem sein neues Werbekonzept f&uuml;r einen Kunden vorgestellt werden soll, bleibt er im Stau stecken. Er versucht verzweifelt, per Autotelefon zu retten, was noch zu retten ist, aber es ist zu sp&auml;t. Der Kunde springt ab und Bill wird gefeuert. Nun muss er sich arbeitslos melden und lernt die harte Realit&auml;t auf dem Arbeitsamt kennen. Zu allem &Uuml;berfluss wirft ihm seine Tochter vor, kein Verst&auml;ndnis f&uuml;r sie zu haben, und will kein Wort mehr mit ihm reden.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Music of the Heart.html"><img width="100%" height="auto" src="_Poster/Mr_ Bill.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Monsieur Pierre geht online.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Music of the Heart.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

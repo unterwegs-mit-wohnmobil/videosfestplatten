@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Green Book - Eine besondere Freundschaft</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Grease.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Green Book - Eine besondere Freundschaft"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Green Card - Scheinehe mit Hindernissen.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Green Book - Eine besondere Freundschaft</b> - 1:57:24 Der T&uuml;rsteher Tony Lip ist Italoamerikaner, stammt aus der Arbeiterklasse und kam &uuml;ber die siebte Schulklasse nicht hinaus. Weil der Club Copacabana in New York, in dem er arbeitet, wegen Umbaus 1962 f&uuml;r mehrere Monate schlie&szlig;t, l&auml;sst sich Tony von dem Afroamerikaner Dr. Don Shirley, einem gebildeten, hochtalentierten und kultivierten Gentleman und Pianisten, der mit den Kennedys befreundet ist und in einem musealen Apartment &uuml;ber der Carnegie Hall wohnt, als Chauffeur anheuern. Doch Shirley sucht mehr als nur einen Fahrer. Tony soll auf einer Konzerttournee, die von New York &uuml;ber Pennsylvania, Ohio, Indiana, Iowa und Kentucky bis in die S&uuml;dstaaten f&uuml;hrt, als sein pers&ouml;nlicher Assistent sicherstellen, dass er p&uuml;nktlich zu allen Auftritten erscheint. Shirleys Mitmusiker, der Bassist George Dyer und der russische Cellist Oleg, nehmen f&uuml;r die Tournee ein anderes Auto.  W&auml;hrend ihres zweimonatigen Roadtrips erleben die Vier gemeinsam H&ouml;hen und Tiefen. Sie m&uuml;ssen ihre Reise durch die S&uuml;dstaaten mit dem Negro Motorist Green Book planen, einem Reisef&uuml;hrer f&uuml;r afroamerikanische Autofahrer, der die wenigen Unterk&uuml;nfte, Restaurants und Tankstellen auff&uuml;hrt, die auch schwarze Kunden akzeptieren. George und Oleg sind als Wei&szlig;e hingegen auf ihrer Reise nicht gleicherma&szlig;en eingeschr&auml;nkt wie ihr Kollege. Immer wieder wird die Kluft zwischen Tony mit seiner recht einfachen Denkweise und Don mit seiner kultivierten Art deutlich, und der Chauffeur kann kaum fassen, dass der Pianist mit Doktortitel noch nie etwas von schwarzen Musikern wie Little Richard und Aretha Franklin geh&ouml;rt hat. Auch Chubby Checker kennt dieser nur vom Namen her. Tony bringt ihm auf ihrer Reise nicht nur die Musik anderer schwarzer Musiker nahe, sondern &uuml;berredet ihn auch dazu, Fried Chicken zu essen und genie&szlig;en zu lernen. Sein Boss hilft ihm im Gegenzug, beim Briefeschreiben an seine Frau die richtigen Worte zu finden, wenn er seine Gef&uuml;hle ihr gegen&uuml;ber artikulieren oder die Sch&ouml;nheit der Landschaften beschreiben will, die sie auf ihrer Reise durchqueren. Zudem gibt er ihm Lektionen in Sachen Ehrlichkeit und versucht, seine Ausdrucksweise zu verbessern.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Green Card - Scheinehe mit Hindernissen.html"><img width="100%" height="auto" src="_Poster/Green Book - Eine besondere Freundschaft.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Grease.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Green Card - Scheinehe mit Hindernissen.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

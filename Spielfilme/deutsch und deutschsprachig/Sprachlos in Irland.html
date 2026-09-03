@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Sprachlos in Irland</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Sonnwende.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Sprachlos in Irland"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="St_ Josef am Berg - Stuermische Zeiten.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Sprachlos in Irland</b> - 1:29:30 Andrea Sawatzki spielt die Perfektionistin Connie, die eigentlich alles kann - au&szlig;er Englisch. Bei einem zweiw&ouml;chigen Intensivkurs in Irland muss sie nicht nur mit der Sprache, sondern vor allem mit ihrem Mitsch&uuml;ler, dem lebenslustigen Tom-Jones-Imitator Max (G&ouml;tz Schubert), k&auml;mpfen. Vor der stimmungsvollen Kulisse der wilden Westk&uuml;ste Irlands inszenierte Regisseur Florian G&auml;rtner die tiefsinnige
+</big></big></p>
+<div class="container" id="myImage">
+<a href="St_ Josef am Berg - Stuermische Zeiten.html"><img width="100%" height="auto" src="_Poster/Sprachlos in Irland.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Sonnwende.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("St_ Josef am Berg - Stuermische Zeiten.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

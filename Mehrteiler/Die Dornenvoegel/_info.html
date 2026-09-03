@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Dornenvoegel - Teil 1.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://www.themoviedb.org/tv/13780-the-thorn-birds?language=de-DE">Details</a> USA 1983 (The Thorn Birds) Fernsehfilm in 4 Teilen Miniserie in 10 Teilen Deutsche Erstausstrahlung: 03.01.1985 Sat.1 Original-Erstausstrahlung: 27.03.1983 ABC (Englisch) Der irische Geistliche Pater Ralph de Bricassart (Richard Chamberlain) wird in die australische Ein&ouml;de verbannt. Hier trifft er auf die alte, aber steinreiche Mary Carson und ihre kleine Nichte Meggie (Rachel Ward). Mary Carson verliebt sich in den Pater, der aber k&uuml;mmert sich lieber um Meggie, die von Ihrer Familie kaum beachtet wird. Als Meggie erwachsen wird, erwachen auch in ihr Gef&uuml;hle f&uuml;r Ralph und Mary sieht in ihr eine Rivalin um die Zuneigung des Paters.  Als Mary stirbt, hinterl&auml;&szlig;t sie der Kirche ihr gesamtes Verm&ouml;gen und macht Ralph zum Verwalter desselben. Somit hat sie am Ende ihr Ziel erreicht; denn der ehrgeizige Ralph wird von der Kirche zu H&ouml;herem berufen und verl&auml;&szlig;t Meggie um Karriere zu machen. Dennoch kreuzen sich ihre Wege im Laufe der Jahre immer wieder – und die Leidenschaft erwacht immer wieder aufs Neue.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Dornenvoegel - Teil 1.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Dornenvoegel - Teil 1.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

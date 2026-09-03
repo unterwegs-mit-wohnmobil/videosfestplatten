@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Alpen von oben - Vom Chablais zum Montblanc</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Alpen von oben - Vom Beaufortain in die Savoyer Alpen.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Alpen von oben - Vom Chablais zum Montblanc"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Alpen von oben - Vom Oberland zum Waadtland.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Alpen von oben - Vom Chablais zum Montblanc</b> - 0:52:10 Die Alpen erstrecken sich &uuml;ber &Ouml;sterreich, Liechtenstein, die Schweiz, Deutschland, Italien und Frankreich. Sie sind der l&auml;ngste und der h&ouml;chste Gebirgszug Europas. Diese Alpenetappe f&uuml;hrt weiter durch die Schweiz von Faucigny zum Montblanc.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Alpen von oben - Vom Oberland zum Waadtland.html"><img width="100%" height="auto" src="_Poster/Die Alpen von oben - Vom Chablais zum Montblanc.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Alpen von oben - Vom Beaufortain in die Savoyer Alpen.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Alpen von oben - Vom Oberland zum Waadtland.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Kommissarin Lucas - Skizze einer Toten</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Jackpot.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Kommissarin Lucas - Skizze einer Toten"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Kuehn hat zu tun.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Kommissarin Lucas - Skizze einer Toten</b> - 1:26:25 Die 25-j&auml;hrige Rechtsanwaltsgehilfin Karin Berling wird ermordet. Und das kurz vor ihrer Hochzeit. War es der zuk&uuml;nftige Ehemann Cengiz &Ouml;zg&uuml;r? Die Beziehung stand n&auml;mlich kurz vor dem Aus.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Kuehn hat zu tun.html"><img width="100%" height="auto" src="_Poster/Kommissarin Lucas - Skizze einer Toten.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Jackpot.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Kuehn hat zu tun.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

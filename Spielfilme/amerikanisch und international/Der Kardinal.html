@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der Kardinal</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Hundertjaehrige, der aus dem Fenster stieg und verschwand.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der Kardinal"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der Klient.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der Kardinal</b> - 2:52:34 Der Film zeigt den Werdegang und Aufstieg von Stephen Fermoyle, einem jungen Amerikaner einfacher Herkunft. Von seiner Berufung &uuml;berzeugt, wird Fermoyle 1917 zum Priester geweiht. Fermoyle f&uuml;hlt sich der katholischen Kirche so eng verbunden, dass sein Dogmatismus die Hochzeit seiner Schwester Mona mit einem Juden verhindert. Als Mona Jahre sp&auml;ter w&auml;hrend ihrer Schwangerschaft schwer erkrankt, entscheidet Stephen, dass das Leben des ungeborenen Kindes Vorrang hat: Mona stirbt unter Qualen. Von Gewissensbissen gepeinigt, l&auml;sst Stephen sein Priesteramt ruhen und arbeitet als Sprachlehrer in Wien. Hier verliebt er sich in die h&uuml;bsche Studentin Annemarie. Aber Stephens Berufung zum Priesteramt erweist sich letztlich als st&auml;rker. Innerlich gereift tritt er in die Dienste des Vatikans, bis er 1938 in p&auml;pstlicher Mission nach Wien zur&uuml;ckkehrt. Stephen soll nationalsozialistischen Terror verhindern helfen. Aber die Politik erweist sich als viel m&auml;chtiger – und Stephen muss tatenlos zusehen, wie Annemarie von der Gestapo gefangen gehalten wird. 1939, knapp vor Ausbruch des Zweiten Weltkriegs, wird Stephen zum Kardinal erhoben.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der Klient.html"><img width="100%" height="auto" src="_Poster/Der Kardinal.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Hundertjaehrige, der aus dem Fenster stieg und verschwand.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der Klient.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

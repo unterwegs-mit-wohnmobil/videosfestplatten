@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der junge Inspektor Morse 22 - Quartett</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der junge Inspektor Morse 21 - Farben.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der junge Inspektor Morse 22 - Quartett"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der junge Inspektor Morse 23 - Ikarus.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der junge Inspektor Morse 22 - Quartett</b> - 1:28:47 <a href="https://de.wikipedia.org/wiki/Der_junge_Inspektor_Morse">Details</a> W&auml;hrend eines Sportwettbewerbs, der live im Fernsehen ausgestrahlt wird, kommt ein Spieler aus der deutschen Mannschaft ums Leben. Steven, ein kleiner Junge, wird schwer verletzt. Ebenso wie der Spieler wurde auch Steven von einer Kugel getroffen. Der Junge wird ins Krankenhaus eingeliefert. Bei dem ermordeten Mann handelt es sich um Karl Pfuscher, der beim Europ&auml;ischen Rat als &Uuml;bersetzer gearbeitet hat. Als Inspektor Morse gerade mit seinen Ermittlungen beginnt, taucht der Staatsschutz auf und entzieht Morse den Fall sowie s&auml;mtliche Unterlagen und die Leiche. Doch Morse ermittelt auf eigene Faust weiter.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der junge Inspektor Morse 23 - Ikarus.html"><img width="100%" height="auto" src="../../../Krimis/Der junge Inspektor Morse/_Poster/Der junge Inspektor Morse 22 - Quartett.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der junge Inspektor Morse 21 - Farben.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der junge Inspektor Morse 23 - Ikarus.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

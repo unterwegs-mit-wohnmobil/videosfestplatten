@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Russland von oben - Am Pazifik - Russland Fern-Ost</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Rom nach oben (2).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Russland von oben - Am Pazifik - Russland Fern-Ost"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Russland von oben - Europaeisches Erbe.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Russland von oben - Am Pazifik - Russland Fern-Ost</b> - 0:43:15 Russland von oben fliegt in dieser Folge zur Halbinsel Kamtschatka mit ihren 29 aktiven Vulkanen, beobachtet unerschrockene Surfer am &ouml;stlichen Ende Russlands und schaut Braunb&auml;ren beim Lachsfang zu. Die Dokumentation begleitet Seeb&auml;ren und ihren Nachwuchs auf der Tyulenyi-Insel und fliegt zur &ouml;stlichsten Stadt des Landes, Wladiwostok.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Russland von oben - Europaeisches Erbe.html"><img width="100%" height="auto" src="_Poster/Russland von oben - Am Pazifik - Russland Fern-Ost.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Rom nach oben (2).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Russland von oben - Europaeisches Erbe.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

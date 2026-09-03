@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Ein riskanter Plan</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Ein Offizier und Gentleman.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Ein riskanter Plan"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Ein seltsames Paar.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Ein riskanter Plan</b> - 1:31:37 <a href="https://de.wikipedia.org/wiki/Ein_riskanter_Plan">Details</a> Der ehemalige Polizist Nick Cassidy sitzt eine 25-j&auml;hrige Haftstrafe ab. Sein fr&uuml;herer Partner Mike Ackerman besorgt ihm zur Beerdigung seines Vaters einen Tag Freigang. Bei der Beerdigung ger&auml;t Nick mit seinem Bruder Joey in einen handfesten Streit. Als die Vollzugsbeamten die streitenden Br&uuml;der auseinanderbringen wollen, &uuml;berw&auml;ltigt Nick diese und fl&uuml;chtet.  Unter falschem Namen checkt Nick Cassidy in einem Hotel ein. Nachdem er auf seinem Zimmer ein Glas Champagner getrunken hat, steigt er aus dem Fenster auf den Sims und erregt damit binnen k&uuml;rzester Zeit die Aufmerksamkeit der New Yorker B&uuml;rger.  Feuerwehr und Polizei sperren die Stra&szlig;e ab, bereiten ein Sprungkissen vor und versuchen zu Nick Kontakt aufzunehmen, um ihn vom vermeintlich drohenden Suizid abzubringen. Nick m&ouml;chte aber mit niemandem au&szlig;er der Polizeipsychologin Lydia Mercer sprechen. In Unkenntnis &uuml;ber Nicks Identit&auml;t merkt diese jedoch schnell, dass Nick zwar entschlossen wirkt, aber nicht in die Tiefe springen will. Die Polizei durchsucht Nicks Hotelzimmer erfolglos nach Spuren. Lydia gelangt aber an einen Fingerabdruck von Nick, als sie ihm eine Zigarette anbietet und behauptet, es sei ihre letzte, die sie sich daraufhin teilen. Anschlie&szlig;end konfrontiert sie ihn mit dem Wissen &uuml;ber seine Identit&auml;t und das Verbrechen, f&uuml;r das er verurteilt und inhaftiert wurde: Er soll dem New Yorker Gesch&auml;ftsmann David Englander einen Diamanten entwendet haben, w&auml;hrend er f&uuml;r einen Nebenjob als Leibw&auml;chter engagiert war. Nick vermutet, dass Englander aufgrund von Schulden, die durch die B&ouml;rsenkrise verursacht worden waren, den Raub mithilfe von korrupten Polizisten – unter anderem seinem Chef Dante Marcus und Nicks Ex-Partner Mike – inszeniert hatte, um die Versicherungssumme in Millionenh&ouml;he zu kassieren. Er vermutet, dass sich der Diamant weiterhin in Englanders Besitz befindet. Nick appelliert an Lydias Vertrauen, um Zeit zu gewinnen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Ein seltsames Paar.html"><img width="100%" height="auto" src="_Poster/Ein riskanter Plan.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Ein Offizier und Gentleman.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Ein seltsames Paar.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Franche-Comte</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Franche-Comte und Jura - unbekannter Nachbar.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Franche-Comte"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Frankreich - Die Nordkueste, Paradies der Voegel.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Franche-Comte</b> - 0:52:05 Die Dokureihe l&auml;dt die Zuschauer ein, die sch&ouml;nsten Regionen Frankreichs in beeindruckenden Luftaufnahmen und aus n&auml;chster N&auml;he zu erkunden. Die aktuelle Folge f&uuml;hrt in die Franche-Comté, eine der kleinsten Regionen Frankreichs, die noch viel unber&uuml;hrte Natur zu bieten hat.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Frankreich - Die Nordkueste, Paradies der Voegel.html"><img width="100%" height="auto" src="_Poster/Franche-Comte.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Franche-Comte und Jura - unbekannter Nachbar.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Frankreich - Die Nordkueste, Paradies der Voegel.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

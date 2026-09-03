@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Huisele Hermann - der Sagenforscher aus Tirol (1965)</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Grossstadtbahnhof (1966).html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Huisele Hermann - der Sagenforscher aus Tirol (1965)"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Juli-Notizen.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Huisele Hermann - der Sagenforscher aus Tirol (1965)</b> - 0:29:08 Tirol war fr&uuml;her ber&uuml;hmt f&uuml;r seine M&auml;rchen, die Gebr&uuml;der Grimm z.B. fuhren extra nach Tirol, um diese aufnehmen. Hermann Holzmann aus Innsbruck, den alle nur den &quot;Huisele Hermann&quot; nennen, wanderte in den 60er-Jahren die D&ouml;rfer und T&auml;ler ab, um n&auml;chtelang alten Leuten zuzuh&ouml;ren. Nicht Dummheit und Naivit&auml;t sondern die Umwelt und die Geschichte, sagt er, haben diese Sagen geformt: Sie sind eingebett
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Juli-Notizen.html"><img width="100%" height="auto" src="_Poster/Huisele Hermann - der Sagenforscher aus Tirol (1965).jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Grossstadtbahnhof (1966).html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Juli-Notizen.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

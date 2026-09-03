@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Zivilprozess</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Zimmer mit Aussicht.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Zivilprozess"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Zu guter Letzt.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Zivilprozess</b> - 1:45:19 Jan Schlichtmann ist ein auf Schadensersatzprozesse spezialisierter Anwalt, der eine Kanzlei leitet, die aus ihm, zwei weiteren Anw&auml;lten und einem Buchhalter besteht. Er arbeitet meist gegen eine Beteiligung an der Entsch&auml;digung anstelle der Anwaltsgeb&uuml;hren. Als in der Kleinstadt Woburn in Massachusetts einige Kinder an Leuk&auml;mie sterben, wenden sich die betroffenen Eltern an Schlichtmann. Sie beschuldigen eine ortsans&auml;ssige Gerberei, das Wasser verunreinigt und dadurch die Krankheit verursacht zu haben.  Schlichtmann zweifelt zuerst, ob der Fall eintr&auml;glich genug sein k&ouml;nnte. Dann &uuml;bernimmt er ihn, da er bemerkt, dass zwei gro&szlig;e kapitalstarke Unternehmen hinter der Gerberei stehen. Diese Unternehmen beauftragen zur Verteidigung die Anw&auml;lte Jerome Facher und William Cheeseman. Es wird ein Vergleich angeboten, bei einer Einmalzahlung von 25 Millionen US-Dollar nicken die Anw&auml;lte der Beklagten. Schlichtmann stellt weitere Forderungen, die sich auf &uuml;ber 300 Millionen US-Dollar summieren. Die Anw&auml;lte der Beklagten verlassen den Verhandlungsraum. Der langwierige Prozess verursacht seiner Kanzlei hohe Kosten und treibt sie schlie&szlig;lich an den Rand der Insolvenz.  Die Beklagten bieten nunmehr 8 Millionen US-Dollar Entsch&auml;digung an, die Schlichtmann akzeptiert. Er will in die Berufung gehen, doch seine Kollegen und Partner wollen nicht mitmachen. Schlichtmann verl&auml;sst die Kanzlei. Er schreibt eine Umweltschutzbeh&ouml;rde an, die erfolgreich Berufung einlegt und die Schlie&szlig;ung der beiden beschuldigten Firmen und 60 Millionen USD Schadenersatz sowie die Beseitigung der Umweltsch&auml;den durchsetzt.  Schlichtmann bleibt verarmt zur&uuml;ck. Im Abspann des Filmes wird gezeigt, dass es mehrere Jahre dauern wird, bis sich Schlichtmann, der sich von nun an auf Umweltrecht spezialisiert, finanziell erholt.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Zu guter Letzt.html"><img width="100%" height="auto" src="_Poster/Zivilprozess.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Zimmer mit Aussicht.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Zu guter Letzt.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

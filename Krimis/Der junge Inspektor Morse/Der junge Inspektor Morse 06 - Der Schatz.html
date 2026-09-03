@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der junge Inspektor Morse 06 - Der Schatz</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der junge Inspektor Morse 05 - Leichte Beute.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der junge Inspektor Morse 06 - Der Schatz"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der junge Inspektor Morse 07 - Nachtstuecke.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der junge Inspektor Morse 06 - Der Schatz</b> - 1:29:07 Endeavour Morse jagt mit Scharfsinn und seinen unkonventionellen Methoden Oxfords Verbrecher. Die Folgen einer Schussverletzung machen ihm allerdings vor allem psychisch noch zu schaffen. Morse ist zur&uuml;ck im Dienst. An seinem ersten Tag, vier Monate nach seiner Schussverletzung, halten ihn ein Farbanschlag auf eine Sch&ouml;nheitsk&ouml;nigin, das pl&ouml;tzliche Verschwinden einer jungen Frau und ein mysteri&ouml;ser Selbstmord auf Trab. Feministin Kitty Batten schie&szlig;t bei der Parade zur 900-Jahrs-Feier mit einer Farbpistole auf Diana, die amtierende Miss Great Britain. Mit dieser Aktion will sie gegen die Sexualisierung und Unterdr&uuml;ckung von Frauen protestieren. Kitty ist die Tochter von Barbara Batten, die sich gerade im Wahlkampf f&uuml;r einen Platz im Parlament befindet. Da der Zwischenfall auf der Parade Barbara Battens Wahlkampf schaden k&ouml;nnte, wird Kittys Tat von Bright vertuscht und Kitty freigelassen. Zudem verschwindet die junge Frida Yellend pl&ouml;tzlich. Morse glaubt, eine m&ouml;gliche Verbindung zu einem vermeintlichen Selbstmord eines unbekannten Mannes gefunden zu haben.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der junge Inspektor Morse 07 - Nachtstuecke.html"><img width="100%" height="auto" src="_Poster/Der junge Inspektor Morse 06 - Der Schatz.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der junge Inspektor Morse 05 - Leichte Beute.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der junge Inspektor Morse 07 - Nachtstuecke.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

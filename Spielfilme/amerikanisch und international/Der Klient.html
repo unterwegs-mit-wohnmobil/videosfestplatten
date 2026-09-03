@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Der Klient</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Der Kardinal.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Der Klient"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Der Knochenjaeger.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Der Klient</b> - 1:51:41 <a href="https://www.fernsehserien.de/der-klient">Details</a> Der elfj&auml;hrige Mark Sway und sein achtj&auml;hriger Bruder Ricky wollen eigentlich nur eine Zigarette im Wald rauchen, als sie &uuml;ber den Mafia-Anwalt Jerome Clifford aus New Orleans stolpern, der gerade dabei ist, sich das Leben zu nehmen. Mark, der nicht tatenlos zusehen will, wird von Clifford &uuml;berw&auml;ltigt und erf&auml;hrt unfreiwillig das Versteck der Leiche eines amerikanischen Senators, den Cliffords Mandant Barry Muldanno umgebracht hat.  Mark kann aus dem Wagen fliehen, doch nicht ohne Spuren zu hinterlassen. Roy Foltrigg, ein Staatsanwalt aus New Orleans, der schon seit Monaten auf der Jagd nach Beweisen f&uuml;r den Mord ist, will Mark unbedingt verh&ouml;ren. Der Junge wird jedoch zugleich von der Mafia unter Druck gesetzt. Verzweifelt wendet Mark sich an die Rechtsanw&auml;ltin Reggie Love. Diese versucht als Erstes, Mark aus der Schusslinie zu bringen. Sowohl Foltrigg als auch die Mafia setzen jetzt auch Marks Anw&auml;ltin zu.  Mark ist den Ereignissen jedoch nicht gewachsen, was Schwierigkeiten verursacht und dazu f&uuml;hrt, dass er in Schutzhaft genommen wird. Durch Vort&auml;uschung von PTS wird er ins Krankenhaus eingeliefert und kann fliehen. Schlie&szlig;lich bleibt f&uuml;r beide nur ein Ausweg: Die Leiche des Senators muss gefunden werden.  Der Roman endet damit, dass Mark und seine Familie in das Zeugenschutzprogramm aufgenommen werden, nachdem er die Staatsanwaltschaft &uuml;ber den Aufenthaltsort der Leiche des Senators informiert hat.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Der Knochenjaeger.html"><img width="100%" height="auto" src="_Poster/Der Klient.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Der Kardinal.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Der Knochenjaeger.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

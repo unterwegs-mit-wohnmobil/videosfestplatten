@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Das China-Syndrom</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Das Beste zum Schluss.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Das China-Syndrom"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Das Fest.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Das China-Syndrom</b> - 1:54:23 <a href="https://de.wikipedia.org/wiki/Das_China-Syndrom">Details</a> Die f&uuml;r einen lokalen Nachrichtensender arbeitende Fernsehjournalistin Kimberly Wells und ihr Kameramann Richard Adams sind bei Dreharbeiten f&uuml;r eine Sendereihe zum Thema Energieversorgung zu Gast in einem kalifornischen Kernkraftwerk. W&auml;hrend sie sich in der Besuchergalerie oberhalb des schalldichten Kontrollraums aufhalten, erzittert die gesamte Anlage wie bei einem Erdbeben, gefolgt von einer zweiten, schw&auml;cheren Vibration einige Sekunden sp&auml;ter. Der Zwischenfall, der den Besuchern als reiner Routinefall verkauft wird, weitet sich aufgrund eines defekten Messger&auml;tes, der Wasserstandsanzeige f&uuml;r den Reaktor, und daraus resultierender Bedienungsfehler des Kontrollraumpersonals zu einem schweren St&ouml;rfall aus, bei dem eine Katastrophe in Form einer Kernschmelze nur knapp vermieden wird.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Das Fest.html"><img width="100%" height="auto" src="_Poster/Das China-Syndrom.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Das Beste zum Schluss.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Das Fest.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

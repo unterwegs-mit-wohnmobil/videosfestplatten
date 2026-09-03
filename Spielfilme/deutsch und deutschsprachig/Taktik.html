@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Taktik</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Tabu - Es ist die Seele ein Fremdes auf Erden.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Taktik"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Tango im Schnee.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Taktik</b> - 1:32:14 In einem Gef&auml;ngnis bringen die drei Insassen Alois Steindl, Hans und Abdullah die drei Mitarbeiterinnen Gaby, Rosa und Jasna aus der Gef&auml;ngniskantine in ihre Gewalt. Mit den Geiseln und selbstgebastelten Bomben wollen die drei H&auml;ftlinge ihre Freiheit erzwingen.  Anf&uuml;hrer der Verbrecher ist Alois Steindl, seitens der Polizei f&uuml;hrt der zuf&auml;llig diensthabende Polizist Alfred „Fredi“ Hollerer die Verhandlungen, zumindest solange, bis der Verhandlungs-Experte eintrifft. Bis dahin dauert es allerdings einige Stunden, die f&uuml;r die drei Frauen zum Albtraum werden
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Tango im Schnee.html"><img width="100%" height="auto" src="_Poster/Taktik.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Tabu - Es ist die Seele ein Fremdes auf Erden.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Tango im Schnee.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Die Jury</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Die Herzogin.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Die Jury"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Die Kanadische Reise.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Die Jury</b> - 2:18:56 In der fiktiven Kleinstadt Clanton im amerikanischen Bundesstaat Mississippi wird die schwarze zehnj&auml;hrige Tonya Hailey von zwei betrunkenen wei&szlig;en M&auml;nnern, Billy Ray Cobb und James „Pete“ Williard, brutal vergewaltigt. Als die beiden M&auml;nner zu einer ersten Anh&ouml;rung in das Gerichtsgeb&auml;ude gef&uuml;hrt werden, erschie&szlig;t sie Tonyas Vater, Carl Lee Hailey.  Das Gerichtsverfahren, das daraufhin gegen Carl Lee Hailey eingeleitet wird, ger&auml;t zum Sensationsprozess. Als Schwarzer, der es wagt, im amerikanischen S&uuml;den Lynchjustiz an den wei&szlig;en Peinigern seiner Tochter zu &uuml;ben, erwartet ihn das Todesurteil. Der junge Anwalt Jake Brigance &uuml;bernimmt diesen Fall. Er wird von seinen Freunden Lucien Wilbanks und Harry Rex Vonner, beide selbst Anw&auml;lte, und sp&auml;ter auch der Jurastudentin Ellen Roark unterst&uuml;tzt. Da der Fall klar ist – Carl Lee hat die Morde minuti&ouml;s vorbereitet und ist eindeutig identifiziert worden – ist der Prozess eine Herausforderung f&uuml;r die Verteidigung. Die einzige M&ouml;glichkeit Carl Lee zu retten, ist es, ihn als unzurechnungsf&auml;hig erscheinen zu lassen. Das soll der Jury als Feigenblatt dienen, um die Selbstjustiz von Carl Lee nicht zu ahnden.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Die Kanadische Reise.html"><img width="100%" height="auto" src="_Poster/Die Jury.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Die Herzogin.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Die Kanadische Reise.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

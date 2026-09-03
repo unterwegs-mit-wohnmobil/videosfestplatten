@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Einer kam durch</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Eine Million Dollar Trinkgeld.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Einer kam durch"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Einer nach dem anderen (2014).html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Einer kam durch</b> - 1:46:27 Auf dem H&ouml;hepunkt der Luftschlacht um Gro&szlig;britannien wird der deutsche Jagdflieger Franz von Werra &uuml;ber England abgeschossen und festgenommen. Im Kriegsgefangenenlager kann ihn nichts von seinem einzigen Ziel abhalten, in sein Heimatland fliehen zu wollen ... - Der britische Film (1957, Regie: Roy Baker) mit Hardy Kr&uuml;ger in der Hauptrolle entstand nach einer wahren Begebenheit.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Einer nach dem anderen (2014).html"><img width="100%" height="auto" src="_Poster/Einer kam durch.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Eine Million Dollar Trinkgeld.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Einer nach dem anderen (2014).html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

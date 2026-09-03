@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>BBC - Unser blauer Planet - 9. Making Waves - Aus der Werkstatt der Filmemacher</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="BBC - Unser blauer Planet - 8_ An der Kueste.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#BBC - Unser blauer Planet - 9_ Making Waves - Aus der Werkstatt der Filmemacher"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="N24 - Unser blauer Planet - Im offenen Meer.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>BBC - Unser blauer Planet - 9. Making Waves - Aus der Werkstatt der Filmemacher</b> - 0:42:59
+</big></big></p>
+<div class="container" id="myImage">
+<a href="N24 - Unser blauer Planet - Im offenen Meer.html"><img width="100%" height="auto" src="_Poster/BBC - Unser blauer Planet - 9_ Making Waves - Aus der Werkstatt der Filmemacher.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("BBC - Unser blauer Planet - 8_ An der Kueste.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("N24 - Unser blauer Planet - Im offenen Meer.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

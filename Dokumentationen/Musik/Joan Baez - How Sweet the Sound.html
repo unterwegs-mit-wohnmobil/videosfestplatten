@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Joan Baez - How Sweet the Sound</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Epochen der Musikgeschichte - Die Wiener Klassik.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Joan Baez - How Sweet the Sound"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Maria Callas Assoluta.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Joan Baez - How Sweet the Sound</b> - 1:23:56 Das Gewissen einer Generation: Die politisch engagierte Folks&auml;ngerin Joan Baez sang im Luftschutzbunker, w&auml;hrend drau&szlig;en die Bomben fielen. Aber sie ist auch eine der wichtigsten und bekanntesten Vertreterinnen der Folkmusik. Seltene Archivaufnahmen und sehr pers&ouml;nliche Interviews machen den Dokumentarfilm zu einem zugleich pers&ouml;nlichen und historischen Portr&auml;t.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Maria Callas Assoluta.html"><img width="100%" height="auto" src="_Poster/Joan Baez - How Sweet the Sound.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Epochen der Musikgeschichte - Die Wiener Klassik.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Maria Callas Assoluta.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Gloria - Das Leben wartet nicht</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Glaubensfrage.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Gloria - Das Leben wartet nicht"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Good Will Hunting.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Gloria - Das Leben wartet nicht</b> - 1:31:59 <a href="https://de.wikipedia.org/wiki/Gloria_–_Das_Leben_wartet_nicht">Details</a> Gloria ist Mutter zweier erwachsener Kinder, temperamentvoll, geschieden und hin und wieder etwas einsam. Ihre Tage verbringt sie mit einem B&uuml;rojob, ihre N&auml;chte auf der Tanzfl&auml;che von Single-Partys in den Clubs von Los Angeles. In einer dieser N&auml;chte trifft sie Arnold, der genau wie Gloria geschieden und Single ist. Was wie eine abenteuerliche Bilderbuchromanze voller Erotik und Schmetterlingen im Bauch beginnt, muss sich schon bald wichtigen Themen des Lebens wie Familie, Beziehungsf&auml;higkeit und Verbindlichkeit stellen.  Dadurch wird ihre neu gewonnene Liebe auf eine harte Probe gestellt. Beim ersten Treffen zwischen Arnold, Gloria, deren Ex-Mann und dessen neuer Frau sowie den beiden gemeinsamen erwachsenen Kindern kommt es bereits zum ersten Eklat: best&uuml;rzt &uuml;ber das noch immer gute Einvernehmen Glorias mit ihrem geschiedenen Mann verl&auml;sst Arnold heimlich die Wohnung und meldet sich auch telefonisch nicht auf Glorias Anrufe. Daraufhin beendet sie die Beziehung mit Arnold. Erst nach Tagen meldet er sich zur&uuml;ck und versucht, Gloria wieder f&uuml;r sich zu gewinnen. Doch sie nimmt wochenlang seine Anrufe nicht entgegen. Erst als ihre Tochter nach Schweden auswandert, ist sie seelisch so bed&uuml;rftig, dass sie ihm nochmals eine Chance gibt. Bei einem Trip nach Las Vegas wollen sie Vers&auml;umtes nachholen.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Good Will Hunting.html"><img width="100%" height="auto" src="_Poster/Gloria - Das Leben wartet nicht.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Glaubensfrage.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Good Will Hunting.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>_info</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"> </div></td>
+  <td><div class="textMitte"><a href="index.htm#_info"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Euer Ehren 1.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>_info</b> <a href="https://de.wikipedia.org/wiki/Euer_Ehren_(Fernsehserie)">Details</a> Euer Ehren ist eine deutsch-&ouml;sterreichische Fernsehserie des Regisseurs David Nawrath von 2022. Sie erz&auml;hlt von einem Innsbrucker Richter, der mit illegalen und unethischen Mitteln seinen jugendlichen Sohn vor der Selbstjustiz einer kriminellen Organisation zu bewahren versucht, die ihm wegen eines Verkehrsunfalls mit Fahrerflucht droht. Die Hauptrollen werden von Sebastian Koch, Tobias Moretti, Paula Beer und Ursula Strauss verk&ouml;rpert. Das Drehbuch von David Marian und David Nawrath basiert auf der israelischen Serie Kvodo (2017), die auch unter dem Titel Your Honor mit Bryan Cranston als Richter adaptiert wurde.
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Euer Ehren 1.html"><img width="100%" height="auto" src="_Poster/_info.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("index.htm", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Euer Ehren 1.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.textLinks { text-align: left; } div.textMitte { text-align: center; } div.textRechts { text-align: right; }
+</style>
+<title>Stratmann wandert - Von Schmallenberg zum Kahlen Asten</title>
+</head>
+<body>
+<table border="0" width="100%">
+ <tr>
+  <td width="20%"><div class="textLinks"><a href="Stratmann wandert - Von Essen bis an die Erft.html"><big>voriges</big></a></div></td>
+  <td><div class="textMitte"><a href="index.htm#Stratmann wandert - Von Schmallenberg zum Kahlen Asten"><big>Index</big></a></div></td>
+  <td width="25%"><div class="textRechts"><a href="Stratmann wandert - Von Siegen bis kurz vor Hessen.html"><big>n&auml;chstes</big></a></div></td>
+</tr></table>
+<p style="font-size:1vw; margin-top: 0vw;; margin-bottom: 0vw;"><big><big>
+<b>Stratmann wandert - Von Schmallenberg zum Kahlen Asten</b> - 0:43:55 Auf dieser Etappe hin zum Kahlen Asten betritt er kurz hinter Schmallenberg den Kyrill-Pfad und begutachtet die verheerenden Sch&auml;den, die der Orkan dort vor einigen Jahren angerichtet hat. Gemeinsam mit Rauhaardackel Fidel geht's danach aber wieder in waldreicheres Gefilde und &uuml;ber eine wackelige H&auml;ngebr&uuml;cke hin zum Waldskulpturenpfad, wo ein r&auml;tselhaftes, goldenes Ei mitten in der Landschaft .....
+</big></big></p>
+<div class="container" id="myImage">
+<a href="Stratmann wandert - Von Siegen bis kurz vor Hessen.html"><img width="100%" height="auto" src="_Poster/Stratmann wandert - Von Schmallenberg zum Kahlen Asten.jpg"></a>
+</div>
+<script>
+var openWindowParm="location=no,toolbar=no,menubar=no,status=no,titlebar=no,scrollbars=yes,resizable=yes";
+var swiper = { touchStartX: 0, touchEndX: 0, minSwipePixels: 30, detectionZone: undefined,
+swiperCallback: function() {},
+  init: function (detectionZone, callback) { swiper.swiperCallback = callback
+  detectionZone.addEventListener("touchstart", function (event) {
+    swiper.touchStartX = event.changedTouches[0].screenX; }, false);
+  detectionZone.addEventListener("touchend", function (event) {
+    swiper.touchEndX = event.changedTouches[0].screenX;
+    swiper.handleSwipeGesture(); }, false); },
+  handleSwipeGesture: function () {
+    if (swiper.touchEndX > swiper.touchStartX) { window.open("Stratmann wandert - Von Essen bis an die Erft.html", "_self", openWindowParm) }
+    if (swiper.touchEndX < swiper.touchStartX) { window.open("Stratmann wandert - Von Siegen bis kurz vor Hessen.html", "_self", openWindowParm) } },
+  swipe: function (direction, movedPixels) { var ret = {}
+    ret.direction = direction, ret.movedPixels = movedPixels,  swiper.swiperCallback(ret) } };
+var gestureZone = document.getElementById("myImage"); swiper.init(gestureZone, function(e) { });
+</script>
+</body>
+</html>
